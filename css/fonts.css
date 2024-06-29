@@ -1,0 +1,9 @@
+/* * Font Faces */
+@font-face {
+    font-family: 'iran-sans';
+    src: url('../fonts/IranianSans.ttf');
+}
+@font-face {
+    font-family: 'diplomat';
+    src: url('../fonts/Far_Diplomat.ttf');
+}

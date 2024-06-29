@@ -1,0 +1,25 @@
+/* * ==== CSS Module Import==== */
+@import './reset.css';
+@import './fonts.css';
+
+/* * ====Color Variables==== */
+
+:root{
+    --dodgerBlue : #4078FF;
+    --blackPearl:#0E1422;
+    --greenWhite:#E9E9EB;
+    --laSalleGreen:#057234;
+    --chiliPepper:#BE1313;
+    --yellowOrange:#F3B40A;
+    --white:#FFFFFF;
+    --whiteSmoke:#F6F6F6;
+
+
+}
+
+h1{
+    font-family: 'diplomat', Courier, monospace;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
