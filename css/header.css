@@ -15,6 +15,7 @@
 /* ! Header Section */
 .header {
   height: 80px;
+  background-color: var(--white);
 }
 .header__wrapper {
   display: flex;
@@ -29,17 +30,14 @@
 .navbar__left__logo {
   display: flex;
   align-items: center;
-  font-size: 1.2rem;
-  font-family: "iranSans-bold", Courier, monospace;
+  font-size: 1.4rem;
+  font-family: "lamia", Courier, monospace;
   color: var(--blackPearl);
 }
 
-.navbar__left__logo-icon {
-  width: 4rem;
-  height: 4rem;
+.navbar__left__logo-image {
   margin-left: 0.5rem;
 }
-
 .header__middle {
 }
 
@@ -92,5 +90,3 @@
   width: 2.2rem;
   height: 2.2rem;
 }
-
-

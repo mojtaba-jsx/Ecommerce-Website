@@ -11,3 +11,7 @@
     font-family: 'iranSans-bold';
     src: url('../fonts/iranSans/IRANSansX-Bold.ttf');
 }
+@font-face {
+    font-family: 'lamia';
+    src: url('../fonts/A-Lamia.ttf');
+}
