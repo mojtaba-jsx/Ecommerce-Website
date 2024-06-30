@@ -22,7 +22,12 @@
 body {
   font-family: "iranSans-light", Courier, monospace;
 }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
+/* * ====Button Component==== */
 .btn {
   width: 12rem;
   height: 4rem;
@@ -34,7 +39,6 @@ body {
   cursor: pointer;
 }
 
-/* * ====Button Component==== */
 .btn-black {
   background-color: var(--blackPearl);
 }
