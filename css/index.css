@@ -1,25 +1,29 @@
 /* * ==== CSS Module Import==== */
-@import './reset.css';
-@import './fonts.css';
+@import "./reset.css";
+@import "./fonts.css";
 
 /* * ====Color Variables==== */
 
-:root{
-    --dodgerBlue : #4078FF;
-    --blackPearl:#0E1422;
-    --greenWhite:#E9E9EB;
-    --laSalleGreen:#057234;
-    --chiliPepper:#BE1313;
-    --yellowOrange:#F3B40A;
-    --white:#FFFFFF;
-    --whiteSmoke:#F6F6F6;
-
-
+:root {
+  --dodgerBlue: #4078ff;
+  --blackPearl: #0e1422;
+  --dark: #202533;
+  --greenWhite: #e9e9eb;
+  --laSalleGreen: #057234;
+  --chiliPepper: #be1313;
+  --yellowOrange: #f3b40a;
+  --white: #ffffff;
+  --whiteSmoke: #f6f6f6;
+  --grayCloud: #b6b7bc;
+}
+.icons{
+    display: none;
 }
 
-h1{
-    font-family: 'diplomat', Courier, monospace;
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 2rem;
+h1 {
+  font-family: "diplomat", Courier, monospace;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
 }
+
