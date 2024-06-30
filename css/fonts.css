@@ -1,9 +1,13 @@
 /* * Font Faces */
 @font-face {
-    font-family: 'iran-sans';
-    src: url('../fonts/IranianSans.ttf');
+    font-family: 'iranSans-light';
+    src: url('../fonts/iranSans/IRANSansX-Light.ttf');
 }
 @font-face {
-    font-family: 'diplomat';
-    src: url('../fonts/Far_Diplomat.ttf');
+    font-family: 'iranSans-medium';
+    src: url('../fonts/iranSans/IRANSansX-Medium.ttf');
+}
+@font-face {
+    font-family: 'iranSans-bold';
+    src: url('../fonts/iranSans/IRANSansX-Bold.ttf');
 }

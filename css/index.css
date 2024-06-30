@@ -16,14 +16,97 @@
   --whiteSmoke: #f6f6f6;
   --grayCloud: #b6b7bc;
 }
-.icons{
-    display: none;
+.icons {
+  display: none;
+}
+body {
+  font-family: "iranSans-light", Courier, monospace;
 }
 
-h1 {
-  font-family: "diplomat", Courier, monospace;
-  font-size: 2rem;
-  text-align: center;
-  margin-top: 2rem;
+.btn {
+  width: 12rem;
+  height: 4rem;
+  border: none;
+  outline: none;
+  color: var(--white);
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  cursor: pointer;
 }
 
+/* * ====Button Component==== */
+.btn-black {
+  background-color: var(--blackPearl);
+}
+
+.btn-dark {
+  background-color: var(--dark);
+}
+
+.btn-white {
+  background-color: var(--white);
+  color: var(--blackPearl);
+  border: 2px solid var(--grayCloud);
+}
+
+/* * ====Tag Products==== */
+.tag {
+  width: 6rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  height: 2rem;
+  border: 1px solid var(--grayCloud);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.tag-close {
+  width: 2rem;
+  height: 2rem;
+  transition: all 140ms ease-in;
+}
+.tag-close:hover {
+  fill: red;
+  color: red;
+}
+
+/* *==== Input Styles==== */
+.input {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10rem;
+  height: 3.2rem;
+  width: 20rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--grayCloud);
+  outline: none;
+  font-family: "iranSans-light", Courier, monospace;
+  color: var(--blackPearl);
+}
+
+.input-danger {
+  border: 2px solid var(--chiliPepper);
+}
+
+/* *====TextArea Styles */
+.textarea {
+  display: block;
+  margin: 0 auto;
+  margin-top: 4rem;
+  width: 20rem;
+  height: 10rem;
+  resize: none;
+  outline: none;
+  border: 2px solid var(--grayCloud);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-family: "iranSans-light", Courier, monospace;
+  color: var(--blackPearl);
+}
+.textarea::placeholder {
+  color: var(--blackPearl);
+}
