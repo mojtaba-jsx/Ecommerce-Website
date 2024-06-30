@@ -12,8 +12,6 @@
       <!-- ! Logo -->
       <symbol
         id="logo"
-        width="48"
-        height="49"
         viewBox="0 0 48 49"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +82,7 @@
         />
         <path
           d="M20.5225 21.0155L16.5782 17.0712"
-          stroke="#5C5F6A"
+          stroke="currentColor"
           stroke-width="1.44"
           stroke-linecap="round"
           stroke-linejoin="round"
@@ -94,8 +92,6 @@
       <!-- ! Basket -->
       <symbol
         id="basket"
-        width="20"
-        height="20"
         viewBox="0 0 20 20"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -513,8 +509,6 @@
       <!-- ! User Circle -->
       <symbol
         id="user-circle"
-        width="20"
-        height="20"
         viewBox="0 0 20 20"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -710,17 +704,17 @@
       <!-- ! Chevron Down -->
       <symbol
         id="chevron-down"
-        width="12"
-        height="6"
-        viewBox="0 0 12 6"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
           fill-rule="evenodd"
           clip-rule="evenodd"
-          d="M6.53269 5.81172C6.25566 6.06096 5.80422 6.063 5.52429 5.81634L0 0.948588L1.00331 0.0460426L6.02066 4.46724L10.9863 0L12 0.893212L6.53269 5.81172Z"
-          fill="#5C5F6A"
+          d="M12.5327 14.8117C12.2557 15.061 11.8042 15.063 11.5243 14.8163L6 9.94859L7.00331 9.04604L12.0207 13.4672L16.9863 9L18 9.89321L12.5327 14.8117Z"
+          fill="#0e1422"
         />
       </symbol>
 
@@ -1236,8 +1230,10 @@
       <div class="container">
         <div class="header__wrapper">
           <div class="header__left">
-            <a href="#" class="navbar__left-__ogo">
-              <svg class="navbar__left__logo-icon"><use href="#logo"></use></svg>
+            <a href="#" class="navbar__left__logo">
+              <svg class="navbar__left__logo-icon">
+                <use href="#logo"></use>
+              </svg>
               فروشگاه
             </a>
           </div>
@@ -1250,11 +1246,13 @@
 
               <li class="menu__item">
                 <a href="#" class="menu__link">
-                   دسته بندی 
-                   <svg><use href="#chevron-down"></use></svg>
-                  </a>
-                  <!--* SubMenu Section -->
-                  <div class="submenu"></div>
+                  دسته بندی
+                  <svg class="menu__link-icon">
+                    <use href="#chevron-down"></use>
+                  </svg>
+                </a>
+                <!--* SubMenu Section -->
+                <div class="submenu"></div>
               </li>
 
               <li class="menu__item">
@@ -1267,18 +1265,31 @@
           </div>
 
           <div class="header__right">
-            <div class="header__right-input">
-              <input placeholder="جست و جوی محصولات" type="text" class="input">
-              <svg><use href="#search"></use></svg>
+            <div class="header__right-inputBox">
+              <input
+                placeholder="جست و جوی محصولات"
+                type="text"
+                class="input header__right-input"
+              />
+              <svg class="header__right__input-icon">
+                <use href="#search"></use>
+              </svg>
+            </div>
+
+            <div class="header__right-btns">
+              <a href="#" class="header__right__basket">
+                <svg class="header__right__basket-icon">
+                  <use href="#basket"></use>
+                </svg>
+              </a>
+
+              <a href="#" class="header__right__user">
+                <svg class="header__right__user-icon">
+                  <use href="#user-circle"></use>
+                </svg>
+              </a>
             </div>
             
-            <a href="#" class="header__right__basket">
-              <svg><use href="#basket"></use></svg>
-            </a>
-
-            <a href="#" class="header__right__user">
-              <svg class="header__right__user-icon"><use href="#user-circle"></use></svg>
-            </a>
           </div>
         </div>
       </div>

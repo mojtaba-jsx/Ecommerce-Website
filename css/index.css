@@ -1,9 +1,9 @@
 /* * ==== CSS Module Import==== */
 @import "./reset.css";
 @import "./fonts.css";
+@import "./header.css";
 
 /* * ====Color Variables==== */
-
 :root {
   --dodgerBlue: #4078ff;
   --blackPearl: #0e1422;
@@ -80,8 +80,6 @@ body {
 /* *==== Input Styles==== */
 .input {
   display: block;
-  margin: 0 auto;
-  margin-top: 10rem;
   height: 3.2rem;
   width: 20rem;
   padding: 0.5rem;
