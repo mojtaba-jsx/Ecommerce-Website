@@ -11,6 +11,11 @@
   --whiteSmoke: #f6f6f6;
   --grayCloud: #b6b7bc;
 }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
 
 /* ! Header Section */
 .header {
@@ -49,17 +54,21 @@
 }
 
 .menu__item {
+  height: 80px;
 }
 
 .menu__link {
   display: flex;
   align-items: center;
   font-family: "iranSans-bold", Courier, monospace;
+  color: var(--blackPearl);
+  height: 100%;
 }
 
 .menu__link-icon {
   width: 1.4rem;
   height: 1.4rem;
+  transition: all 120ms ease-in;
 }
 
 .header__right {
@@ -75,6 +84,7 @@
 .header__right__input-icon {
   position: absolute;
   left: 4px;
+  cursor: pointer;
 }
 
 .header__right-btns {
@@ -89,4 +99,90 @@
 .header__right__user-icon {
   width: 2.2rem;
   height: 2.2rem;
+}
+.header__right__basket-icon {
+  color: var(--blackPearl);
+}
+
+/* * ==== Sub Menu Styles ==== */
+.submenu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: var(--dodgerBlue);
+  display: flex;
+  justify-content: space-around;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 140ms ease-in;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.menu__item:hover .submenu {
+  opacity: 100%;
+  visibility: visible;
+  transition: all 140ms ease-in;
+}
+.menu__item:hover .menu__link-icon {
+  transform: rotate(180deg);
+}
+
+.submenu__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.submenu__col {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.submenu__col__row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.submenu__col__row-texts {
+  display: flex;
+  flex-direction: column;
+  font-family: "iranSans-medium", Courier, monospace;
+}
+
+.submenu__col__row-icon-svg {
+  width: 5rem;
+  height: 5rem;
+  color: var(--whiteSmoke);
+  margin-right: 1rem;
+  margin-left: 1rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.submenu__col__row-texts-title {
+  display: flex;
+  align-items: center;
+  font-family: "iranSans-bold", Courier, monospace;
+  font-size: 1.2rem;
+  color: var(--whiteSmoke);
+  transition: all 120ms ease-in;
+}
+.submenu__col__row-texts-title:hover {
+  transform: scale(1.02);
+}
+
+.submenu__col__row-texts-title-icon {
+  width: 1.4rem;
+  height: 1.4rem;
+  stroke: var(--whiteSmoke);
+}
+
+.submenu__col__row-texts-text {
+  margin-top: 1rem;
 }
