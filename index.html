@@ -1265,7 +1265,7 @@
 
       <!-- ! Shirt -->
       <symbol
-      id="shirt"
+        id="shirt"
         xmlns="http://www.w3.org/2000/svg"
         class="icon icon-tabler icon-tabler-shirt"
         viewBox="0 0 24 24"
@@ -1304,7 +1304,7 @@
 
       <!-- ! Hat -->
       <symbol
-      id="hat"
+        id="hat"
         xmlns="http://www.w3.org/2000/svg"
         class="icon icon-tabler icon-tabler-brand-redhat"
         viewBox="0 0 24 24"
@@ -1340,6 +1340,16 @@
         <path d="M9 18v3h2.5" />
         <path d="M9 6v-3h6v3" />
         <path d="M15 19l2 2l4 -4" />
+      </symbol>
+
+      <!-- ! Circle Shape -->
+      <symbol
+        id="circle-shape"
+        viewBox="0 0 340 340"
+        fill="#EEEEEE"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle opacity="0.6" cx="170" cy="170" r="170" fill="#E9E9EB" />
       </symbol>
     </svg>
 
@@ -1542,5 +1552,40 @@
         </div>
       </div>
     </header>
+
+    <!-- ! ///////////////////////// Main Section ///////////////////////// -->
+    <main class="main">
+      <!-- * ========Landing Section======== -->
+      <section class="landing">
+        <div class="container">
+          <div class="landing__wrapper">
+            <div class="landing__right">
+              <h1 class="landing__left-title">
+                به استایل کده خوش آمدید
+                <svg class="landing__left-icon"><use href="#shirt"></use></svg>
+              </h1>
+              <p class="landing__left-text">
+                از جدیدترین محصولات ما دیدن کنید
+              </p>
+              <button class="landing__left__btn btn btn-black ">
+                مشاهده محصولات
+                <svg class="landing__left__btn-icon"><use href="#arrow-left"></use></svg>
+              </button>
+            </div>
+
+            <div class="landing__left">
+              <svg class="landing__left-shape">
+                <use href="#circle-shape"></use>
+              </svg>
+              <img
+                src="./images/landing.png"
+                alt="landing"
+                class="landing__left-image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

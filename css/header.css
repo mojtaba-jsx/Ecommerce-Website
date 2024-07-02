@@ -10,6 +10,8 @@
   --white: #ffffff;
   --whiteSmoke: #f6f6f6;
   --grayCloud: #b6b7bc;
+  --lightRoyalBlue:#4A3AFF;
+  --porcelain:#EFF0F6
 }
 .container {
   max-width: 1200px;
@@ -109,7 +111,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  background-color: var(--dodgerBlue);
+  background-color: var(--white);
   display: flex;
   justify-content: space-around;
   opacity: 0;
@@ -117,6 +119,8 @@
   transition: all 140ms ease-in;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  z-index: 100;
 }
 
 .menu__item:hover .submenu {
@@ -157,7 +161,7 @@
 .submenu__col__row-icon-svg {
   width: 5rem;
   height: 5rem;
-  color: var(--whiteSmoke);
+  color: var(--lightRoyalBlue);
   margin-right: 1rem;
   margin-left: 1rem;
   border-radius: 1rem;
@@ -170,7 +174,7 @@
   align-items: center;
   font-family: "iranSans-bold", Courier, monospace;
   font-size: 1.2rem;
-  color: var(--whiteSmoke);
+  color: var(--lightRoyalBlue);
   transition: all 120ms ease-in;
 }
 .submenu__col__row-texts-title:hover {
@@ -180,7 +184,7 @@
 .submenu__col__row-texts-title-icon {
   width: 1.4rem;
   height: 1.4rem;
-  stroke: var(--whiteSmoke);
+  stroke: var(--dodgerBlue);
 }
 
 .submenu__col__row-texts-text {

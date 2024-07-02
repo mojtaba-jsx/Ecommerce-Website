@@ -15,6 +15,10 @@
   --white: #ffffff;
   --whiteSmoke: #f6f6f6;
   --grayCloud: #b6b7bc;
+  --lightRoyalBlue: #4a3aff;
+  --porcelain: #eff0f6;
+  --mercury: #e6e7e8;
+  --softPeach: #eeeeee;
 }
 .icons {
   display: none;
@@ -25,6 +29,7 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 
 /* * ====Button Component==== */
@@ -35,8 +40,9 @@ body {
   outline: none;
   color: var(--white);
   border-radius: 0.5rem;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   cursor: pointer;
+  font-family: "iranSans-light", Courier, monospace;
 }
 
 .btn-black {
@@ -111,4 +117,106 @@ body {
 }
 .textarea::placeholder {
   color: var(--blackPearl);
+}
+
+/* ! ////////////////// Main Section ////////////////// */
+
+/* ! //////// Landing Section //////// */
+.landing {
+  height: 30rem;
+  background-color: var(--whiteSmoke);
+}
+.landing__wrapper {
+  height: 100%;
+  width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.landing__right {
+  width: 50%;
+}
+
+.landing__left-title {
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  font-family: "lamia", Courier, monospace;
+}
+
+.landing__left-icon {
+  width: 6rem;
+  height: 6rem;
+  margin-right: 0.5rem;
+  animation: vibrate 2s linear infinite;
+  transform: rotate(-10deg);
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.landing__left-text {
+  font-size: 1.2rem;
+  font-family: "iranSans-medium", Courier, monospace;
+  margin-top: 1rem;
+}
+
+.landing__left__btn {
+  padding: 1rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 14rem;
+}
+.landing__left__btn:hover .landing__left__btn-icon {
+  transform: translateX(-10px);
+}
+.landing__left__btn-icon {
+  width: 2.8rem;
+  height: 2.8rem;
+  transition: all 120ms ease-in;
+  stroke: var(--white);
+}
+
+.landing__left {
+  /* position: relative; */
+  height: 100%;
+  width: 50%;
+}
+
+.landing__left-shape {
+  width: 25rem;
+  height: 25rem;
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+}
+
+.landing__left-image {
+  position: absolute;
+  width: 20rem;
+  bottom: 0;
+  left: 0;
+  z-index: 12;
 }
