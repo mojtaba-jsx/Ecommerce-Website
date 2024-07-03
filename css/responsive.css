@@ -6,38 +6,94 @@
 
 /* *  ------------------------1200px------------------------ */
 @media screen and (max-width: 1200px) {
-    /*! Index Page */
-    .navbar__left__logo{
-        flex-direction: column;
-        margin-right: 0.5rem;
-    }
-    .header__right-input{
-        width: 15rem;
-    }
-    .header__right__user-icon{
-        margin-left: 0.5rem;
-    }
+  /*! Index Page(Header) */
+  .navbar__left__logo {
+    flex-direction: column;
+    margin-right: 0.5rem;
+  }
+  .header__right-input {
+    width: 15rem;
+  }
+  .header__right__user-icon {
+    margin-left: 0.5rem;
+  }
+  /*! Index Page(Landing) */
+  .landing__right {
+    margin-right: 0.5rem;
+  }
+  .landing__left {
+    margin-left: 0.5rem;
+  }
 }
 
 /* *  ------------------------992px------------------------ */
 @media screen and (max-width: 992px) {
-    /*! Index Page */
-    .header__middle{
-        display: none;   
-        /* ! Hide Desktop Menu And Show MobileMenu */
-    }
-    .header__right{
-        display: none;
-    }
-    .header__left{
-        margin: 0 auto;
-    }
+  /*! Index Page (Header) */
+  .header__middle {
+    display: none;
+    /* ! Hide Desktop Menu And Show MobileMenu */
+  }
+  .header__right {
+    display: none;
+  }
+  .header__left {
+    margin: 0 auto;
+  }
+  /*! Index Page(Landing) */
+  .landing {
+    height: auto;
+  }
+  .landing__wrapper {
+    flex-direction: column;
+  }
+
+  .landing__left-title {
+    flex-direction: column-reverse;
+  }
+  .landing__left-title,
+  .landing__left-text {
+    text-align: center;
+  }
+  .landing__left__btn {
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+  .landing__left {
+    width: 100%;
+  }
+  .landing__left-image {
+    width: 16rem;
+  }
+  .landing__left-shape {
+    width: 14rem;
+  }
+  .landing__left-image,
+  .landing__left-shape {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 10rem;
+  }
 }
 
 /* *  ------------------------768px------------------------ */
 @media screen and (max-width: 768px) {
+    /* ! Index Page(Landing) */
+  .landing__left-title {
+    font-size: 1.5rem;
+  }
+  .landing__left__btn {
+    font-size: 1rem;
+    width: 10rem;
+  }
+  .landing__left-text {
+    line-height: 1.6rem;
+  }
 }
 
 /* *  ------------------------576px------------------------ */
 @media screen and (max-width: 576px) {
+  .landing__left-image {
+    width: 14rem;
+  }
 }

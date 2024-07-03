@@ -125,6 +125,7 @@ body {
 .landing {
   height: 30rem;
   background-color: var(--whiteSmoke);
+  margin-bottom: 4rem;
 }
 .landing__wrapper {
   height: 100%;
