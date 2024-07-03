@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- *==== CSS Links ====-->
     <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/responsive.css" />
     <title>فروشگاه</title>
   </head>
   <body>
@@ -345,8 +345,6 @@
       <!-- ! Shield -->
       <symbol
         id="shield"
-        width="18"
-        height="18"
         viewBox="0 0 18 18"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -363,8 +361,6 @@
       <!-- ! Star Badge -->
       <symbol
         id="star-badge"
-        width="20"
-        height="20"
         viewBox="0 0 20 20"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -381,8 +377,6 @@
       <!-- ! Delivary-->
       <symbol
         id="delivary"
-        width="20"
-        height="16"
         viewBox="0 0 20 16"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -1565,12 +1559,12 @@
                 به استایل کده خوش آمدید
                 <svg class="landing__left-icon"><use href="#shirt"></use></svg>
               </h1>
-              <p class="landing__left-text">
-                از جدیدترین محصولات ما دیدن کنید
-              </p>
-              <button class="landing__left__btn btn btn-black ">
+              <p class="landing__left-text">از جدیدترین محصولات ما دیدن کنید</p>
+              <button class="landing__left__btn btn btn-black">
                 مشاهده محصولات
-                <svg class="landing__left__btn-icon"><use href="#arrow-left"></use></svg>
+                <svg class="landing__left__btn-icon">
+                  <use href="#arrow-left"></use>
+                </svg>
               </button>
             </div>
 
@@ -1583,6 +1577,41 @@
                 alt="landing"
                 class="landing__left-image"
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- * ========Feature Section======== -->
+      <section class="feature">
+        <div class="container">
+          <div class="feature__wrapper">
+            <div class="feature__item">
+              <svg class="feature__item-icon"><use href="#delivary"></use></svg>
+              <span class="feature__item-title"> حمل و نقل رایگان</span>
+              <p class="feature__item-text">
+                امروز استایل خود را ارتقا دهید و برای همه ی سفارشات ارسال رایگان
+                دریافت کنید
+              </p>
+            </div>
+
+            <div class="feature__item">
+              <svg class="feature__item-icon">
+                <use href="#star-badge"></use>
+              </svg>
+              <span class="feature__item-title">ضمانت رضایت</span>
+              <p class="feature__item-text">
+                با ضمانت رضایت با اطمینان از ما خرید کنید ، آن را دوست داشته
+                باشد یا بازپرداخت کنید
+              </p>
+            </div>
+
+            <div class="feature__item">
+              <svg class="feature__item-icon"><use href="#shield"></use></svg>
+              <span class="feature__item-title">پرداخت امن</span>
+              <p class="feature__item-text">
+                امنیت شما الولیت ماست ، پرداخت های شما نزد ما امن است
+              </p>
             </div>
           </div>
         </div>

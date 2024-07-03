@@ -221,3 +221,36 @@ body {
   left: 0;
   z-index: 12;
 }
+
+/* ! //////// Feature Section //////// */
+.feature{
+  margin-bottom: 4rem;
+}
+.feature__wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.feature__item{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.feature__item-icon{
+  width: 2rem;
+  height: 2rem;
+}
+
+.feature__item-title{
+  font-family: 'iranSans-bold', Courier, monospace;
+  margin-top: 1rem;
+}
+
+.feature__item-text{
+  margin-top: 1rem;
+  line-height: 1.4rem;
+}

@@ -78,7 +78,7 @@
 
 /* *  ------------------------768px------------------------ */
 @media screen and (max-width: 768px) {
-    /* ! Index Page(Landing) */
+  /* ! Index Page(Landing) */
   .landing__left-title {
     font-size: 1.5rem;
   }
