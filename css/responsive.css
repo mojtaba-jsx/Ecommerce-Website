@@ -1,0 +1,43 @@
+/*! ==============================Responsive MediaQueries ================================ */
+
+/* *  ------------------------1400px------------------------ */
+@media screen and (max-width: 1400px) {
+}
+
+/* *  ------------------------1200px------------------------ */
+@media screen and (max-width: 1200px) {
+    /*! Index Page */
+    .navbar__left__logo{
+        flex-direction: column;
+        margin-right: 0.5rem;
+    }
+    .header__right-input{
+        width: 15rem;
+    }
+    .header__right__user-icon{
+        margin-left: 0.5rem;
+    }
+}
+
+/* *  ------------------------992px------------------------ */
+@media screen and (max-width: 992px) {
+    /*! Index Page */
+    .header__middle{
+        display: none;   
+        /* ! Hide Desktop Menu And Show MobileMenu */
+    }
+    .header__right{
+        display: none;
+    }
+    .header__left{
+        margin: 0 auto;
+    }
+}
+
+/* *  ------------------------768px------------------------ */
+@media screen and (max-width: 768px) {
+}
+
+/* *  ------------------------576px------------------------ */
+@media screen and (max-width: 576px) {
+}
