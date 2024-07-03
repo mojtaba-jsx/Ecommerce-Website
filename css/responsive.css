@@ -89,6 +89,14 @@
   .landing__left-text {
     line-height: 1.6rem;
   }
+  /* ! Index Page(Feature) */
+  .feature__wrapper{
+    flex-direction: column;
+  }
+  .feature__item{
+    margin-bottom: 2rem;
+    width: 100%;
+  }
 }
 
 /* *  ------------------------576px------------------------ */
