@@ -262,3 +262,71 @@ body {
   margin-top: 1rem;
   line-height: 1.4rem;
 }
+
+
+/* ! //////// Best Sell Section //////// */
+.best-sell{
+  margin-bottom: 4rem;
+}
+.best-sell__title{
+  font-size: 2rem;
+  font-family: 'iranSans-bold', Courier, monospace;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.best-sell__wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.product{
+  width: 256px;
+  height: 434px;
+  /* background-color: red; */
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.product__top{
+  height: 70%;
+  background-color: var(--whiteSmoke);
+}
+
+.product-image{
+  width: 100%;
+
+}
+
+.product__bottom{
+  height: 30%;
+}
+
+.product__bottom-title{
+  display: block;
+  font-family: 'iranSans-light', Courier, monospace;
+  margin-top: 2rem;
+}
+
+.product__bottom__infos{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.product__bottom__infos-price{
+  font-family: 'iranSans-bold', Courier, monospace;
+
+}
+
+.product__bottom__infos-stock{
+  border-radius: 1rem;
+  border: 2px solid var(--whiteSmoke);
+  padding: 0.5rem 1rem;
+  font-family: 'iranSans-bold', Courier, monospace;
+}
