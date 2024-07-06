@@ -183,7 +183,7 @@ body {
 }
 
 .landing__left__btn {
-  padding: 1rem;
+  /* padding: 1rem; */
   margin-top: 2rem;
   display: flex;
   align-items: center;
