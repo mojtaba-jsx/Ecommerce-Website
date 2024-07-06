@@ -125,8 +125,7 @@ body {
 .landing {
   height: 30rem;
   background-color: var(--whiteSmoke);
-  margin-bottom:10rem;
-
+  margin-bottom: 10rem;
 }
 .landing__wrapper {
   height: 100%;
@@ -225,7 +224,7 @@ body {
 
 /* ! //////// Feature Section //////// */
 .feature {
-  margin-bottom:10rem;
+  margin-bottom: 10rem;
   /* width: 100%; */
 }
 .feature__wrapper {
@@ -276,7 +275,7 @@ body {
 }
 .best-sell__title {
   font-size: 2rem;
-  font-family: "iranSans-bold", Courier, monospace;
+  font-family: "lamia", Courier, monospace;
   text-align: center;
   margin-top: 2rem;
 }
@@ -340,11 +339,71 @@ body {
 /* * Owl Slider  */
 
 .owl-theme .owl-dots .owl-dot span {
-  width: 15px; 
-  height: 15px; 
+  width: 15px;
+  height: 15px;
   background: var(--whiteSmoke);
   border-radius: 0;
 }
 .owl-theme .owl-dots .owl-dot.active span {
   background: var(--dark);
+}
+
+/* ! //////// Browse Section //////// */
+
+.browse {
+  margin-bottom: 10rem;
+  background-color: var(--whiteSmoke);
+}
+
+.browse__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.browse__right {
+}
+
+.browse__right__title {
+  font-size: 2rem;
+  font-family: "lamia", Courier, monospace;
+  display: flex;
+  align-items: center;
+}
+
+.browse__right__title-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.browse__right-text {
+  font-family: "iranSans-light", Courier, monospace;
+  margin-top: 1rem;
+}
+
+.browse__right__btn {
+  padding: 0.5rem;
+  display: block;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.browse__right__btn-icon {
+  width: 2.8rem;
+  height: 2.8rem;
+  margin-right: 1rem;
+  stroke: var(--white);
+  transition: all 120ms ease-in;
+}
+
+.browse__right__btn:hover .browse__right__btn-icon {
+  transform: translateX(-10px);
+}
+
+.browse__left {
+}
+
+.browse__left-image {
 }
