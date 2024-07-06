@@ -388,6 +388,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 14rem;
 }
 
 .browse__right__btn-icon {
