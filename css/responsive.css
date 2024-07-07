@@ -2,6 +2,10 @@
 
 /* *  ------------------------1400px------------------------ */
 @media screen and (max-width: 1400px) {
+  /* ! Index Page (Latest Feauterd) */
+  .tabcontent{
+    flex-wrap: wrap;
+  }
 }
 
 /* *  ------------------------1200px------------------------ */
@@ -133,5 +137,9 @@
     width: 14rem;
     margin: 1rem auto;
     line-height: 1.4rem;
+  }
+  /* ! Index Page (Latest Feauterd) */
+  .tabs-btns{
+    flex-wrap: wrap;
   }
 }
