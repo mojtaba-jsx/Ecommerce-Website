@@ -524,6 +524,7 @@ body {
 .footer__row1__logo {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   font-family: "iranSans-bold", Courier, monospace;
   color: var(--blackPearl);
 }
@@ -595,9 +596,7 @@ footer li a:hover {
   stroke: var(--dodgerBlue);
 }
 
-
-
-.developer{
+.developer {
   display: flex;
   font-family: "iranSans-bold", Courier, monospace;
   width: 20rem;
@@ -605,9 +604,8 @@ footer li a:hover {
   align-items: center;
   justify-content: space-around;
   color: var(--blackPearl);
-  
 }
 
-.developer-link{
+.developer-link {
   color: var(--blackPearl);
 }
