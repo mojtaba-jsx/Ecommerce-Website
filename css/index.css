@@ -408,3 +408,60 @@ body {
 
 .browse__left-image {
 }
+
+
+/* ! //////// Latest Fetured Section //////// */
+
+
+.latest-featured{
+  margin-bottom: 10rem;
+}
+
+.latest-featured__wrapper{
+
+}
+
+.tabs-btns{
+  display: flex;
+  margin: 0 auto;
+}
+
+
+.tablinks{
+  margin:  0 auto;
+  padding: 1rem;
+  outline: none;
+  width: 10rem;
+  border-radius: 0.5rem;
+  background: none;
+  cursor: pointer;
+  font-family: 'iranSans-bold', Courier, monospace;
+  border: 2px solid var(--whiteSmoke);
+}
+.tablinks--active {
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+.tabs-contents{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tabcontent{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 4rem;
+  margin-top: 2rem;
+
+}
+.tabcontent:nth-child(2){
+  display: none;
+}
+
+.tab-active {
+  background: var(--dark);
+  color: var(--white);
+}
