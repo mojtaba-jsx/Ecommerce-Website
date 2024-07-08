@@ -9,6 +9,7 @@
       href="./vendor/owl-slider/owl.theme.default.min.css"
     />
     <link rel="stylesheet" href="./css/product.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
 
     <title>محصول</title>
   </head>
@@ -920,8 +921,6 @@
       <!-- ! Home -->
       <symbol
         id="home"
-        width="20"
-        height="18"
         viewBox="0 0 20 18"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -1497,30 +1496,43 @@
     <main class="main">
       <!-- * ========Landing Section======== -->
       <section class="breadCrumb">
-        <div class="conianer">
+        <div class="container">
           <div class="breadCrumb__wrapper">
             <span class="breadCrumb_item">
-              <a href="#" class="breadCrumb_item-link"> خانه </a>
+              <a href="#" class="breadCrumb_item-link">
+                خانه
+                <svg class="breadCrumb__icon-svg"><use href="#home"></use></svg>
+              </a>
             </span>
 
             <span class="breadCrumb__icon">
               <svg class="breadCrumb__icon-svg">
-                <use href="#arrow-left"></use>
+                <use href="#chevron-left"></use>
               </svg>
             </span>
 
             <span class="breadCrumb_item">
-              <a href="#" class="breadCrumb_item-link"> محصولات </a>
+              <a href="#" class="breadCrumb_item-link">
+                محصولات
+                <svg class="breadCrumb__icon-svg">
+                  <use href="#basket"></use>
+                </svg>
+              </a>
             </span>
 
             <span class="breadCrumb__icon">
               <svg class="breadCrumb__icon-svg">
-                <use href="#arrow-left"></use>
+                <use href="#chevron-left"></use>
               </svg>
             </span>
 
             <span class="breadCrumb_item">
-              <a href="#" class="breadCrumb_item-link"> لباس </a>
+              <a href="#" class="breadCrumb_item-link">
+                لباس
+                <svg class="breadCrumb__icon-svg">
+                  <use href="#shirt"></use>
+                </svg>
+              </a>
             </span>
           </div>
         </div>

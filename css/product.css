@@ -46,7 +46,8 @@ body {
 }
 .btn:hover {
   background-color: var(--dodgerBlue);
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .btn-black {
   background-color: var(--blackPearl);
@@ -118,3 +119,52 @@ body {
 }
 
 /* * ////////////////// Main Section ////////////////// */
+/* ! //////// Landing Section //////// */
+
+.breadCrumb {
+  margin-top: 2rem;
+  /* background-color: red; */
+  /* height: 2rem; */
+}
+
+.breadCrumb__wrapper {
+  /* height: 2rem; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  border: 2px solid var(--blackPearl);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+.breadCrumb_item {
+  font-size: 1.2rem;
+  font-family: 'iranSans-medium', Courier, monospace;
+}
+.breadCrumb_item-link {
+  color: var(--dark);
+  display: flex;
+  align-items: center;
+
+}
+.breadCrumb_item-link:hover .breadCrumb__icon-svg {
+  transform: scale(1.2);
+}
+
+.breadCrumb__icon {
+}
+
+.breadCrumb__icon-svg {
+  width: 1.4rem;
+  height: 1.4rem;
+  stroke: var(--dark);
+  margin-right: 0.4rem;
+  transition: all 120ms ease-in;
+}
+
+
+
