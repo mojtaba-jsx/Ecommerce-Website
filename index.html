@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./vendor/aos/aos.css">
     <title>فروشگاه</title>
   </head>
   <body>
@@ -1518,6 +1519,8 @@
                 <use href="#circle-shape"></use>
               </svg>
               <img
+              data-aos="zoom-in"
+              data-aos-duration="1500"
                 src="./images/landing.png"
                 alt="landing"
                 class="landing__left-image"
@@ -1531,7 +1534,7 @@
       <section class="feature">
         <div class="container">
           <div class="feature__wrapper">
-            <div class="feature__item">
+            <div class="feature__item" data-aos="fade-up" data-aos-duration="1200">
               <svg class="feature__item-icon"><use href="#delivary"></use></svg>
               <span class="feature__item-title"> حمل و نقل رایگان</span>
               <p class="feature__item-text">
@@ -1540,7 +1543,7 @@
               </p>
             </div>
 
-            <div class="feature__item">
+            <div class="feature__item" data-aos="fade-up" data-aos-duration="1200">
               <svg class="feature__item-icon">
                 <use href="#star-badge"></use>
               </svg>
@@ -1551,7 +1554,7 @@
               </p>
             </div>
 
-            <div class="feature__item">
+            <div class="feature__item" data-aos="fade-up" data-aos-duration="1200">
               <svg class="feature__item-icon"><use href="#shield"></use></svg>
               <span class="feature__item-title">پرداخت امن</span>
               <p class="feature__item-text">
@@ -1696,6 +1699,8 @@
 
             <div class="browse__left">
               <img
+              data-aos="zoom-in-up"
+              data-aos-duration="1500"
                 src="./images/browse/browse.png"
                 alt="browse"
                 class="browse__left-image"
@@ -1898,7 +1903,7 @@
         <div class="container">
           <div class="join__wrapper">
             <div class="join__right">
-              <h1 class="join__right-title">عضو خبرنامه ما شوید</h1>
+              <h1 class="join__right-title" id="type-writer"></h1>
               <p class="join__right-text">
                 ما دوست داریم مشترکان خود را با هدایای ویژه غافل گیر کنیم
               </p>
@@ -2040,14 +2045,9 @@
         </div>
 
         <div class="developer">
-          <span class="developer-text">
-            توسعه داده شده با 
-          </span>
+          <span class="developer-text"> توسعه داده شده با </span>
           <p>&#128151;</p>
-          <a href="#" class="developer-link">
-            توسط
-            Mojtaba JSX
-          </a>
+          <a href="#" class="developer-link"> توسط Mojtaba JSX </a>
         </div>
       </div>
     </footer>
@@ -2055,6 +2055,7 @@
     <!-- *======== Scripts ======== -->
     <script src="./vendor/owl-slider/jquery.min.js"></script>
     <script src="./vendor/owl-slider/owl.carousel.min.js"></script>
+    <script src="./vendor/aos/aos.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>

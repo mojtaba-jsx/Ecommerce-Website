@@ -3,7 +3,7 @@
 /* *  ------------------------1400px------------------------ */
 @media screen and (max-width: 1400px) {
   /* ! Index Page (Latest Feauterd) */
-  .tabcontent{
+  .tabcontent {
     flex-wrap: wrap;
   }
 }
@@ -29,19 +29,19 @@
     margin-left: 0.5rem;
   }
   /* ! index Page (Join) */
-  .join__wrapper{
+  .join__wrapper {
     flex-direction: column;
     text-align: center;
   }
   /* ! Index Page (Footer) */
-  .footer__wrapper{
+  .footer__wrapper {
     flex-wrap: wrap;
   }
   .footer__wrapper div {
     margin: 2rem auto;
     text-align: center;
   }
-  .developer{
+  .developer {
     flex-direction: column;
     width: 14rem;
   }
@@ -142,34 +142,34 @@
     flex-direction: column-reverse;
     line-height: 1.4rem;
   }
-  .browse__right__btn{
+  .browse__right__btn {
     padding: 0;
     flex-direction: column;
     width: 10rem;
   }
-  .browse__left-image{
+  .browse__left-image {
     width: 15rem;
   }
-  .browse__right-text{
+  .browse__right-text {
     width: 14rem;
     margin: 1rem auto;
     line-height: 1.4rem;
   }
   /* ! Index Page (Latest Feauterd) */
-  .tabs-btns{
+  .tabs-btns {
     flex-wrap: wrap;
   }
   /* ! index Page (Join) */
-  .join__left__box-input{
+  .join__left__box-input {
     width: 10rem;
   }
-  .join__left__box-input::placeholder{
+  .join__left__box-input::placeholder {
     font-size: 0.7rem;
   }
-  .join__left__box-btn{
+  .join__left__box-btn {
     width: 4.8rem;
   }
-  .join__right-text{
+  .join__right-text {
     width: 12rem;
     text-align: center;
     margin: 1rem auto;
