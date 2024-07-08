@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
-    <link rel="stylesheet" href="./vendor/aos/aos.css">
+    <link rel="stylesheet" href="./vendor/aos/aos.css" />
     <title>فروشگاه</title>
   </head>
   <body>
@@ -1519,8 +1519,6 @@
                 <use href="#circle-shape"></use>
               </svg>
               <img
-              data-aos="zoom-in"
-              data-aos-duration="1500"
                 src="./images/landing.png"
                 alt="landing"
                 class="landing__left-image"
@@ -1534,7 +1532,11 @@
       <section class="feature">
         <div class="container">
           <div class="feature__wrapper">
-            <div class="feature__item" data-aos="fade-up" data-aos-duration="1200">
+            <div
+              class="feature__item"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
               <svg class="feature__item-icon"><use href="#delivary"></use></svg>
               <span class="feature__item-title"> حمل و نقل رایگان</span>
               <p class="feature__item-text">
@@ -1543,7 +1545,11 @@
               </p>
             </div>
 
-            <div class="feature__item" data-aos="fade-up" data-aos-duration="1200">
+            <div
+              class="feature__item"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
               <svg class="feature__item-icon">
                 <use href="#star-badge"></use>
               </svg>
@@ -1554,7 +1560,11 @@
               </p>
             </div>
 
-            <div class="feature__item" data-aos="fade-up" data-aos-duration="1200">
+            <div
+              class="feature__item"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
               <svg class="feature__item-icon"><use href="#shield"></use></svg>
               <span class="feature__item-title">پرداخت امن</span>
               <p class="feature__item-text">
@@ -1699,8 +1709,8 @@
 
             <div class="browse__left">
               <img
-              data-aos="zoom-in-up"
-              data-aos-duration="1500"
+                data-aos="zoom-in-up"
+                data-aos-duration="1500"
                 src="./images/browse/browse.png"
                 alt="browse"
                 class="browse__left-image"
@@ -1718,17 +1728,17 @@
             <div class="tabs-btns">
               <button
                 class="tablinks tab-active"
-                onclick="openCity(event, 'London')"
+                onclick="openCity(event, 'tab1')"
               >
                 محصولات ویژه
               </button>
-              <button class="tablinks" onclick="openCity(event, 'Paris')">
+              <button class="tablinks" onclick="openCity(event, 'tab2')">
                 آخرین محصولات
               </button>
             </div>
             <!-- ! Tab Content -->
             <div class="tabs-contents">
-              <div id="London" class="tabcontent">
+              <div id="tab1" class="tabcontent owl-carousel owl-theme">
                 <!-- ! Content -->
                 <div class="product item">
                   <div class="product__top">
@@ -1811,7 +1821,7 @@
                 </div>
               </div>
 
-              <div id="Paris" class="tabcontent">
+              <div id="tab2" class="tabcontent owl-carousel owl-theme">
                 <!-- ! Content -->
                 <div class="product item">
                   <div class="product__top">

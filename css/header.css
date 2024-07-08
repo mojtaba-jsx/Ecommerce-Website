@@ -45,8 +45,6 @@
 .navbar__left__logo-image {
   margin-left: 0.5rem;
 }
-.header__middle {
-}
 
 .menu__list {
   display: flex;
@@ -65,8 +63,11 @@
   font-family: "iranSans-bold", Courier, monospace;
   color: var(--blackPearl);
   height: 100%;
+  transition: all 120ms ease-in;
 }
-
+.menu__link:hover{
+  border-bottom: 4px solid var(--dark);
+}
 .menu__link-icon {
   width: 1.4rem;
   height: 1.4rem;
@@ -161,7 +162,7 @@
 .submenu__col__row-icon-svg {
   width: 5rem;
   height: 5rem;
-  color: var(--lightRoyalBlue);
+  color: var(--dark);
   margin-right: 1rem;
   margin-left: 1rem;
   border-radius: 1rem;
@@ -174,7 +175,7 @@
   align-items: center;
   font-family: "iranSans-bold", Courier, monospace;
   font-size: 1.2rem;
-  color: var(--lightRoyalBlue);
+  color: var(--dark);
   transition: all 120ms ease-in;
 }
 .submenu__col__row-texts-title:hover {
@@ -184,7 +185,7 @@
 .submenu__col__row-texts-title-icon {
   width: 1.4rem;
   height: 1.4rem;
-  stroke: var(--dodgerBlue);
+  stroke: var(--dark);
 }
 
 .submenu__col__row-texts-text {
