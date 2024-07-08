@@ -1,0 +1,120 @@
+/* * ==== CSS Module Import==== */
+@import "./reset.css";
+@import "./fonts.css";
+@import "./header.css";
+
+/* * ====Color Variables==== */
+:root {
+  --dodgerBlue: #4078ff;
+  --blackPearl: #0e1422;
+  --dark: #202533;
+  --greenWhite: #e9e9eb;
+  --laSalleGreen: #057234;
+  --chiliPepper: #be1313;
+  --yellowOrange: #f3b40a;
+  --white: #ffffff;
+  --whiteSmoke: #f6f6f6;
+  --grayCloud: #b6b7bc;
+  --lightRoyalBlue: #4a3aff;
+  --porcelain: #eff0f6;
+  --mercury: #e6e7e8;
+  --softPeach: #eeeeee;
+}
+.icons {
+  display: none;
+}
+body {
+  font-family: "iranSans-light", Courier, monospace;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+/* * ====Button Component==== */
+.btn {
+  width: 12rem;
+  height: 4rem;
+  border: none;
+  outline: none;
+  color: var(--white);
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-family: "iranSans-light", Courier, monospace;
+  transition: all 120ms ease-in;
+}
+.btn:hover {
+  background-color: var(--dodgerBlue);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.btn-black {
+  background-color: var(--blackPearl);
+}
+
+.btn-dark {
+  background-color: var(--dark);
+}
+
+.btn-white {
+  background-color: var(--white);
+  color: var(--blackPearl);
+  border: 2px solid var(--grayCloud);
+}
+/* * ====Tag Products==== */
+.tag {
+  width: 6rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  height: 2rem;
+  border: 1px solid var(--grayCloud);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.tag-close {
+  width: 2rem;
+  height: 2rem;
+  transition: all 140ms ease-in;
+}
+.tag-close:hover {
+  fill: red;
+  color: red;
+}
+/* *==== Input Styles==== */
+.input {
+  display: block;
+  height: 3.2rem;
+  width: 20rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--grayCloud);
+  outline: none;
+  font-family: "iranSans-light", Courier, monospace;
+  color: var(--blackPearl);
+}
+.input-danger {
+  border: 2px solid var(--chiliPepper);
+}
+/* *====TextArea Styles */
+.textarea {
+  display: block;
+  margin: 0 auto;
+  margin-top: 4rem;
+  width: 20rem;
+  height: 10rem;
+  resize: none;
+  outline: none;
+  border: 2px solid var(--grayCloud);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-family: "iranSans-light", Courier, monospace;
+  color: var(--blackPearl);
+}
+.textarea::placeholder {
+  color: var(--blackPearl);
+}
+
+/* * ////////////////// Main Section ////////////////// */
