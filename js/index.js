@@ -1,3 +1,4 @@
+// ! Owl Slider Logic
 $(".owl-carousel").owlCarousel({
   loop: true,
   margin: 20,
