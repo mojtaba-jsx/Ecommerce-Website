@@ -4,11 +4,8 @@ $(".owl-carousel").owlCarousel({
     margin: 20,
     item: 4,
     center: true,
-    // dotsEach:true,
-    // dotsData:true,
-    // rewind: true,
     startPosition: 0,
-    // autoplay: true,
+    autoplay: true,
     autoplayTimeout: 2500,
     responsive: {
       0: {
