@@ -1,25 +1,22 @@
 // ! Owl Slider Logic
 $(".owl-carousel").owlCarousel({
     loop: true,
-    margin: 20,
-    item: 4,
+    margin: 10,
+    item: 1,
     center: true,
     startPosition: 0,
-    autoplay: true,
+    // autoplay: true,
     autoplayTimeout: 2500,
-    responsive: {
-      0: {
-        items: 1,
-        // nav:true
+    responsive:{
+      0:{
+          items:1
       },
-      600: {
-        items: 1,
-        // nav:false
+      600:{
+          items:3,
+          margin: 30,
       },
-      1920: {
-        items: 2,
-        nav: false,
-        loop: true,
-      },
-    },
+      1400:{
+          items:1
+      }
+  }
   });

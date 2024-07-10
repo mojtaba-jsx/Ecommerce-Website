@@ -1494,17 +1494,35 @@
         <div class="container">
           <div class="product__wrapper">
             <div class="product__right">
-              <div class="product__right__images owl-carousel">
-                <img
-                  src="./images/products/shirt.png"
-                  alt="product"
-                  class="product__right__image"
-                />
-                <img
-                  src="./images/products/shirt2.png"
-                  alt="product"
-                  class="product__right__image"
-                />
+              <div
+                class="product__right__images owl-carousel owl-theme owl-loaded"
+              >
+                <div class="owl-stage-outer">
+                  <div class="owl-stage">
+                    <div class="owl-item">
+                      <img
+                        src="./images/products/shirt.png"
+                        alt="product"
+                        class="owl-item-image"
+                      />
+                    </div>
+
+                    <div class="owl-item">
+                      <img
+                        src="./images/products/shirt2.png"
+                        alt="product"
+                        class="owl-item-image"
+                      />
+                    </div>
+                    <div class="owl-item">
+                      <img
+                        src="./images/products/shirt2.png"
+                        alt="product"
+                        class="owl-item-image"
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -1566,6 +1584,9 @@
                 </button>
                 <span class="product__left-free">
                   ارسال رایگان برای سفارش بالای 100 هزار تومان
+                  <svg class="product__left-free-icon">
+                    <use href="#delivary"></use>
+                  </svg>
                 </span>
               </div>
 

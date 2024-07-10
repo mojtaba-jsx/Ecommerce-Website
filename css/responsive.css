@@ -6,6 +6,20 @@
   .tabcontent {
     flex-wrap: wrap;
   }
+  /* ! Product Page (Product) */
+  .product__wrapper {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .product__right {
+    width: 100%;
+  }
+  .product__left {
+    width: 80%;
+  }
+  .product__left__size-box {
+    flex-wrap: wrap;
+  }
 }
 
 /* *  ------------------------1200px------------------------ */
@@ -130,6 +144,11 @@
   .feature__item {
     margin-bottom: 2rem;
     width: 80%;
+  }
+
+  /* ! Product Page (Product) */
+  .product__left__title {
+    font-size: 1.4rem;
   }
 }
 

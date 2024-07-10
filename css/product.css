@@ -143,13 +143,12 @@ body {
 
 .breadCrumb_item {
   font-size: 1.2rem;
-  font-family: 'iranSans-medium', Courier, monospace;
+  font-family: "iranSans-medium", Courier, monospace;
 }
 .breadCrumb_item-link {
   color: var(--dark);
   display: flex;
   align-items: center;
-
 }
 .breadCrumb_item-link:hover .breadCrumb__icon-svg {
   transform: scale(1.2);
@@ -166,128 +165,134 @@ body {
   transition: all 120ms ease-in;
 }
 
-
-
 /* ! //////// Product Section //////// */
 
-.product{
+.product {
   margin-top: 2rem;
   margin-bottom: 4rem;
 }
 
-.product__wrapper{
+.product__wrapper {
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
 }
 
-.product__right{
+.product__right {
   width: 45%;
-  background-color: var(--whiteSmoke);
-  /* height:40rem; */
+  height: 100%;
   border-radius: 1rem;
-
 }
 
-.product__right__images{
+.product__right__images {
   direction: ltr;
-
+  height: 100%;
+  /* background-color: var(--grayCloud); */
 }
+/* .owl-stage-outer {
+  width: 100%;
+} */
 
-.product__right__image{
+/* .owl-stage {
+  width: 100%;
+} */
+
+.owl-item-image {
   width: 100%;
   height: 100%;
 }
 
-.product__right__image{
-
+.owl-item {
+  width: 100%;
+  height: 100%;
+  background-color: var(--whiteSmoke);
 }
 
 /* ! Product Left */
-.product__left{
+.product__left {
   width: 45%;
   /* background-color: red; */
 }
 
-.product__left__title{
+.product__left__title {
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 2rem;
-  font-family: 'iranSans-bold', Courier, monospace;
+  font-family: "iranSans-bold", Courier, monospace;
   /* padding: 0.5rem; */
 }
 
-.product__left__title-icon{
+.product__left__title-icon {
   width: 2rem;
   height: 2rem;
   fill: var(--blackPearl);
+  cursor: pointer;
 }
 
-.product__left__reviews{
+.product__left__reviews {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 2rem;
 }
-.product__left__reviews-box{
+.product__left__reviews-box {
   background-color: var(--whiteSmoke);
   display: flex;
   align-items: center;
   padding: 0.2rem;
   border-radius: 1rem;
-  font-family: 'iranSans-bold', Courier, monospace;
-
+  font-family: "iranSans-bold", Courier, monospace;
 }
 
-.product__left__reviews-icon{
+.product__left__reviews-icon {
   width: 1.4rem;
   height: 1.4rem;
   margin-right: 0.5rem;
 }
 
-.product__left__reviews-stock{
+.product__left__reviews-stock {
   border: 2px solid var(--whiteSmoke);
   padding: 0.5rem 1rem;
-  border-radius: 1rem; 
+  border-radius: 1rem;
 }
 
-.product__left-price{
+.product__left-price {
   display: block;
   font-size: 1.5rem;
-  font-family: 'iranSans-bold', Courier, monospace;
+  font-family: "iranSans-bold", Courier, monospace;
   margin-top: 2rem;
 }
 
-.product__left__colors-box{
+.product__left__colors-box {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.product__left__colors-available{
+.product__left__colors-available {
   display: block;
   margin-bottom: 1rem;
   font-size: 1.2rem;
   margin-top: 2rem;
 }
-.product__left__colors-box span{
+.product__left__colors-box span {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
   background-color: var(--lightRoyalBlue);
 }
 
-.product__left__size{
+.product__left__size {
   margin-top: 2rem;
 }
 
-.product__left__size-title{
+.product__left__size-title {
   font-size: 1.2rem;
-
 }
 
-.product__left__size-box{
+.product__left__size-box {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -301,10 +306,10 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 0.5rem;
-
+  cursor: pointer;
 }
 
-.product__left__quantity{
+.product__left__quantity {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -324,7 +329,6 @@ body {
   background: none;
   border: none;
   cursor: pointer;
-
 }
 .product__left__quantity button svg {
   width: 2rem;
@@ -332,7 +336,7 @@ body {
   stroke: red;
 }
 
-.product__left__quantity-input{
+.product__left__quantity-input {
   height: 4rem;
   width: 4rem;
   border: none;
@@ -340,18 +344,35 @@ body {
   text-align: center;
 }
 
-.product__left-add{
+.product__left-add {
   display: flex;
   flex-direction: column;
 }
-.product__left-add-btn{
+.product__left-add-btn {
   width: 14rem;
   margin-top: 2rem;
 }
 
-.product__left-free{
+.product__left-free {
   font-size: 1.2rem;
   margin-top: 1rem;
-  font-family: 'iranSans-bold', Courier, monospace;
+  font-family: "iranSans-bold", Courier, monospace;
+  display: flex;
+  align-items: center;
+}
+.product__left-free-icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
 }
 
+/* * Owl Slider  */
+.owl-theme .owl-dots .owl-dot span {
+  width: 15px;
+  height: 15px;
+  background: var(--whiteSmoke);
+  border-radius: 0;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+  background: var(--dark);
+}
