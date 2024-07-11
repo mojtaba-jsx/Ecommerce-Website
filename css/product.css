@@ -447,6 +447,7 @@ background: var(--chiliPepper);
   margin-top: 1rem;
   text-align: justify;
   font-family: "iranSans-light", Courier, monospace;
+  padding: 1.2rem;
 }
 
 .detail-reviews__right__list {
@@ -576,6 +577,8 @@ background: var(--chiliPepper);
   width: 14rem;
   cursor: pointer;
   transition: all 120ms ease-in;
+  background: none;
+  border: 2px solid var(--dark);
 }
 .reviwes__boxes-form-btn:hover{
   background-color: var(--dodgerBlue);

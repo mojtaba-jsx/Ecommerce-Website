@@ -120,6 +120,23 @@
   .browse__right__btn {
     margin: 2rem auto;
   }
+  /* ! Product Page (Detail-Reviwes) */
+  .detail-reviews__wrapper {
+    flex-direction: column-reverse;
+  }
+  .detail-reviews__left {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .tab {
+    width: 100%;
+  }
+  .tablinks {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 1rem;
+  }
 }
 
 /* *  ------------------------768px------------------------ */
@@ -195,5 +212,9 @@
     text-align: center;
     margin: 1rem auto;
     line-height: 1.4rem;
+  }
+  /* ! Product Page (Detail-Reviwes) */
+  .reviwes__boxes-btn {
+    width: 14rem;
   }
 }
