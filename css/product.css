@@ -542,4 +542,42 @@ background: var(--chiliPepper);
   background: none;
   border-radius: 1rem;
   cursor: pointer;
+  color: var(--dark);
+  transition: all 120ms ease-in;
+}
+.reviwes__boxes-btn:hover{
+  background-color: var(--dodgerBlue);
+  color: var(--white);
+}
+
+
+.reviwes__boxes-form{
+  width: 100%;
+}
+
+.reviwes__boxes-form-input{
+  width: 100%;
+  resize: none;
+  height: 20rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  font-family: "iranSans-bold", Courier, monospace;
+
+}
+
+.reviwes__boxes-form-btn{
+  display: block;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  border: none;
+  font-family: "iranSans-bold", Courier, monospace;
+  padding: 1rem;
+  width: 14rem;
+  cursor: pointer;
+  transition: all 120ms ease-in;
+}
+.reviwes__boxes-form-btn:hover{
+  background-color: var(--dodgerBlue);
+  color: var(--white);
 }
