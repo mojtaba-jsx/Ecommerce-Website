@@ -1,0 +1,91 @@
+
+/* * ////////////////// Footer Section ////////////////// */
+.footer {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+  }
+  .footer__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid var(--grayCloud);
+    padding: 2rem;
+  }
+  .footer__row1__logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "iranSans-bold", Courier, monospace;
+    color: var(--blackPearl);
+  }
+  .footer__row1__logo-image {
+    margin-right: 1rem;
+  }
+  .footer__row1-text {
+    margin-top: 1rem;
+  }
+  .footer__row1__socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+  }
+  .footer__row1__socials a svg {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: column;
+  }
+  footer li {
+    margin-top: 1rem;
+  }
+  footer li a {
+    color: var(--dark);
+    transition: all 120ms ease-in;
+  }
+  footer li a:hover {
+    color: var(--dodgerBlue);
+    font-weight: bold;
+  }
+  .footer__row2-title,
+  .footer__row3-title,
+  .footer__row4-title {
+    font-family: "iranSans-bold", Courier, monospace;
+  }
+  .footer__row5-title {
+    font-family: "iranSans-bold", Courier, monospace;
+  }
+  .footer__row5__payments {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+  }
+  .footer__row1__socials__github-icon,
+  .footer__row1__socials__instagram-icon,
+  .footer__row1__socials__telegram-icon {
+    transition: all 120ms ease-in;
+  }
+  .footer__row1__socials__github-icon:hover {
+    stroke: var(--softPeach);
+  }
+  .footer__row1__socials__instagram-icon:hover {
+    stroke: var(--chiliPepper);
+  }
+  .footer__row1__socials__telegram-icon:hover {
+    stroke: var(--dodgerBlue);
+  }
+  .developer {
+    display: flex;
+    font-family: "iranSans-bold", Courier, monospace;
+    width: 20rem;
+    margin: 2rem auto;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--blackPearl);
+  }
+  .developer-link {
+    color: var(--blackPearl);
+  }
+  

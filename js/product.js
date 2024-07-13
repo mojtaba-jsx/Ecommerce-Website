@@ -1,4 +1,4 @@
-// ! Owl Slider Logic
+// ! Owl Product Slider Logic
 $(".owl-carousel").owlCarousel({
     loop: true,
     margin: 10,
@@ -20,6 +20,9 @@ $(".owl-carousel").owlCarousel({
       }
   }
   });
+
+
+
 
 
 // ! Tabs Content Logic
