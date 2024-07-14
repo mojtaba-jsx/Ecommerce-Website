@@ -21,10 +21,12 @@
     margin-top: 2rem;
     /* background-color: red; */
     /* height: 2rem; */
+
   }
   
   .breadCrumb__wrapper {
     /* height: 2rem; */
+    /* width: 100%; */
     display: flex;
     flex-wrap: wrap;
     align-items: center;

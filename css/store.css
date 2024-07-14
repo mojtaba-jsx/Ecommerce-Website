@@ -126,16 +126,20 @@ body {
 .main-content {
   display: flex;
   justify-content: space-between;
+  gap: 2rem;
+  /* width: 100%; */
 }
 
 /* ! //////// Aside Menu Section //////// */
-
 .side-menu {
+  width: 20%;
   margin-top: 2rem;
-  border: 2px solid var(--blackPearl);
+  /* border: 2px solid var(--blackPearl); */
   padding: 1rem;
   border-radius: 1rem;
   margin-bottom: 4rem;
+  height: 50rem;
+  width: 25%;
 }
 
 .side-menu__title {
@@ -161,6 +165,22 @@ body {
 
 .side-menu__item-checkbox {
 }
+
+/* ! Category Show Number */
+.side-menu__show{
+  display: flex;
+  flex-direction: column;
+  font-family: "iranSans-bold", Courier, monospace;
+  margin-top: 2rem;
+} 
+
+.side-menu__show-input{
+  text-align: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 0.5rem;
+}
+
 
 /* ! Color Box */
 .side-menu__colorBox {
@@ -227,4 +247,99 @@ body {
 
 .side-menu__price-input {
   margin-top: 1rem;
+}
+
+
+/* ! //////// Shop Section //////// */
+
+.shop{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 2rem;
+  border-right: 2px solid var(--blackPearl);
+  padding: 1rem;
+  width: 75%;
+}
+/* ! Shop Filter */
+
+.shop__filters{
+}
+
+.shop__filters-title{
+  font-family: 'lamia', Courier, monospace;
+  font-size: 1.6rem;
+  width: 100%;
+  text-align: right;
+}
+
+.shop__filters__box{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.shop__filter{
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--blackPearl);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  font-family: "iranSans-bold", Courier, monospace;
+
+}
+
+.shop__filter-icon{
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+
+
+/* ! Shop Products Section */
+.shop-products__wrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
+.shop-product {
+  width: 256px;
+  height: 434px;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+}
+.shop-product__top {
+  height: 70%;
+  background-color: var(--whiteSmoke);
+}
+.shop-product-image {
+  width: 100%;
+}
+.shop-product__bottom {
+  height: 30%;
+}
+.shop-product__bottom-title {
+  display: block;
+  font-family: "iranSans-light", Courier, monospace;
+  margin-top: 2rem;
+  text-align: right;
+}
+.shop-product__bottom__infos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.shop-product__bottom__infos-price {
+  font-family: "iranSans-bold", Courier, monospace;
+}
+.shop-product__bottom__infos-stock {
+  border-radius: 1rem;
+  border: 2px solid var(--whiteSmoke);
+  padding: 0.5rem 1rem;
+  font-family: "iranSans-bold", Courier, monospace;
 }
