@@ -5,7 +5,6 @@
 @import "./footer.css";
 @import "./breadcrumb.css";
 
-
 /* * ====Color Variables==== */
 :root {
   --dodgerBlue: #4078ff;
@@ -49,7 +48,8 @@ body {
 }
 .btn:hover {
   background-color: var(--dodgerBlue);
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .btn-black {
   background-color: var(--blackPearl);
@@ -123,10 +123,108 @@ body {
 /* * ////////////////// Main Section ////////////////// */
 /* ! //////// Main Content Section //////// */
 
-.main-content{
+.main-content {
   display: flex;
   justify-content: space-between;
 }
 
 /* ! //////// Aside Menu Section //////// */
 
+.side-menu {
+  margin-top: 2rem;
+  border: 2px solid var(--blackPearl);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 4rem;
+}
+
+.side-menu__title {
+  font-size: 1.6rem;
+  font-family: "lamia", Courier, monospace;
+}
+
+.side-menu__list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.side-menu__item {
+  margin-top: 1rem;
+  border-bottom: 1px solid var(--blackPearl);
+  padding-bottom: 0.5rem;
+}
+
+.side-menu__item-label {
+  font-size: 1.2rem;
+}
+
+.side-menu__item-checkbox {
+}
+
+/* ! Color Box */
+.side-menu__colorBox {
+  margin-top: 2rem;
+}
+
+.side-menu__colorBox-title {
+  font-size: 1.6rem;
+  font-family: "lamia", Courier, monospace;
+}
+
+.side-menu__colorBox__colors {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.side-menu__colorBox__color {
+  width: 2rem;
+  height: 2rem;
+  background-color: red;
+  border-radius: 50%;
+  margin-top: 1rem;
+}
+
+/* ! Category Size */
+.side-menu__sizes {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.side-menu__sizes-title {
+  font-size: 1.6rem;
+  font-family: "lamia", Courier, monospace;
+}
+
+.side-menu__sizes__boxes {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.side-menu__sizes__box {
+  border: 1px solid var(--dark);
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+/* ! Category Price */
+.side-menu__price {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.side-menu__price-title {
+  font-size: 1.6rem;
+  font-family: "lamia", Courier, monospace;
+}
+
+.side-menu__price-input {
+  margin-top: 1rem;
+}
