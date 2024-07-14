@@ -167,20 +167,19 @@ body {
 }
 
 /* ! Category Show Number */
-.side-menu__show{
+.side-menu__show {
   display: flex;
   flex-direction: column;
   font-family: "iranSans-bold", Courier, monospace;
   margin-top: 2rem;
-} 
+}
 
-.side-menu__show-input{
+.side-menu__show-input {
   text-align: center;
   padding: 1rem;
   border-radius: 1rem;
   margin-top: 0.5rem;
 }
-
 
 /* ! Color Box */
 .side-menu__colorBox {
@@ -249,10 +248,9 @@ body {
   margin-top: 1rem;
 }
 
-
 /* ! //////// Shop Section //////// */
 
-.shop{
+.shop {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -263,44 +261,41 @@ body {
 }
 /* ! Shop Filter */
 
-.shop__filters{
+.shop__filters {
 }
 
-.shop__filters-title{
-  font-family: 'lamia', Courier, monospace;
+.shop__filters-title {
+  font-family: "lamia", Courier, monospace;
   font-size: 1.6rem;
   width: 100%;
   text-align: right;
 }
 
-.shop__filters__box{
+.shop__filters__box {
   display: flex;
   align-items: center;
   gap: 1rem;
   margin-top: 1rem;
 }
 
-.shop__filter{
+.shop__filter {
   display: flex;
   align-items: center;
   border: 2px solid var(--blackPearl);
   border-radius: 1rem;
   padding: 0.5rem;
   font-family: "iranSans-bold", Courier, monospace;
-
 }
 
-.shop__filter-icon{
+.shop__filter-icon {
   width: 1.2rem;
   height: 1.2rem;
   margin-right: 0.5rem;
   cursor: pointer;
 }
 
-
-
 /* ! Shop Products Section */
-.shop-products__wrapper{
+.shop-products__wrapper {
   display: flex;
   flex-wrap: wrap;
 }
@@ -342,4 +337,48 @@ body {
   border: 2px solid var(--whiteSmoke);
   padding: 0.5rem 1rem;
   font-family: "iranSans-bold", Courier, monospace;
+}
+
+/* ! //////// Pagination Section //////// */
+
+.pagination {
+  margin-top: 4rem;
+  border: 1px solid var(--blackPearl);
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+.pagination__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.pagination__item {
+  height: 2rem;
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 1rem;
+
+}
+
+.pagination__item__link {
+  color: var(--blackPearl);
+  font-family: "iranSans-bold", Courier, monospace;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination__item__link-icon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--blackPearl);
+}
+
+.pagination--active {
+  background-color: var(--whiteSmoke);
 }
