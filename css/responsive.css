@@ -1,5 +1,21 @@
 /*! ==============================Responsive MediaQueries ================================ */
-
+/* * ====Color Variables==== */
+:root {
+  --dodgerBlue: #4078ff;
+  --blackPearl: #0e1422;
+  --dark: #202533;
+  --greenWhite: #e9e9eb;
+  --laSalleGreen: #057234;
+  --chiliPepper: #be1313;
+  --yellowOrange: #f3b40a;
+  --white: #ffffff;
+  --whiteSmoke: #f6f6f6;
+  --grayCloud: #b6b7bc;
+  --lightRoyalBlue: #4a3aff;
+  --porcelain: #eff0f6;
+  --mercury: #e6e7e8;
+  --softPeach: #eeeeee;
+}
 /* *  ------------------------1400px------------------------ */
 @media screen and (max-width: 1400px) {
   /* ! Index Page (Latest Feauterd) */
@@ -58,6 +74,33 @@
   .developer {
     flex-direction: column;
     width: 14rem;
+  }
+
+  /* ! Store Page (Shop) */
+  .main-content {
+    flex-direction: column;
+  }
+  .side-menu {
+    width: 80%;
+    margin: 1rem auto;
+  }
+  .side-menu__item {
+    text-align: center;
+  }
+  .shop {
+    width: 80%;
+    margin: 0 auto;
+    border-right: none;
+    border-top: 2px solid var(--blackPearl);
+  }
+  .side-menu__title {
+    display: block;
+    text-align: center;
+  }
+  .side-menu__show{
+    width: 60%;
+    margin: 2rem auto;
+    text-align: center;
   }
 }
 
@@ -216,5 +259,9 @@
   /* ! Product Page (Detail-Reviwes) */
   .reviwes__boxes-btn {
     width: 14rem;
+  }
+  /* ! Store Page (Shop) */
+  .pagination__list {
+    flex-wrap: wrap;
   }
 }
