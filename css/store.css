@@ -90,7 +90,6 @@ body {
 /* *==== Input Styles==== */
 .input {
   display: block;
-  /* height: 3.2rem; */
   width: 20rem;
   padding: 0.5rem;
   border-radius: 0.5rem;
@@ -98,6 +97,8 @@ body {
   outline: none;
   font-family: "iranSans-light", Courier, monospace;
   color: var(--blackPearl);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 .input-danger {
   border: 2px solid var(--chiliPepper);
@@ -128,7 +129,6 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
-  /* width: 100%; */
   margin-bottom: 4rem;
 }
 
@@ -136,7 +136,6 @@ body {
 .side-menu {
   width: 20%;
   margin-top: 2rem;
-  /* border: 2px solid var(--blackPearl); */
   padding: 1rem;
   border-radius: 1rem;
   margin-bottom: 4rem;
@@ -156,16 +155,28 @@ body {
 }
 
 .side-menu__item {
+  display: flex;
+  align-items: center;
   margin-top: 1rem;
-  border-bottom: 1px solid var(--blackPearl);
+  font-family: "iranSans-bold", Courier, monospace;
   padding-bottom: 0.5rem;
+  border-bottom: 10px solid;
+  border-image-source: url("../images/waveBorder.svg");
+  border-image-slice: 30;
 }
 
 .side-menu__item-label {
   font-size: 1.2rem;
 }
-
 .side-menu__item-checkbox {
+  margin-right: 0.5rem;
+}
+
+input[type="checkbox"] {
+  width: 1.2rem;
+  height: 1.2rem;
+  accent-color: var(--blackPearl);
+  border: 1px solid var(--blackPearl);
 }
 
 /* ! Category Show Number */
@@ -181,6 +192,8 @@ body {
   padding: 1rem;
   border-radius: 1rem;
   margin-top: 0.5rem;
+  font-family: "iranSans-bold", Courier, monospace;
+  font-size: 1.2rem;
 }
 
 /* ! Color Box */
@@ -232,6 +245,10 @@ body {
   border: 1px solid var(--dark);
   padding: 0.5rem;
   cursor: pointer;
+  transition: all 120ms ease-in;
+}
+.side-menu__sizes__box:hover {
+  font-weight: bold;
 }
 
 /* ! Category Price */
@@ -250,6 +267,27 @@ body {
   margin-top: 1rem;
 }
 
+.side-menu__price-input {
+  appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  border-radius: 1rem;
+}
+.side-menu__price-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: var(--blackPearl);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
 /* ! //////// Shop Section //////// */
 
 .shop {
@@ -257,13 +295,17 @@ body {
   flex-direction: column;
   width: 100%;
   margin-top: 2rem;
-  border-right: 2px solid var(--blackPearl);
+  /* border-right: 2px solid var(--blackPearl); */
   padding: 1rem;
   width: 75%;
 }
 /* ! Shop Filter */
-
 .shop__filters {
+  /* border-bottom: 2px solid var(--blackPearl); */
+  padding-bottom: 1rem;
+  border-bottom: 10px solid;
+  border-image-source: url("../images/waveBorder.svg");
+  border-image-slice: 30;
 }
 
 .shop__filters-title {
@@ -300,14 +342,24 @@ body {
 .shop-products__wrapper {
   display: flex;
   flex-wrap: wrap;
+  border-bottom: 10px solid;
+  border-image-source: url("../images/waveBorder.svg");
+  border-image-slice: 30;
 }
 .shop-product {
   width: 256px;
-  height: 434px;
+  /* height: 434px; */
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
   margin: 2rem auto;
+  transition: all 120ms ease-in;
+  padding: 0.5rem;
+}
+.shop-product:hover {
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 .shop-product__top {
   height: 70%;
@@ -325,11 +377,31 @@ body {
   margin-top: 2rem;
   text-align: right;
 }
+
+.shop-product__bottom__link {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  font-family: "iranSans-bold", Courier, monospace;
+  color: var(--blackPearl);
+}
+.shop-product__bottom__link:hover .shop-product__bottom__link-icon {
+  transform: scale(1.2);
+}
+
+.shop-product__bottom__link-icon {
+  width: 1.4rem;
+  height: 1.4rem;
+  fill: var(--blackPearl);
+  margin-right: 1rem;
+  transition: all 120ms ease-in;
+}
+
 .shop-product__bottom__infos {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .shop-product__bottom__infos-price {
   font-family: "iranSans-bold", Courier, monospace;
@@ -339,6 +411,29 @@ body {
   border: 2px solid var(--whiteSmoke);
   padding: 0.5rem 1rem;
   font-family: "iranSans-bold", Courier, monospace;
+}
+
+.shop-product__btn {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-family: "iranSans-bold", Courier, monospace;
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 120ms ease-in;
+}
+.shop-product__btn:hover {
+  background-color: var(--blackPearl);
+  color: var(--white);
+}
+
+.shop-product__btn-icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
 }
 
 /* ! //////// Pagination Section //////// */
