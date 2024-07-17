@@ -186,7 +186,8 @@ body {
   /* border:  2px solid var(--dark); */
   padding: 1rem;
   border-radius: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
 }
 
 .checkout__left-title {
@@ -220,9 +221,9 @@ body {
   cursor: pointer;
   transition: all 120ms ease-in;
 }
-.checkout__left__editcart-btn:hover{
-    background-color: var(--blackPearl);
-    color: var(--white);
+.checkout__left__editcart-btn:hover {
+  background-color: var(--blackPearl);
+  color: var(--white);
 }
 
 .checkout__left__info {
