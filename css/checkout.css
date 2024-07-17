@@ -120,3 +120,131 @@ body {
 .textarea::placeholder {
   color: var(--blackPearl);
 }
+
+/* * ////////////////// Main Section ////////////////// */
+/* ! //////// Checkout Section //////// */
+
+.checkout {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.checkout-title,
+.checkout__left-title {
+  font-size: 1.6rem;
+  font-family: "lamia", Courier, monospace;
+}
+
+.checkout__wrapper {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* margin-top: 2rem; */
+}
+
+.checkout__right {
+  width: 65%;
+}
+
+.checkout__left {
+  width: 30%;
+  /* background-color: red; */
+}
+
+.checkout__right {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 2rem;
+}
+.checkout__right input {
+  padding: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+  outline: none;
+  border-radius: 1rem;
+  font-family: "iranSans-bold", Courier, monospace;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.checkout__right-row1,
+.checkout__right-row2,
+.checkout__right-row3 {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+}
+
+/* ! Checkout Left */
+
+.checkout__left {
+  display: flex;
+  flex-direction: column;
+  /* border:  2px solid var(--dark); */
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+.checkout__left-title {
+  text-align: left;
+}
+
+.checkout__left__editcart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.checkout__left__editcart__products {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.checkout__left__editcart__products-product {
+  width: 2.8rem;
+  height: 4rem;
+}
+
+.checkout__left__editcart-btn {
+  padding: 1rem;
+  border-radius: 1rem;
+  outline: none;
+  background: none;
+  font-family: "iranSans-bold", Courier, monospace;
+  border: 2px solid var(--grayCloud);
+  cursor: pointer;
+  transition: all 120ms ease-in;
+}
+.checkout__left__editcart-btn:hover{
+    background-color: var(--blackPearl);
+    color: var(--white);
+}
+
+.checkout__left__info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.checkout__left__info-title {
+  font-family: "iranSans-bold", Courier, monospace;
+}
+
+.checkout__left__info-value {
+}
+
+.checkout__left-btn {
+  padding: 1rem;
+  margin-top: 2rem;
+  outline: none;
+  background-color: var(--blackPearl);
+  color: var(--white);
+  border-radius: 1rem;
+  font-family: "iranSans-bold", Courier, monospace;
+  cursor: pointer;
+}
