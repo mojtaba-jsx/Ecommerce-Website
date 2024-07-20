@@ -161,7 +161,7 @@ body {
   font-family: "iranSans-bold", Courier, monospace;
   padding-bottom: 0.5rem;
   border-bottom: 10px solid;
-  border-image-source: url("../images/waveBorder.svg");
+  border-image-source: url("../svg/waveBorder.svg");
   border-image-slice: 30;
 }
 
@@ -304,7 +304,7 @@ input[type="checkbox"] {
   /* border-bottom: 2px solid var(--blackPearl); */
   padding-bottom: 1rem;
   border-bottom: 10px solid;
-  border-image-source: url("../images/waveBorder.svg");
+  border-image-source: url("../svg/waveBorder.svg");
   border-image-slice: 30;
 }
 
@@ -343,7 +343,7 @@ input[type="checkbox"] {
   display: flex;
   flex-wrap: wrap;
   border-bottom: 10px solid;
-  border-image-source: url("../images/waveBorder.svg");
+  border-image-source: url("../svg/waveBorder.svg");
   border-image-slice: 30;
 }
 .shop-product {

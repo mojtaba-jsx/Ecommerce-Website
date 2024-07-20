@@ -1,0 +1,58 @@
+/* * ==== CSS Module Import==== */
+@import "./reset.css";
+@import "./fonts.css";
+
+/* * ====Color Variables==== */
+:root {
+  --dodgerBlue: #4078ff;
+  --blackPearl: #0e1422;
+  --dark: #202533;
+  --greenWhite: #e9e9eb;
+  --laSalleGreen: #057234;
+  --chiliPepper: #be1313;
+  --yellowOrange: #f3b40a;
+  --white: #ffffff;
+  --whiteSmoke: #f6f6f6;
+  --grayCloud: #b6b7bc;
+  --lightRoyalBlue: #4a3aff;
+  --porcelain: #eff0f6;
+  --mercury: #e6e7e8;
+  --softPeach: #eeeeee;
+  --whiteLiac : #f7f7fc;
+}
+.icons {
+  display: none;
+}
+body {
+  font-family: "iranSans-light", Courier, monospace;
+  background-color: var(--whiteLiac);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* * ////////////////// Header Section ////////////////// */
+
+.header__wrapper{
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+}
+.header-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'lamia', Courier, monospace;
+    font-size: 1.6rem;
+}
+
+.header-icon{
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1rem;
+}

@@ -3,9 +3,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- *==== CSS Links ====-->
-    <link rel="stylesheet" href="./css/store.css" />
-    <link rel="stylesheet" href="./css/responsive.css" />
-    <title>فروشگاه</title>
+    <link rel="stylesheet" href="../vendor/owl-slider/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="../vendor/owl-slider/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="../public/css/product.css" />
+    <link rel="stylesheet" href="../public/css/responsive.css" />
+
+    <title>محصول</title>
   </head>
   <body>
     <!-- *====Icons==== -->
@@ -208,8 +214,6 @@
       <!-- ! Star Fill -->
       <symbol
         id="star-fill"
-        width="16"
-        height="16"
         viewBox="0 0 16 16"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -223,8 +227,6 @@
       <!-- ! Star -->
       <symbol
         id="star"
-        width="16"
-        height="16"
         viewBox="0 0 16 16"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -283,63 +285,22 @@
           stroke-linejoin="round"
         />
       </symbol>
-
       <!-- ! Like -->
+
       <symbol
         id="like"
-        width="24"
-        height="20"
-        viewBox="0 0 24 20"
-        fill="currentColor"
         xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
       >
-        <g filter="url(#filter0_d_1342_459)">
-          <path
-            d="M12.0048 15L4.791 8.55129C0.870448 4.68258 6.63333 -2.74663 12.0048 3.26384C17.3763 -2.74663 23.1141 4.70729 19.22 8.55129L12.0048 15Z"
-            stroke="currentColor"
-            stroke-width="1.42857"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            shape-rendering="crispEdges"
-          />
-        </g>
-        <defs>
-          <filter
-            id="filter0_d_1342_459"
-            x="-1.21521"
-            y="0.285675"
-            width="26.4304"
-            height="23.4286"
-            filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-            <feColorMatrix
-              in="SourceAlpha"
-              type="matrix"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-              result="hardAlpha"
-            />
-            <feOffset dy="4" />
-            <feGaussianBlur stdDeviation="2" />
-            <feComposite in2="hardAlpha" operator="out" />
-            <feColorMatrix
-              type="matrix"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-            />
-            <feBlend
-              mode="normal"
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_1342_459"
-            />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="effect1_dropShadow_1342_459"
-              result="shape"
-            />
-          </filter>
-        </defs>
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+        />
       </symbol>
 
       <!-- ! Shield -->
@@ -560,8 +521,6 @@
       <!-- ! Share -->
       <symbol
         id="share"
-        width="18"
-        height="20"
         viewBox="0 0 18 20"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -617,6 +576,8 @@
       <!-- ! Arrow Right -->
       <symbol
         id="arrow-right"
+        width="14"
+        height="12"
         viewBox="0 0 14 12"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -638,17 +599,15 @@
       <!-- ! Chevron Left -->
       <symbol
         id="chevron-left"
-        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 6 12"
         fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="size-6"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M15.75 19.5 8.25 12l7.5-7.5"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M0.188322 6.53269C-0.060948 6.25565 -0.0630279 5.80422 0.183674 5.52429L5.05141 0L5.95396 1.00331L1.53277 6.02065L6 10.9863L5.10679 12L0.188322 6.53269Z"
+          fill="none"
         />
       </symbol>
 
@@ -678,17 +637,17 @@
       <!-- ! Chevron Right -->
       <symbol
         id="chevron-right"
-        xmlns="http://www.w3.org/2000/svg"
+        width="6"
+        height="12"
+        viewBox="0 0 6 12"
         fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="size-6"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="m8.25 4.5 7.5 7.5-7.5 7.5"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M5.81168 5.46731C6.06095 5.74435 6.06303 6.19578 5.81633 6.47571L0.948585 12L0.0460425 10.9967L4.46723 5.97935L0 1.01366L0.89321 0L5.81168 5.46731Z"
+          fill="#5C5F6A"
         />
       </symbol>
 
@@ -730,8 +689,6 @@
       <!-- ! Minus -->
       <symbol
         id="minus"
-        width="14"
-        height="2"
         viewBox="0 0 14 2"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -766,8 +723,6 @@
       <!-- ! Plus -->
       <symbol
         id="plus"
-        width="24"
-        height="24"
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -791,53 +746,17 @@
       <!-- ! More -->
       <symbol
         id="more"
-        width="16"
-        height="4"
-        viewBox="0 0 16 4"
-        fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
       >
         <path
-          d="M2.14284 2.57142C1.82725 2.57142 1.57141 2.31558 1.57141 1.99999C1.57141 1.6844 1.82725 1.42856 2.14284 1.42856"
-          stroke="#5C5F6A"
-          stroke-width="1.8"
           stroke-linecap="round"
           stroke-linejoin="round"
-        />
-        <path
-          d="M2.14284 2.57142C2.45843 2.57142 2.71427 2.31558 2.71427 1.99999C2.71427 1.6844 2.45843 1.42856 2.14284 1.42856"
-          stroke="#5C5F6A"
-          stroke-width="1.8"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-        <path
-          d="M7.99998 2.57142C7.68439 2.57142 7.42855 2.31558 7.42855 1.99999C7.42855 1.6844 7.68439 1.42856 7.99998 1.42856"
-          stroke="#5C5F6A"
-          stroke-width="1.8"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-        <path
-          d="M7.99998 2.57142C8.31557 2.57142 8.57141 2.31558 8.57141 1.99999C8.57141 1.6844 8.31557 1.42856 7.99998 1.42856"
-          stroke="#5C5F6A"
-          stroke-width="1.8"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-        <path
-          d="M13.8571 2.57142C13.5415 2.57142 13.2856 2.31558 13.2856 1.99999C13.2856 1.6844 13.5415 1.42856 13.8571 1.42856"
-          stroke="#5C5F6A"
-          stroke-width="1.8"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-        <path
-          d="M13.8571 2.57142C14.1727 2.57142 14.4285 2.31558 14.4285 1.99999C14.4285 1.6844 14.1727 1.42856 13.8571 1.42856"
-          stroke="#5C5F6A"
-          stroke-width="1.8"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
         />
       </symbol>
 
@@ -915,8 +834,6 @@
       <!-- ! Home -->
       <symbol
         id="home"
-        width="20"
-        height="18"
         viewBox="0 0 20 18"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -1265,9 +1182,25 @@
         <circle opacity="0.6" cx="170" cy="170" r="170" fill="#E9E9EB" />
       </symbol>
       <!-- ! Eye  -->
-      <symbol id="eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+
+      <symbol
+        id="eye"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
         <path
-          d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"
+        />
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
         />
       </symbol>
     </svg>
@@ -1280,7 +1213,7 @@
           <div class="header__left">
             <a href="#" class="navbar__left__logo">
               <img
-                src="./images/Logomark.png"
+                src="../public/images/index/Logomark.png"
                 alt="logo"
                 class="navbar__left__logo-image"
               />
@@ -1471,441 +1404,289 @@
         </div>
       </div>
     </header>
+
     <!-- ! ///////////////////////// Main Section ///////////////////////// -->
     <main class="main">
-      <div class="container">
-        <!-- * ========BreadCrubm Section======== -->
-        <section class="breadCrumb">
-          <div class="container">
-            <div class="breadCrumb__wrapper">
-              <span class="breadCrumb_item">
-                <a href="#" class="breadCrumb_item-link">
-                  خانه
-                  <svg class="breadCrumb__icon-svg">
-                    <use href="#home"></use>
-                  </svg>
-                </a>
-              </span>
+      <!-- * ========BreadCrubm Section======== -->
+      <section class="breadCrumb">
+        <div class="container">
+          <div class="breadCrumb__wrapper">
+            <span class="breadCrumb_item">
+              <a href="#" class="breadCrumb_item-link">
+                خانه
+                <svg class="breadCrumb__icon-svg"><use href="#home"></use></svg>
+              </a>
+            </span>
 
-              <span class="breadCrumb__icon">
+            <span class="breadCrumb__icon">
+              <svg class="breadCrumb__icon-svg">
+                <use href="#chevron-left"></use>
+              </svg>
+            </span>
+
+            <span class="breadCrumb_item">
+              <a href="#" class="breadCrumb_item-link">
+                محصولات
                 <svg class="breadCrumb__icon-svg">
-                  <use href="#chevron-left"></use>
+                  <use href="#basket"></use>
                 </svg>
-              </span>
+              </a>
+            </span>
 
-              <span class="breadCrumb_item">
-                <a href="#" class="breadCrumb_item-link">
-                  محصولات
-                  <svg class="breadCrumb__icon-svg">
-                    <use href="#basket"></use>
+            <span class="breadCrumb__icon">
+              <svg class="breadCrumb__icon-svg">
+                <use href="#chevron-left"></use>
+              </svg>
+            </span>
+
+            <span class="breadCrumb_item">
+              <a href="#" class="breadCrumb_item-link">
+                لباس
+                <svg class="breadCrumb__icon-svg">
+                  <use href="#shirt"></use>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- * ========Product Section======== -->
+      <section class="product">
+        <div class="container">
+          <div class="product__wrapper">
+            <div class="product__right">
+              <div
+                class="product__right__images owl-carousel owl-theme owl-loaded"
+              >
+                <div class="owl-stage-outer">
+                  <div class="owl-stage">
+                    <div class="owl-item">
+                      <img
+                        src="../public/images/products/shirt.png"
+                        alt="product"
+                        class="owl-item-image"
+                      />
+                    </div>
+
+                    <div class="owl-item">
+                      <img
+                        src="../public/images/products/shirt.png"
+                        alt="product"
+                        class="owl-item-image"
+                      />
+                    </div>
+                    <div class="owl-item">
+                      <img
+                        src="../public/images/products/shirt.png"
+                        alt="product"
+                        class="owl-item-image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product__left">
+              <h1 class="product__left__title">
+                تیشرت نخ پنبه عالی
+                <svg class="product__left__title-icon">
+                  <use href="#share"></use>
+                </svg>
+              </h1>
+              <!-- !---------------------------------- -->
+              <div class="product__left__reviews">
+                <span class="product__left__reviews-box">
+                  4.2 - 54 برسی
+                  <svg class="product__left__reviews-icon">
+                    <use href="#star-fill"></use>
                   </svg>
-                </a>
-              </span>
+                </span>
+                <span class="product__left__reviews-stock"> موجود </span>
+              </div>
+              <!-- !---------------------------------- -->
+              <span class="product__left-price"> 120,0000 تومان </span>
+              <!-- !---------------------------------- -->
+              <div class="product__left__colors">
+                <span class="product__left__colors-available">
+                  رنگ های موجود
+                </span>
+                <div class="product__left__colors-box">
+                  <span class="product__left__colors-color"></span>
+                  <span class="product__left__colors-color"></span>
+                  <span class="product__left__colors-color"></span>
+                </div>
+              </div>
+              <!-- !---------------------------------- -->
+              <div class="product__left__size">
+                <span class="product__left__size-title"> انتخاب سایز </span>
+                <div class="product__left__size-box">
+                  <span class="product__left__size-s">S</span>
+                  <span class="product__left__size-m">M</span>
+                  <span class="product__left__size-l">L</span>
+                  <span class="product__left__size-xl">XL</span>
+                  <span class="product__left__size-xxl">XXL</span>
+                </div>
+              </div>
+              <!-- !---------------------------------- -->
+              <div class="product__left__quantity">
+                <button>+</button>
+                <input
+                  value="10"
+                  type="number"
+                  class="product__left__quantity-input"
+                />
+                <button>-</button>
+              </div>
+              <!-- !---------------------------------- -->
+              <div class="product__left-add">
+                <button class="product__left-add-btn btn btn-black">
+                  اضافه کردن به سبد خرید
+                </button>
+                <span class="product__left-free">
+                  ارسال رایگان برای سفارش بالای 100 هزار تومان
+                  <svg class="product__left-free-icon">
+                    <use href="#delivary"></use>
+                  </svg>
+                </span>
+              </div>
+
+              <!-- !---------------------------------- -->
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- * ========Main Content Section======== -->
-        <section class="main-content">
-          <!-- * Aside Menu -->
-          <aside class="side-menu">
-            <span class="side-menu__title"> دسته بندی </span>
+      <!-- * ========Detail-Reviwes Section======== -->
+      <section class="detail-reviews">
+        <div class="container">
+          <div class="detail-reviews__wrapper">
+            <div class="detail-reviews__right">
+              <div id="detail" class="tabcontent">
+                <h2 class="detail-reviews__right-title">توضیحات محصول</h2>
+                <p class="detail-reviews__right-text">
+                  با تی شرت های مشکی مردانه ما، کمد لباسی که برای مردان مدرن
+                  ضروری است، استایل روزمره خود را ارتقا دهید. این سه راهی مشکی
+                  همه کاره که با توجه دقیق به جزئیات ساخته شده و برای راحتی
+                  طراحی شده است، یک افزودنی ضروری به مجموعه شماست. رنگ مشکی
+                  کلاسیک هرگز از مد نمی افتد. فرقی نمی‌کند برای یک موقعیت خاص
+                  لباس بپوشید یا آن را غیررسمی نگه دارید، این تی شرت‌های مشکی
+                  بهترین انتخاب هستند و بدون زحمت مکمل هر لباسی هستند.
+                </p>
 
-            <!-- ! Category List -->
-            <ul class="side-menu__list">
-              <li class="side-menu__item">
-                <label class="side-menu__item-label" for="perfum"
-                  >عطر و ادکلن</label
-                >
-                <input
-                  id="perfum"
-                  type="checkbox"
-                  class="side-menu__item-checkbox"
-                />
+                <ul class="detail-reviews__right__list">
+                  <li class="detail-reviews__right__list-item">کیفیت برتر</li>
 
-              </li>
+                  <li class="detail-reviews__right__list-item">
+                    منگنه کمد لباس همه کاره
+                  </li>
 
-    
+                  <li class="detail-reviews__right__list-item">
+                    موجود در سایزهای مختلف
+                  </li>
 
-              <li class="side-menu__item">
-                <label class="side-menu__item-label" for="shoe">کفش</label>
-                <input
-                  id="shoe"
-                  type="checkbox"
-                  class="side-menu__item-checkbox"
-                />
-              </li>
+                  <li class="detail-reviews__right__list-item">
+                    مناسب و متناسب
+                  </li>
+                </ul>
+              </div>
 
-              <li class="side-menu__item">
-                <label class="side-menu__item-label" for="men-shirt"
-                  >لباس های مردانه</label
-                >
-                <input
-                  id="men-shirt"
-                  type="checkbox"
-                  class="side-menu__item-checkbox"
-                />
-              </li>
+              <div id="reviwes" class="tabcontent">
+                <div class="reviwes__write">
+                  <h1 class="reviwes__write-title">نظرات</h1>
+                  <div class="reviwes__write-number">
+                    <span class="reviwes__write-number-span">4.2</span> - 54 نظر
+                  </div>
+                  <button class="reviwes__write-btn btn">ثبت نظر</button>
+                </div>
 
-              <li class="side-menu__item">
-                <label class="side-menu__item-label" for="woman-shirt"
-                  >لباس های زنانه</label
-                >
-                <input
-                  id="woman-shirt"
-                  type="checkbox"
-                  class="side-menu__item-checkbox"
-                />
-              </li>
+                <div class="reviwes__boxes">
+                  <div class="reviwes__box">
+                    <div class="reviwes__box__right">
+                      <span class="reviwes__box__right-user"> قدیر یلمه </span>
+                      <span class="reviwes__box__right-date"> 20/12/1402 </span>
+                      <p class="reviwes__box__right-text">محصول خوبی بود</p>
+                    </div>
 
-              <li class="side-menu__item">
-                <label class="side-menu__item-label" for="hat">کلاه</label>
-                <input
-                  id="hat"
-                  type="checkbox"
-                  class="side-menu__item-checkbox"
-                />
-              </li>
+                    <div class="reviwes__box__left">
+                      <svg class="reviwes__box__left-star">
+                        <use href="#star"></use>
+                      </svg>
+                      <svg class="reviwes__box__left-star">
+                        <use href="#star"></use>
+                      </svg>
+                      <svg class="reviwes__box__left-star">
+                        <use href="#star"></use>
+                      </svg>
+                      <svg class="reviwes__box__left-star">
+                        <use href="#star"></use>
+                      </svg>
+                      <svg class="reviwes__box__left-star">
+                        <use href="#star"></use>
+                      </svg>
+                    </div>
+                  </div>
 
-              <li class="side-menu__item">
-                <label class="side-menu__item-label" for="clock"
-                  >ساعت و اکسسوری</label
-                >
-                <input
-                  id="clock"
-                  type="checkbox"
-                  class="side-menu__item-checkbox"
-                />
-              </li>
-            </ul>
+                  <div class="reviwes__box">
+                    <div class="reviwes__box__right">
+                      <span class="reviwes__box__right-user"> قدیر یلمه </span>
+                      <span class="reviwes__box__right-date"> 20/12/1402 </span>
+                      <p class="reviwes__box__right-text">محصول خوبی بود</p>
+                    </div>
+                    <div class="reviwes__box__left">
+                      <svg class="reviwes__box__left-star">
+                        <use href="#star"></use>
+                      </svg>
+                      <svg class="reviwes__box__left-star">
+                        <use href="#star"></use>
+                      </svg>
+                      <svg class="reviwes__box__left-star">
+                        <use href="#star"></use>
+                      </svg>
+                      <svg class="reviwes__box__left-star">
+                        <use href="#star"></use>
+                      </svg>
+                      <svg class="reviwes__box__left-star">
+                        <use href="#star"></use>
+                      </svg>
+                    </div>
+                  </div>
 
-            <!-- ! Category Colors -->
-            <div class="side-menu__colorBox">
-              <span class="side-menu__colorBox-title"> رنگ ها </span>
-              <div class="side-menu__colorBox__colors">
-                <span class="side-menu__colorBox__color"></span>
-                <span class="side-menu__colorBox__color"></span>
-                <span class="side-menu__colorBox__color"></span>
-                <span class="side-menu__colorBox__color"></span>
+                  <button class="reviwes__boxes-btn">نمایش نظرات بیشتر</button>
+                </div>
+
+                <form class="reviwes__boxes-form">
+                  <textarea
+                    class="reviwes__boxes-form-input"
+                    name=""
+                    id=""
+                    placeholder="نظر خود را بنویسید"
+                  ></textarea>
+                  <button class="reviwes__boxes-form-btn">ثبت نظر</button>
+                </form>
               </div>
             </div>
 
-            <!-- ! Category Sizes -->
-            <div class="side-menu__sizes">
-              <span class="side-menu__sizes-title"> سایز </span>
-              <div class="side-menu__sizes__boxes">
-                <span class="side-menu__sizes__box">S</span>
-                <span class="side-menu__sizes__box">M</span>
-                <span class="side-menu__sizes__box">L</span>
-                <span class="side-menu__sizes__box">XL</span>
-                <span class="side-menu__sizes__box">XXL</span>
+            <div class="detail-reviews__left">
+              <div class="tab">
+                <button
+                  class="tablinks tab-active"
+                  onclick="openCity(event, 'detail')"
+                >
+                  توضیحات
+                  <svg class="tablinks-icon"><use href="#more"></use></svg>
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'reviwes')">
+                  نظرات
+                  <svg class="tablinks-icon"><use href="#star"></use></svg>
+                </button>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <!-- ! Category Price -->
-            <div class="side-menu__price">
-              <span class="side-menu__price-title">  قیمت از  
-                <span class="side-menu__price-price">120,0000 تومان</span>
-              </span>
-              <input min="1" max="100" value="70" type="range" class="side-menu__price-input" />
-            </div>
-            <!-- ! Category ShowNumber -->
-            <div class="side-menu__show">
-              نمایش 10 از 30 نتیجه
-              <input  type="number" value="10" class="side-menu__show-input" />
-            </div>
-          </aside>
-
-          <!-- * Shop Section -->
-          <section class="shop">
-            <!-- * ========Shop Filters Section======== -->
-            <section class="shop__filters">
-              <span class="shop__filters-title"> فیلتر های اعمال شده </span>
-              <div class="shop__filters__box">
-                <span class="shop__filter">
-                  عطر و ادکلن
-                  <svg class="shop__filter-icon">
-                    <use href="#close"></use>
-                  </svg>
-                </span>
-
-                <span class="shop__filter">
-                  سایز M
-                  <svg class="shop__filter-icon">
-                    <use href="#close"></use>
-                  </svg>
-                </span>
-              </div>
-            </section>
-
-            <!-- * ========Shop Products Section======== -->
-            <section class="shop-products">
-              <div class="shop-products__wrapper">
-
-                <div class="shop-product">
-                  <div class="shop-product__top">
-                    <img
-                      src="./images/products/shirt.png"
-                      alt="product"
-                      class="shop-product-image"
-                    />
-                  </div>
-
-                  <div class="shop-product__bottom">
-                    <span class="shop-product__bottom-title">
-                      تی شرت مشکی کلاسیک
-                    </span>
-                    <a href="#" class="shop-product__bottom__link">
-                      مشاهده محصول
-                      <svg class="shop-product__bottom__link-icon">
-                        <use href="#eye"></use>
-                      </svg>
-                    </a>
-                    <div class="shop-product__bottom__infos">
-                      <span class="shop-product__bottom__infos-price">
-                        $1000
-                      </span>
-                      <span class="shop-product__bottom__infos-stock">
-                        موجود
-                      </span>
-                    </div>
-                  </div>
-
-                  <button class="shop-product__btn">
-                    افزودن به سبد خرید
-                    <svg class="shop-product__btn-icon">
-                      <use href="#basket"></use>
-                    </svg>
-                  </button>
-                </div>
-
-                <div class="shop-product">
-                  <div class="shop-product__top">
-                    <img
-                      src="./images/products/shirt.png"
-                      alt="product"
-                      class="shop-product-image"
-                    />
-                  </div>
-
-                  <div class="shop-product__bottom">
-                    <span class="shop-product__bottom-title">
-                      تی شرت مشکی کلاسیک
-                    </span>
-                    <a href="#" class="shop-product__bottom__link">
-                      مشاهده محصول
-                      <svg class="shop-product__bottom__link-icon">
-                        <use href="#eye"></use>
-                      </svg>
-                    </a>
-                    <div class="shop-product__bottom__infos">
-                      <span class="shop-product__bottom__infos-price">
-                        $1000
-                      </span>
-                      <span class="shop-product__bottom__infos-stock">
-                        موجود
-                      </span>
-                    </div>
-                  </div>
-
-                  <button class="shop-product__btn">
-                    افزودن به سبد خرید
-                    <svg class="shop-product__btn-icon">
-                      <use href="#basket"></use>
-                    </svg>
-                  </button>
-                </div>
-
-                <div class="shop-product">
-                  <div class="shop-product__top">
-                    <img
-                      src="./images/products/shirt.png"
-                      alt="product"
-                      class="shop-product-image"
-                    />
-                  </div>
-
-                  <div class="shop-product__bottom">
-                    <span class="shop-product__bottom-title">
-                      تی شرت مشکی کلاسیک
-                    </span>
-                    <a href="#" class="shop-product__bottom__link">
-                      مشاهده محصول
-                      <svg class="shop-product__bottom__link-icon">
-                        <use href="#eye"></use>
-                      </svg>
-                    </a>
-                    <div class="shop-product__bottom__infos">
-                      <span class="shop-product__bottom__infos-price">
-                        $1000
-                      </span>
-                      <span class="shop-product__bottom__infos-stock">
-                        موجود
-                      </span>
-                    </div>
-                  </div>
-
-                  <button class="shop-product__btn">
-                    افزودن به سبد خرید
-                    <svg class="shop-product__btn-icon">
-                      <use href="#basket"></use>
-                    </svg>
-                  </button>
-                </div>
-
-                <div class="shop-product">
-                  <div class="shop-product__top">
-                    <img
-                      src="./images/products/shirt.png"
-                      alt="product"
-                      class="shop-product-image"
-                    />
-                  </div>
-
-                  <div class="shop-product__bottom">
-                    <span class="shop-product__bottom-title">
-                      تی شرت مشکی کلاسیک
-                    </span>
-                    <a href="#" class="shop-product__bottom__link">
-                      مشاهده محصول
-                      <svg class="shop-product__bottom__link-icon">
-                        <use href="#eye"></use>
-                      </svg>
-                    </a>
-                    <div class="shop-product__bottom__infos">
-                      <span class="shop-product__bottom__infos-price">
-                        $1000
-                      </span>
-                      <span class="shop-product__bottom__infos-stock">
-                        موجود
-                      </span>
-                    </div>
-                  </div>
-
-                  <button class="shop-product__btn">
-                    افزودن به سبد خرید
-                    <svg class="shop-product__btn-icon">
-                      <use href="#basket"></use>
-                    </svg>
-                  </button>
-                </div>
-
-                <div class="shop-product">
-                  <div class="shop-product__top">
-                    <img
-                      src="./images/products/shirt.png"
-                      alt="product"
-                      class="shop-product-image"
-                    />
-                  </div>
-
-                  <div class="shop-product__bottom">
-                    <span class="shop-product__bottom-title">
-                      تی شرت مشکی کلاسیک
-                    </span>
-                    <a href="#" class="shop-product__bottom__link">
-                      مشاهده محصول
-                      <svg class="shop-product__bottom__link-icon">
-                        <use href="#eye"></use>
-                      </svg>
-                    </a>
-                    <div class="shop-product__bottom__infos">
-                      <span class="shop-product__bottom__infos-price">
-                        $1000
-                      </span>
-                      <span class="shop-product__bottom__infos-stock">
-                        موجود
-                      </span>
-                    </div>
-                  </div>
-
-                  <button class="shop-product__btn">
-                    افزودن به سبد خرید
-                    <svg class="shop-product__btn-icon">
-                      <use href="#basket"></use>
-                    </svg>
-                  </button>
-                </div>
-                
-                <div class="shop-product">
-                  <div class="shop-product__top">
-                    <img
-                      src="./images/products/shirt.png"
-                      alt="product"
-                      class="shop-product-image"
-                    />
-                  </div>
-
-                  <div class="shop-product__bottom">
-                    <span class="shop-product__bottom-title">
-                      تی شرت مشکی کلاسیک
-                    </span>
-                    <a href="#" class="shop-product__bottom__link">
-                      مشاهده محصول
-                      <svg class="shop-product__bottom__link-icon">
-                        <use href="#eye"></use>
-                      </svg>
-                    </a>
-                    <div class="shop-product__bottom__infos">
-                      <span class="shop-product__bottom__infos-price">
-                        $1000
-                      </span>
-                      <span class="shop-product__bottom__infos-stock">
-                        موجود
-                      </span>
-                    </div>
-                  </div>
-
-                  <button class="shop-product__btn">
-                    افزودن به سبد خرید
-                    <svg class="shop-product__btn-icon">
-                      <use href="#basket"></use>
-                    </svg>
-                  </button>
-                </div>
-
-              </div>
-            </section>
-
-            <!-- * ========Pagination Section======== -->
-            <section class="pagination">
-              <ul class="pagination__list">
-                <li class="pagination__item">
-                  <a href="#" class="pagination__item__link">
-                    <svg class="pagination__item__link-icon">
-                      <use href="#chevron-right"></use>
-                    </svg>
-                  </a>
-                </li>
-
-                <li class="pagination__item pagination--active">
-                  <a href="#" class="pagination__item__link">1</a>
-                </li>
-
-                <li class="pagination__item">
-                  <a href="#" class="pagination__item__link">2</a>
-                </li>
-
-                <li class="pagination__item">
-                  <a href="#" class="pagination__item__link">3</a>
-                </li>
-
-                <li class="pagination__item">
-                  <a href="#" class="pagination__item__link">4</a>
-                </li>
-
-                <li class="pagination__item">
-                  <a href="#" class="pagination__item__link">
-                    <svg class="pagination__item__link-icon">
-                      <use href="#chevron-left"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </section>
-          </section>
-        </section>
-      </div>
       <!-- * ========Join Section======== -->
       <section class="join">
         <div class="container">
@@ -1921,7 +1702,7 @@
               <div class="join__left__box">
                 <input
                   type="text"
-                  class=" input join__left__box-input"
+                  class="join__left__box-input input"
                   placeholder="آدرس ایمیل خود را وارد کنید"
                 />
                 <button class="join__left__box-btn btn btn-black">عضویت</button>
@@ -1940,7 +1721,7 @@
             <a href="#" class="footer__row1__logo">
               استایل کده
               <img
-                src="./images/Logomark.png"
+                src="../public/images/index/Logomark.png"
                 alt="logo"
                 class="footer__row1__logo-image"
               />
@@ -2027,7 +1808,7 @@
             <div class="footer__row5__payments">
               <a href="#" class="footer__row5__payments__mastercard">
                 <img
-                  src="./images/logos/Mastercard.png"
+                  src="../public/images/logos/Mastercard.png"
                   alt=""
                   class="footer__row5__payments__mastercard-image"
                 />
@@ -2035,7 +1816,7 @@
 
               <a href="#" class="footer__row5__payments__amex">
                 <img
-                  src="./images/logos/Amex.png"
+                  src="../public/images/logos/Amex.png"
                   alt=""
                   class="footer__row5__payments__amex-image"
                 />
@@ -2043,7 +1824,7 @@
 
               <a href="#" class="footer__row5__payments__visa">
                 <img
-                  src="./images/logos/Visa.png"
+                  src="../public/images/logos/Visa.png"
                   alt=""
                   class="footer__row5__payments__visa-image"
                 />
@@ -2060,6 +1841,10 @@
       </div>
     </footer>
 
-    <script src="./js/shared.js"></script>
+    <!-- *======== Scripts ======== -->
+    <script src="../vendor/owl-slider/jquery.min.js"></script>
+    <script src="../vendor/owl-slider/owl.carousel.min.js"></script>
+    <script src="../public/js/product.js"></script>
+    <script src="../public/js/shared.js"></script>
   </body>
 </html>
