@@ -18,7 +18,9 @@
   --porcelain: #eff0f6;
   --mercury: #e6e7e8;
   --softPeach: #eeeeee;
-  --whiteLiac : #f7f7fc;
+  --whiteLiac: #f7f7fc;
+  --alabaster: #f9fafc;
+  --caribbeanGreen: #00c291;
 }
 .icons {
   display: none;
@@ -35,24 +37,239 @@ body {
 
 /* * ////////////////// Header Section ////////////////// */
 
-.header__wrapper{
-    text-align: center;
-    padding: 1rem;
-    margin-top: 1rem;
-    border-radius: 1rem;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-
+.header__wrapper {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  background-color: var(--white);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
-.header-title{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'lamia', Courier, monospace;
-    font-size: 1.6rem;
+.header-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "lamia", Courier, monospace;
+  font-size: 1.6rem;
 }
 
-.header-icon{
-    width: 2rem;
-    height: 2rem;
-    margin-left: 1rem;
+.header-icon {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1rem;
+}
+
+/* * ////////////////// Main Section ////////////////// */
+/* ! //////// Payment Section //////// */
+.payment {
+  margin-bottom: 4rem;
+}
+.payment__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+.payment-right {
+  width: 70%;
+  background-color: var(--white);
+  padding: 1rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 1rem;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+}
+
+.payment-left {
+  width: 30%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 1rem;
+}
+/* ! Payment Right */
+
+.payment-right__title {
+  font-size: 1.2rem;
+  font-family: "lamia", Courier, monospace;
+  backdrop-filter: var(--whiteLiac);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.payment-right__cart {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-right__cart-label,
+.payment-right__cvv2-label,
+.payment-right__expire-date-label,
+.payment-right___security-label {
+  font-size: 1.2rem;
+  font-family: "iranSans-bold", Courier, monospace;
+}
+.payment-right__cart-input,
+.payment-right__cvv2-input {
+  padding: 1rem;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  background-color: var(--alabaster);
+  text-align: center;
+  font-size: 1.2rem;
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.payment-right__cvv2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-right__expire-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-right__expire-date-inputs {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem auto;
+}
+
+.payment-right__expire-date-input {
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-family: "iranSans-bold", Courier, monospace;
+  outline: none;
+  border: none;
+  background-color: var(--alabaster);
+}
+
+.payment-right___security {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-right___security-box {
+  display: flex;
+  /* align-items: center; */
+  margin-top: 1rem;
+  justify-content: space-around;
+}
+.payment-right___security-box-input {
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  background-color: var(--alabaster);
+  text-align: center;
+  font-family: "iranSans-bold", Courier, monospace;
+}
+
+.payment-right___security-box-code {
+  height: 3.5rem;
+  border-radius: 1rem;
+}
+
+.payment-right__btn,
+.payment-right__btn-cancel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  background-color: var(--caribbeanGreen);
+  color: var(--white);
+  font-family: "iranSans-bold", Courier, monospace;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.payment-right__btn-cancel {
+  background-color: var(--chiliPepper);
+}
+
+.payment-right__btn-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* ! Payment Right */
+.payment-left {
+  background-color: var(--white);
+  padding: 1rem;
+}
+
+.payment-left__timer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.payment-left__timer-title {
+  font-family: "iranSans-bold", Courier, monospace;
+}
+
+.payment-left__logo {
+  margin-top: 2rem;
+}
+.payment-left__logo-image {
+  margin: 0 auto;
+  display: block;
+}
+
+.payment-left__details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-bottom: 2px solid var(--blackPearl);
+  padding-bottom: 1rem;
+}
+
+.payment-left__details__box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.payment-left__details__box-title {
+  font-family: "iranSans-bold", Courier, monospace;
+}
+
+.payment-left__hints {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.payment-left__hints__title {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "iranSans-bold", Courier, monospace;
+}
+
+.payment-left__hints__title-icon {
+  width: 2rem;
+  height: 2rem;
+}
+.payment-left__hints-text{
+    line-height: 1.4rem;
+    text-align: justify;
+}
+.payment-left__hints-highlight {
+  font-family: "iranSans-bold", Courier, monospace;
 }

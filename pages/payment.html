@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="en" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -42,6 +42,22 @@
           d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
         />
       </symbol>
+      <!-- ! Question -->
+      <symbol
+        id="question"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"
+        />
+      </symbol>
     </svg>
     <!-- ! ///////////////////////// Header Section ///////////////////////// -->
     <header class="header">
@@ -64,70 +80,89 @@
         <div class="container">
           <div class="payment__wrapper">
             <section class="payment-right">
-              <h2 class="payment-right__title">
-                اطلاعات کارت خود را وارد کنید
-              </h2>
-              <!-- * Cart -->
-              <div class="payment-right__cart">
-                <label class="payment-right__cart-label" for="">
-                  شماره کارت
-                </label>
-                <input type="text" class="payment-right__cart-input" />
-              </div>
-              <!-- * CVV2 -->
-              <div class="payment-right__cvv2">
-                <label class="payment-right__cvv2-label" for="">
-                  شماره شناسایی دوم (CVV2)
-                </label>
-                <input type="text" class="payment-right__cvv2-input" />
-              </div>
-              <!-- * Expire -->
-              <div class="payment-right__expire-date">
-                <label class="payment-right__expire-date-label" for="">
-                  تاریخ انقضا
-                </label>
-                <div class="payment-right__expire-date-inputs">
+              <form class="payment-right-form">
+                <h2 class="payment-right__title">
+                  اطلاعات کارت خود را وارد کنید
+                </h2>
+                <!-- * Cart -->
+                <div class="payment-right__cart">
+                  <label class="payment-right__cart-label" for="">
+                    شماره کارت
+                  </label>
                   <input
-                    placeholder="ماه"
+                    placeholder="---- ---- ---- ---- "
                     type="text"
-                    class="payment-right__expire-date-input"
-                  />
-                  <input
-                    placeholder="سال"
-                    type="text"
-                    class="payment-right__expire-date-input"
+                    class="payment-right__cart-input"
                   />
                 </div>
-              </div>
-              <!-- * Security Code -->
-              <div class="payment-right___security">
-                <label for="" class="payment-right___security-label"></label>
-                <div class="payment-right___security-box">
+                <!-- * CVV2 -->
+                <div class="payment-right__cvv2">
+                  <label class="payment-right__cvv2-label" for="">
+                    شماره شناسایی دوم (CVV2)
+                  </label>
                   <input
+                    placeholder="CVV2"
                     type="text"
-                    class="payment-right___security-box-input"
-                  />
-                  <img
-                    src="../public/images/payment/download.jpeg"
-                    alt="paymnet"
-                    class="payment-right___security-box-code"
+                    class="payment-right__cvv2-input"
                   />
                 </div>
-              </div>
-              <!-- * Payment Buuton -->
-              <button class="payment-right__btn">
-                پرداخت 120000 تومان
-                <svg class="payment-right__btn-icon">
-                  <use href="#money"></use>
-                </svg>
-              </button>
+                <!-- * Expire -->
+                <div class="payment-right__expire-date">
+                  <label class="payment-right__expire-date-label" for="">
+                    تاریخ انقضا
+                  </label>
+                  <div class="payment-right__expire-date-inputs">
+                    <input
+                      placeholder="ماه"
+                      type="text"
+                      class="payment-right__expire-date-input"
+                    />
+                    <input
+                      placeholder="سال"
+                      type="text"
+                      class="payment-right__expire-date-input"
+                    />
+                  </div>
+                </div>
+                <!-- * Security Code -->
+                <div class="payment-right___security">
+                  <label for="" class="payment-right___security-label"
+                    >کد امنیتی</label
+                  >
+                  <div class="payment-right___security-box">
+                    <input
+                      placeholder="کد امنیتی"
+                      type="text"
+                      class="payment-right___security-box-input"
+                    />
+                    <img
+                      src="../public/images/payment/download.jpeg"
+                      alt="paymnet"
+                      class="payment-right___security-box-code"
+                    />
+                  </div>
+                </div>
+                <!-- * Payment Buuton -->
+                <button class="payment-right__btn">
+                  پرداخت 120000 تومان
+                  <svg class="payment-right__btn-icon">
+                    <use href="#money"></use>
+                  </svg>
+                </button>
+                <button class="payment-right__btn-cancel">
+                  انصراف
+                  <svg class="payment-right__btn-icon">
+                    <use href="#money"></use>
+                  </svg>
+                </button>
+              </form>
             </section>
 
             <section class="payment-left">
               <!-- ! Timer -->
               <div class="payment-left__timer">
                 <span class="payment-left__timer-title">
-                  زملن باقی مانده :
+                  زمان باقی مانده :
                 </span>
                 <span class="payment-left__timer-time"> 20:10 </span>
               </div>
@@ -174,6 +209,45 @@
                     استایل کده
                   </span>
                 </div>
+              </div>
+              <!-- ! Hints -->
+              <div class="payment-left__hints">
+                <h2 class="payment-left__hints__title">
+                  راهنما و نکات امنیتی
+                  <svg class="payment-left__hints__title-icon">
+                    <use href="#question"></use>
+                  </svg>
+                </h2>
+                <p class="payment-left__hints-text">
+                  <span class="payment-left__hints-highlight">
+                    شماره کارت :
+                  </span>
+                  16 رقمی بوده و بصورت 4 قسمت 4 رقمی روی کارت درج شده است.
+                </p>
+
+                <p class="payment-left__hints-text">
+                  <span class="payment-left__hints-highlight">
+                    شماره شناسایی دوم (CVV2) :
+                  </span>
+                  شماره شناسایی کارت با طول 3 یا 4 رقم کنار شماره کارت و یا پشت
+                  کارت درج شده است.
+                </p>
+
+                <p class="payment-left__hints-text">
+                  <span class="payment-left__hints-highlight">
+                    تاریخ انقضا:
+                  </span>
+                  شامل دو بخش ماه و سال انقضا در کنار شماره کارت درج شده است.
+                </p>
+
+                <p class="payment-left__hints-text">
+                  <span class="payment-left__hints-highlight">
+                    کد امنیتی:
+                  </span>
+                  بخشی از محتوای صفحه پرداخت است و لازم است برای ادامه فرآیند
+                  خرید، کد موجود که به صورت عددی در تصویر مشخص شده است در محل
+                  پیش بینی شده درج شود.
+                </p>
               </div>
             </section>
           </div>
