@@ -26,21 +26,159 @@
           d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z"
         />
       </symbol>
+      <!-- ! Money -->
+      <symbol
+        id="money"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+        />
+      </symbol>
     </svg>
     <!-- ! ///////////////////////// Header Section ///////////////////////// -->
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
           <h1 class="header-title">
-            درگاه پرداخت اینترنتی آگهی کده
+            درگاه پرداخت اینترنتی استایل کده
             <svg class="header-icon">
-                <use href="#payment"></use>
+              <use href="#payment"></use>
             </svg>
-        </h1>
+          </h1>
         </div>
       </div>
     </header>
 
-    
+    <!-- ! ///////////////////////// Main Section ///////////////////////// -->
+    <main class="main">
+      <!-- * ========Payment Section======== -->
+      <section class="payment">
+        <div class="container">
+          <div class="payment__wrapper">
+            <section class="payment-right">
+              <h2 class="payment-right__title">
+                اطلاعات کارت خود را وارد کنید
+              </h2>
+              <!-- * Cart -->
+              <div class="payment-right__cart">
+                <label class="payment-right__cart-label" for="">
+                  شماره کارت
+                </label>
+                <input type="text" class="payment-right__cart-input" />
+              </div>
+              <!-- * CVV2 -->
+              <div class="payment-right__cvv2">
+                <label class="payment-right__cvv2-label" for="">
+                  شماره شناسایی دوم (CVV2)
+                </label>
+                <input type="text" class="payment-right__cvv2-input" />
+              </div>
+              <!-- * Expire -->
+              <div class="payment-right__expire-date">
+                <label class="payment-right__expire-date-label" for="">
+                  تاریخ انقضا
+                </label>
+                <div class="payment-right__expire-date-inputs">
+                  <input
+                    placeholder="ماه"
+                    type="text"
+                    class="payment-right__expire-date-input"
+                  />
+                  <input
+                    placeholder="سال"
+                    type="text"
+                    class="payment-right__expire-date-input"
+                  />
+                </div>
+              </div>
+              <!-- * Security Code -->
+              <div class="payment-right___security">
+                <label for="" class="payment-right___security-label"></label>
+                <div class="payment-right___security-box">
+                  <input
+                    type="text"
+                    class="payment-right___security-box-input"
+                  />
+                  <img
+                    src="../public/images/payment/download.jpeg"
+                    alt="paymnet"
+                    class="payment-right___security-box-code"
+                  />
+                </div>
+              </div>
+              <!-- * Payment Buuton -->
+              <button class="payment-right__btn">
+                پرداخت 120000 تومان
+                <svg class="payment-right__btn-icon">
+                  <use href="#money"></use>
+                </svg>
+              </button>
+            </section>
+
+            <section class="payment-left">
+              <!-- ! Timer -->
+              <div class="payment-left__timer">
+                <span class="payment-left__timer-title">
+                  زملن باقی مانده :
+                </span>
+                <span class="payment-left__timer-time"> 20:10 </span>
+              </div>
+              <!-- ! Logo -->
+              <div class="payment-left__logo">
+                <img
+                  src="../public/images/index/Logomark.png"
+                  alt="logo"
+                  class="payment-left__logo-image"
+                />
+              </div>
+              <!-- ! Details -->
+              <div class="payment-left__details">
+                <div class="payment-left__details__box">
+                  <span class="payment-left__details__box-title">
+                    پذیرنده
+                  </span>
+                  <span class="payment-left__details__box-text">
+                    استایل کده
+                  </span>
+                </div>
+
+                <div class="payment-left__details__box">
+                  <span class="payment-left__details__box-title"> مبلغ </span>
+                  <span class="payment-left__details__box-text">
+                    120000 تومان
+                  </span>
+                </div>
+
+                <div class="payment-left__details__box">
+                  <span class="payment-left__details__box-title">
+                    شماره پذیرنده / ترمینال
+                  </span>
+                  <span class="payment-left__details__box-text">
+                    12345678910 / 12345678910
+                  </span>
+                </div>
+
+                <div class="payment-left__details__box">
+                  <span class="payment-left__details__box-title">
+                    سایت پذیرنده
+                  </span>
+                  <span class="payment-left__details__box-text">
+                    استایل کده
+                  </span>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
