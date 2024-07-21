@@ -359,4 +359,15 @@
   .header-title{
     flex-direction: column;
   }
+  /* ! After Payment Page (Main) */
+  .main-image{
+    width: 7rem;
+    height: 7rem;
+  }
+  .main-title{
+    font-size: 1.4rem;
+  }
+  .main-text{
+    font-size: 1rem;
+  }
 }

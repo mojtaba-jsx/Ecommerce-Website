@@ -59,6 +59,7 @@ body {
   flex-direction: column;
   /* background-color: red; */
   padding: 2rem;
+  position: relative;
 }
 
 .main-image {
@@ -77,6 +78,7 @@ body {
   text-align: center;
   margin-top: 1rem;
   font-size: 1.2rem;
+  line-height: 1.4rem;
 }
 
 .main-btn {
@@ -92,10 +94,3 @@ body {
   cursor: pointer;
 }
 
-.order-image {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  z-index: -100;
-  width: 20rem;
-}
