@@ -1,0 +1,101 @@
+/* * ==== CSS Module Import==== */
+@import "./reset.css";
+@import "./fonts.css";
+@import "./header.css";
+@import "./footer.css";
+
+/* * ====Color Variables==== */
+:root {
+  --dodgerBlue: #4078ff;
+  --blackPearl: #0e1422;
+  --dark: #202533;
+  --greenWhite: #e9e9eb;
+  --laSalleGreen: #057234;
+  --chiliPepper: #be1313;
+  --yellowOrange: #f3b40a;
+  --white: #ffffff;
+  --whiteSmoke: #f6f6f6;
+  --grayCloud: #b6b7bc;
+  --lightRoyalBlue: #4a3aff;
+  --porcelain: #eff0f6;
+  --mercury: #e6e7e8;
+  --softPeach: #eeeeee;
+}
+.icons {
+  display: none;
+}
+body {
+  font-family: "iranSans-light", Courier, monospace;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* *==== Input Styles==== */
+.input {
+  display: block;
+  /* height: 3.2rem; */
+  width: 20rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--grayCloud);
+  outline: none;
+  font-family: "iranSans-light", Courier, monospace;
+  color: var(--blackPearl);
+}
+.input-danger {
+  border: 2px solid var(--chiliPepper);
+}
+
+/* * ////////////////// Main Section ////////////////// */
+.main {
+}
+
+.main__wrapper {
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+  padding: 2rem;
+}
+
+.main-image {
+  width: 10rem;
+  height: 10rem;
+  margin: 0 auto;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "iranSans-bold", Courier, monospace;
+}
+
+.main-text {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.main-btn {
+  width: 14rem;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  background-color: var(--blackPearl);
+  color: var(--white);
+  font-family: "iranSans-bold", Courier, monospace;
+  cursor: pointer;
+}
+
+.order-image {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: -100;
+  width: 20rem;
+}
