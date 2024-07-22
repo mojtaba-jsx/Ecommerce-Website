@@ -347,27 +347,41 @@
   .payment-right___security-box {
     flex-direction: column;
   }
-  .payment-right___security-box-input{
+  .payment-right___security-box-input {
     width: 50%;
     margin: 1rem auto;
     padding: 1rem;
   }
-  .payment-right___security-box-code{
+  .payment-right___security-box-code {
     width: 10rem;
     margin: 0 auto;
   }
-  .header-title{
+  .header-title {
     flex-direction: column;
   }
   /* ! After Payment Page (Main) */
-  .main-image{
+  .main-image {
     width: 7rem;
     height: 7rem;
   }
-  .main-title{
+  .main-title {
     font-size: 1.4rem;
   }
-  .main-text{
+  .main-text {
     font-size: 1rem;
   }
+  /* ! Sign Up Page (Main) */
+  .signup-form__text {
+    width: auto;
+    margin: 1rem 1rem;
+  }
+  .signup-title::before{
+      width: 4rem;
+  }
+
+  .signup-title::after {
+    width: 4rem;
+    left:-2rem;
+  }
+
 }
