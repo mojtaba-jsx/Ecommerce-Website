@@ -120,13 +120,12 @@ body {
 .textarea::placeholder {
   color: var(--blackPearl);
 }
-/* * ////////////////// Main Section ////////////////// */
-/* ! //////// Main Section //////// */
+
 .main {
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
-.signup-title {
+.login-title {
   position: relative;
   text-align: center;
   font-family: "lamia", Courier, monospace;
@@ -135,7 +134,7 @@ body {
   margin: 0 auto;
 }
 
-.signup-title::before {
+.login-title::before {
   position: absolute;
   content: "";
   width: 10rem;
@@ -144,7 +143,7 @@ body {
   top: 1rem;
   left: 8rem;
 }
-.signup-title::after {
+.login-title::after {
   position: absolute;
   content: "";
   width: 10rem;
@@ -154,12 +153,12 @@ body {
   left: -8rem;
 }
 
-.signup-form {
+.login-form {
   display: flex;
   flex-direction: column;
   margin: 2rem auto;
 }
-.signup-form div {
+.login-form div {
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
@@ -170,7 +169,7 @@ label {
   font-family: "iranSans-bold", Courier, monospace;
   margin-bottom: 0.5rem;
 }
-.signup-form div input {
+.login-form div input {
   width: 20rem;
   padding: 1rem;
   border-radius: 0.5em;
@@ -178,7 +177,7 @@ label {
   border: 1px solid var(--grayCloud);
   font-family: "iranSans-light", Courier, monospace;
 }
-.signup-form__text {
+.login-form__text {
   display: flex;
   align-items: center;
   text-align: center;
@@ -187,7 +186,7 @@ label {
   line-height: 1.4rem;
 }
 
-.signup-form__btn {
+.login-form__btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -203,15 +202,15 @@ label {
   cursor: pointer;
   gap: 1rem;
 }
-.signup-form__btn-icon {
+.login-form__btn-icon {
   width: 2rem;
   height: 2rem;
 }
 
-.signup-form__login {
+.login-form__login {
   margin: 1rem auto;
 }
-.signup-form__login-link {
+.login-form__signup-link {
   font-family: "iranSans-bold", Courier, monospace;
   color: var(--blackPearl);
 }

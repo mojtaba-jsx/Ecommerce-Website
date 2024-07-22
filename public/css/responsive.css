@@ -375,13 +375,25 @@
     width: auto;
     margin: 1rem 1rem;
   }
-  .signup-title::before{
-      width: 4rem;
+  .signup-title::before {
+    width: 4rem;
   }
 
   .signup-title::after {
     width: 4rem;
-    left:-2rem;
+    left: -2rem;
+  }
+  /* ! Login  Page (Main) */
+  .login-form__text {
+    width: auto;
+    margin: 1rem 1rem;
+  }
+  .login-title::before {
+    width: 4rem;
   }
 
+  .login-title::after {
+    width: 4rem;
+    left: -2rem;
+  }
 }
