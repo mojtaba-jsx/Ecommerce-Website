@@ -145,6 +145,31 @@
   .payment-left {
     text-align: center;
   }
+  /*! User Account Orders (Main) */
+  .account__wrapper {
+    flex-direction: column;
+  }
+  .account-menu {
+    display: block;
+    width: 80%;
+    margin: 1rem auto;
+  }
+  .account-menu__list {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* width: 100%; */
+  }
+  .account-menu__link {
+    flex-direction: column;
+  }
+  .account-main {
+    width: 80%;
+    margin: 1rem auto;
+  }
+  .account-main-title {
+    text-align: center;
+  }
 }
 
 /* *  ------------------------992px------------------------ */
@@ -235,6 +260,11 @@
   }
   .cart__item__left {
     margin-top: 2rem;
+  }
+  /*! User Account Orders (Main) */
+  .account-main__product__left {
+    flex-direction: column;
+    gap: 1rem;
   }
 }
 
@@ -395,5 +425,19 @@
   .login-title::after {
     width: 4rem;
     left: -2rem;
+  }
+  /*! User Account Orders (Main) */
+  .account-main__product {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .account-main-title {
+    margin-bottom: 2rem;
+  }
+  .account-main__product__right__details{
+    text-align: center;
+  }
+  .account-main__product__right{
+    flex-direction: column;
   }
 }
