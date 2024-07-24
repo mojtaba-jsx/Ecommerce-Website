@@ -1,0 +1,47 @@
+/* * ====Color Variables==== */
+:root {
+  --dodgerBlue: #4078ff;
+  --blackPearl: #0e1422;
+  --dark: #202533;
+  --greenWhite: #e9e9eb;
+  --laSalleGreen: #057234;
+  --chiliPepper: #be1313;
+  --yellowOrange: #f3b40a;
+  --white: #ffffff;
+  --whiteSmoke: #f6f6f6;
+  --grayCloud: #b6b7bc;
+  --lightRoyalBlue: #4a3aff;
+  --porcelain: #eff0f6;
+  --mercury: #e6e7e8;
+  --softPeach: #eeeeee;
+}
+
+/* ! Aside Menu  */
+
+.account-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.account-menu__item {
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.account-menu__link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--blackPearl);
+  font-family: "iranSans-bold", Courier, monospace;
+}
+
+.account-menu__link--active {
+  background-color: var(--softPeach);
+}
+
+.account-menu__icon {
+  width: 2rem;
+  height: 2rem;
+}
