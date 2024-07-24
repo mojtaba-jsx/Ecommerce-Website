@@ -104,4 +104,87 @@ body {
 }
 
 /* * ////////////////// Main Section ////////////////// */
-/* ! //////// Account Section //////// */
+/* ! //////// WishList Section //////// */
+.account-menu {
+  width: 25%;
+}
+
+.wishlist {
+  width: 75%;
+}
+
+.wishlist-title {
+  font-size: 1.4rem;
+  font-family: "lamia", Courier, monospace;
+}
+
+.wishlist-product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  border-bottom: 1px solid var(--blackPearl);
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.wishlist-product__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.wishlist-product__right-image {
+  width: 4rem;
+  height: 5rem;
+  background-color: var(--whiteSmoke);
+}
+
+.wishlist-product__right__infos {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 0.5rem;
+}
+
+.wishlist-product__right__infos-name {
+  font-family: "iranSans-bold", Courier, monospace;
+}
+
+.wishlist-product__right__remove {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  font-family: "iranSans-bold", Courier, monospace;
+  background-color: var(--chiliPepper);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.wishlist-product__left {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.wishlist-product__left-price {
+  font-family: "iranSans-bold", Courier, monospace;
+}
+
+.wishlist-product__left-btn {
+    padding: 1rem;
+    border: 2px solid var(--blackPearl) ;
+    border-radius: 0.5rem;
+    font-family: 'iranSans-bold', Courier, monospace;
+    color: var(--blackPearl);
+    transition: all 120ms ease-in;
+    background: none;
+    cursor: pointer;
+}
+
+.wishlist-product__left-btn:hover{
+    background-color: var(--blackPearl);
+    color: var(--white);
+}

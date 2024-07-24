@@ -15,7 +15,26 @@
   --mercury: #e6e7e8;
   --softPeach: #eeeeee;
 }
+/* ! //////// Account Section //////// */
+.account{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
 
+.account__wrapper{
+  display: flex;
+  gap: 1rem;
+}
+
+.account-menu{
+  width: 25%;
+  padding: 1rem;
+}
+
+.account-main{
+  width: 70%;
+  padding: 1rem;
+}
 /* ! Aside Menu  */
 
 .account-menu__list {

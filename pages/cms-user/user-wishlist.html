@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- *==== CSS Links ====-->
-    <link rel="stylesheet" href="../../public/css/user-orders.css" />
+    <link rel="stylesheet" href="../../public/css/user-wishlist.css" />
     <link rel="stylesheet" href="../../public/css/responsive.css" />
     <title>علاقه مندی ها</title>
   </head>
@@ -1472,38 +1472,138 @@
         </div>
       </section>
       <!-- * ========WishList Section======== -->
-      <section class="wishlist">
-        <h1 class="wishlist-title">
-            علاقه مندی ها
-        </h1>
-        <div class="wishlist__wrapper">
-            <div class="wishlist-product">
-                <div class="wishlist-product__right">
-                    <img src="../../public/images/products/shirt.png" alt="product" class="wishlist-product__right-image">
-                    <div class="wishlist-product__right__infos">
-                        <span class="wishlist-product__right__infos-name">
-                            تیشرت مشکی نخ پنبه
-                        </span>
-                        <span class="wishlist-product__right__infos-date">
-                            اضافه شده در : 20/6/1402
-                        </span>
-                        <button class="wishlist-product__right__remove">
-                            حذف
-                        </button>
-                    </div>
-                </div>
+      <section class="account">
+        <div class="container">
+          <div class="account__wrapper">
+            <!-- ! Side Menu -->
+            <aside class="account-menu">
+              <ul class="account-menu__list">
+                <li class="account-menu__item">
+                  <a href="#" class="account-menu__link">
+                    <svg class="account-menu__icon">
+                      <use href="#basket"></use>
+                    </svg>
+                    سفارشات
+                  </a>
+                </li>
 
-                <div class="wishlist-product__left">
+                <li class="account-menu__item account-menu__link--active">
+                  <a href="#" class="account-menu__link">
+                    <svg class="account-menu__icon">
+                      <use href="#like"></use>
+                    </svg>
+                    علاقه مندی ها
+                  </a>
+                </li>
+
+                <li class="account-menu__item">
+                  <a href="#" class="account-menu__link">
+                    <svg class="account-menu__icon">
+                      <use href="#delivary"></use>
+                    </svg>
+                    آدرس ها
+                  </a>
+                </li>
+
+                <li class="account-menu__item">
+                  <a href="#" class="account-menu__link">
+                    <svg class="account-menu__icon">
+                      <use href="#key"></use>
+                    </svg>
+                    رمز عبور
+                  </a>
+                </li>
+
+                <li class="account-menu__item">
+                  <a href="#" class="account-menu__link">
+                    <svg class="account-menu__icon">
+                      <use href="#user"></use>
+                    </svg>
+                    اطلاعات حساب کاربری
+                  </a>
+                </li>
+
+                <li class="account-menu__item">
+                  <a href="#" class="account-menu__link">
+                    <svg class="account-menu__icon">
+                      <use href="#logout"></use>
+                    </svg>
+                    خروج از حساب کاربری
+                  </a>
+                </li>
+              </ul>
+            </aside>
+
+            <!-- ! WishList Section -->
+            <section class="wishlist">
+              <h1 class="wishlist-title">علاقه مندی ها</h1>
+              <div class="wishlist__wrapper">
+                <div class="wishlist-product">
+                  <div class="wishlist-product__right">
+                    <img
+                      src="../../public/images/products/shirt.png"
+                      alt="product"
+                      class="wishlist-product__right-image"
+                    />
+                    <div class="wishlist-product__right__infos">
+                      <span class="wishlist-product__right__infos-name">
+                        تیشرت مشکی نخ پنبه
+                      </span>
+                      <span class="wishlist-product__right__infos-date">
+                        اضافه شده در : 20/6/1402
+                      </span>
+                      <button class="wishlist-product__right__remove">
+                        حذف
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="wishlist-product__left">
                     <span class="wishlist-product__left-price">
-                        120000 تومان
+                      120000 تومان
                     </span>
                     <button class="wishlist-product__left-btn">
-                        اضافه کردن به سبد خرید 
+                      اضافه کردن به سبد خرید
                     </button>
+                  </div>
                 </div>
-            </div>
+
+                <div class="wishlist-product">
+                  <div class="wishlist-product__right">
+                    <img
+                      src="../../public/images/products/shirt.png"
+                      alt="product"
+                      class="wishlist-product__right-image"
+                    />
+                    <div class="wishlist-product__right__infos">
+                      <span class="wishlist-product__right__infos-name">
+                        تیشرت مشکی نخ پنبه
+                      </span>
+                      <span class="wishlist-product__right__infos-date">
+                        اضافه شده در : 20/6/1402
+                      </span>
+                      <button class="wishlist-product__right__remove">
+                        حذف
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="wishlist-product__left">
+                    <span class="wishlist-product__left-price">
+                      120000 تومان
+                    </span>
+                    <button class="wishlist-product__left-btn">
+                      اضافه کردن به سبد خرید
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
       </section>
     </main>
+
+    
   </body>
 </html>

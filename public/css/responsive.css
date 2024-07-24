@@ -170,6 +170,11 @@
   .account-main-title {
     text-align: center;
   }
+  /*! User Account WishList (Main) */
+  .wishlist {
+    width: 80%;
+    margin: 2rem auto;
+  }
 }
 
 /* *  ------------------------992px------------------------ */
@@ -266,6 +271,10 @@
     flex-direction: column;
     gap: 1rem;
   }
+  /*! User Account WishList (Main) */
+  .wishlist-product__right {
+    flex-direction: column;
+  }
 }
 
 /* *  ------------------------768px------------------------ */
@@ -299,6 +308,11 @@
   /* ! Checkout Page (Checkout) */
   .checkout__right-row1 {
     flex-wrap: wrap;
+  }
+  /*! User Account WishList (Main) */
+  .wishlist-product {
+    flex-direction: column;
+    gap: 2rem;
   }
 }
 
@@ -434,10 +448,18 @@
   .account-main-title {
     margin-bottom: 2rem;
   }
-  .account-main__product__right__details{
+  .account-main__product__right__details {
     text-align: center;
   }
-  .account-main__product__right{
+  .account-main__product__right {
     flex-direction: column;
+  }
+  /*! User Account WishList (Main) */
+  .wishlist-product__left {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .wishlist-title {
+    text-align: center;
   }
 }
