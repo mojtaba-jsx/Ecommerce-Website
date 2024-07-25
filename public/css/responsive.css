@@ -175,6 +175,11 @@
     width: 80%;
     margin: 2rem auto;
   }
+  /*! User Account Address (Main) */
+  .address {
+    width: 80%;
+    margin: 2rem auto;
+  }
 }
 
 /* *  ------------------------992px------------------------ */
@@ -313,6 +318,14 @@
   .wishlist-product {
     flex-direction: column;
     gap: 2rem;
+  }
+  /*! User Account Address (Main) */
+  .address__form__row2,
+  .address__form__row3 {
+    flex-direction: column;
+  }
+  .address__title{
+    text-align: center;
   }
 }
 
@@ -460,6 +473,12 @@
     gap: 1rem;
   }
   .wishlist-title {
+    text-align: center;
+  }
+  /*! User Account Address (Main) */
+  .address__list__item {
+    flex-direction: column-reverse;
+    gap: 1rem;
     text-align: center;
   }
 }
