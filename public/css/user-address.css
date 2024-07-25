@@ -104,4 +104,128 @@ body {
 }
 
 /* * ////////////////// Main Section ////////////////// */
-/* ! Account Main Section  */
+/* ! Address Section  */
+
+.account__wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+.account-menu {
+  width: 25%;
+}
+.address {
+  width: 75%;
+}
+
+.address__title {
+  font-size: 1.4rem;
+  font-family: "lamia", Courier, monospace;
+}
+
+.address__wrapper {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.address__form {
+  flex-direction: column;
+}
+
+.address__form__row1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.address__form__row2,
+.address__form__row3 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.address__form__row2__col1,
+.address__form__row2__col2,
+.address__form__row3__col1,
+.address__form__row3__col2 {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-family: "iranSans-bold", Courier, monospace;
+}
+.address__form input {
+  padding: 0.8rem;
+  border: none;
+  outline: none;
+  background-color: var(--softPeach);
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "iranSans-medium", Courier, monospace;
+}
+
+.address__form-btn {
+  display: flex;
+  align-items: center;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  border: 2px solid var(--blackPearl);
+  outline: none;
+  background-color: var(--blackPearl);
+  color: var(--blackPearl);
+  border-radius: 1rem;
+  font-family: "iranSans-bold", Courier, monospace;
+  background: none;
+  transition: all 120ms ease-in;
+  cursor: pointer;
+}
+.address__form-btn:hover {
+  background-color: var(--blackPearl);
+  color: var(--white);
+}
+
+.address__form-btn-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.address__list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.address__list-title {
+  font-size: 1.2rem;
+  font-family: "lamia", Courier, monospace;
+  text-align: center;
+}
+.address__list__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  border: 2px solid var(--blackPearl);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.address__list__item-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.address__list__item__right-state-title,
+.address__list__item__right-city-title,
+.address__list__item__right-zip-code-title,
+.address__list__item__right-zip-pelal-title,
+.address__list__item-right__street-title {
+  font-size: 1.2rem;
+  font-family: "iranSans-bold", Courier, monospace;
+}
