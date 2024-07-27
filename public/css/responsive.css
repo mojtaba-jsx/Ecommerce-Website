@@ -180,6 +180,12 @@
     width: 80%;
     margin: 2rem auto;
   }
+
+  /*! Account Details (Main) */
+  .account-details {
+    width: 80%;
+    margin: 2rem auto;
+  }
 }
 
 /* *  ------------------------992px------------------------ */
@@ -324,7 +330,15 @@
   .address__form__row3 {
     flex-direction: column;
   }
-  .address__title{
+  .address__title {
+    text-align: center;
+  }
+  /*! Account Details (Main) */
+  .account-details__form__row1,
+  .account-details__form__row2 {
+    flex-direction: column;
+  }
+  .account-details__title {
     text-align: center;
   }
 }
@@ -480,5 +494,9 @@
     flex-direction: column-reverse;
     gap: 1rem;
     text-align: center;
+  }
+  /*! Account Details (Main) */
+  .account-details__form div div input{
+    width: 16rem;
   }
 }
