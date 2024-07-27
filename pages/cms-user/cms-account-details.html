@@ -5,7 +5,7 @@
     <!-- *==== CSS Links ====-->
     <link rel="stylesheet" href="../../public/css/user-address.css" />
     <link rel="stylesheet" href="../../public/css/responsive.css" />
-    <title>آدرس ها</title>
+    <title>اطلاعات حساب کاربری</title>
   </head>
   <body>
     <!-- *====Icons==== -->
@@ -1455,17 +1455,16 @@
 
             <span class="breadCrumb_item">
               <a href="#" class="breadCrumb_item-link">
-                سفارشات
+                اطلاعات حساب کاربری
                 <svg class="breadCrumb__icon-svg">
-                  <use href="#basket"></use>
+                  <use href="#user"></use>
                 </svg>
               </a>
             </span>
           </div>
         </div>
       </section>
-
-      <!-- * ========Address Section======== -->
+      <!-- * ========Account Section======== -->
       <section class="account">
         <div class="container">
           <div class="account__wrapper">
@@ -1490,7 +1489,7 @@
                   </a>
                 </li>
 
-                <li class="account-menu__item account-menu__link--active">
+                <li class="account-menu__item">
                   <a href="#" class="account-menu__link">
                     <svg class="account-menu__icon">
                       <use href="#delivary"></use>
@@ -1508,7 +1507,7 @@
                   </a>
                 </li>
 
-                <li class="account-menu__item">
+                <li class="account-menu__item account-menu__link--active">
                   <a href="#" class="account-menu__link">
                     <svg class="account-menu__icon">
                       <use href="#user"></use>
@@ -1527,116 +1526,68 @@
                 </li>
               </ul>
             </aside>
-
-            <!-- ! Address Section -->
-            <section class="address">
-              <h1 class="address__title">آدرس حمل و نقل</h1>
-              <div class="address__wrapper">
-                <form action="#" class="address__form">
-                  <div class="address__form__row1">
-                    <label for="" class="address__form__row1-label">
-                      آدرس محل سکونت
+            <!-- ! Account Details Main -->
+            <section class="account-details">
+              <h1 class="account-details__title">اطلاعات حساب کاربری</h1>
+              <form action="#" class="account-details__form">
+                <div class="account-details__form__row1">
+                  <div class="account-details__form__row1__col1">
+                    <label
+                      for=""
+                      class="account-details__form__row1__col1-label"
+                    >
+                      نام
                     </label>
-                    <input type="text" class="address__form__row1-input" />
+                    <input
+                      type="text"
+                      class="account-details__form__row1__col1-name"
+                    />
                   </div>
 
-                  <div class="address__form__row2">
-                    <div class="address__form__row2__col1">
-                      <label for="" class="address__form__row2__col1-label">
-                        استان
-                      </label>
-                      <input
-                        type="text"
-                        class="address__form__row2__col1-input"
-                      />
-                    </div>
-
-                    <div class="address__form__row2__col2">
-                      <label for="" class="address__form__row2__col2-label">
-                        شهر
-                      </label>
-                      <input
-                        type="text"
-                        class="address__form__row2__col2-input"
-                      />
-                    </div>
-                  </div>
-
-                  <div class="address__form__row3">
-                    <div class="address__form__row3__col1">
-                      <label for="" class="address__form__row3__col1-label">
-                        کد پستی
-                      </label>
-                      <input
-                        type="text"
-                        class="address__form__row3__col1-input"
-                      />
-                    </div>
-
-                    <div class="address__form__row3__col2">
-                      <label for="" class="address__form__row3__col2-label">
-                        پلاک
-                      </label>
-                      <input
-                        type="text"
-                        class="address__form__row3__col2-input"
-                      />
-                    </div>
-                  </div>
-                  <button class="address__form-btn">
-                    اضافه کردن آدرس
-                    <svg class="address__form-btn-icon">
-                      <use href="#plus"></use>
-                    </svg>
-                  </button>
-                </form>
-                <div class="address__list">
-                  <h2 class="address__list-title">آدرس ها</h2>
-                  <div class="address__list__item">
-                    <div class="address__list__item-right">
-                      <h1 class="address__list__item-right__street">
-                        <span class="address__list__item-right__street-title">
-                          آدرس :
-                        </span>
-                        خیابان ایران - ایران - ایرانی
-                      </h1>
-                      <span class="address__list__item__right-state">
-                        <span class="address__list__item__right-state-title">
-                          استان :
-                        </span>
-                        اصفهان
-                      </span>
-                      <span class="address__list__item__right-city">
-                        <span class="address__list__item__right-city-title">
-                          شهر :
-                        </span>
-                        نطنز
-                      </span>
-                      <span class="address__list__item__right-zip-code">
-                        <span class="address__list__item__right-zip-code-title">
-                          کد پستی :
-                        </span>
-                        12765478
-                      </span>
-                      <span class="address__list__item__right-zip-pelak">
-                        <span
-                          class="address__list__item__right-zip-pelal-title"
-                        >
-                          پلاک
-                        </span>
-                        100
-                      </span>
-                    </div>
-
-                    <div class="address__list__item__left">
-                      <input
-                        type="radio"
-                        class="address__list__item__left-input"
-                      />
-                    </div>
+                  <div class="account-details__form__row1__col2">
+                    <label
+                      for=""
+                      class="account-details__form__row1__col2-label"
+                    >
+                      نام خانوادگی
+                    </label>
+                    <input
+                      type="text"
+                      class="account-details__form__row1__col2-family-name"
+                    />
                   </div>
                 </div>
-              </div>
+
+                <div class="account-details__form__row2">
+                  <div class="account-details__form__row2__col1">
+                    <label
+                      for=""
+                      class="account-details__form__row2__col1-label"
+                    >
+                      شناسه کاربری
+                    </label>
+                    <input
+                      type="text"
+                      class="account-details__form__row2__col1-username"
+                    />
+                  </div>
+
+                  <div class="account-details__form__row2__col2">
+                    <label
+                      for=""
+                      class="account-details__form__row2__col2-label"
+                    >
+                      گذرواژه
+                    </label>
+                    <input
+                      type="text"
+                      class="account-details__form__row2__col2-password"
+                    />
+                  </div>
+                </div>
+
+                <button class="account-details__form-btn">ذخیره تغیرات</button>
+              </form>
             </section>
           </div>
         </div>
