@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="en" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -109,6 +109,39 @@
           d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
         />
       </symbol>
+
+      <!-- ! Chevron Left -->
+      <symbol
+        id="chevron-left"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15.75 19.5 8.25 12l7.5-7.5"
+        />
+      </symbol>
+      <!-- ! Admin -->
+      <symbol
+        id="admin"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+        />
+      </symbol>
     </svg>
 
     <section class="dashboard">
@@ -120,10 +153,10 @@
             alt="admin"
             class="dashboard-menu__title-image"
           />
-          ادمین
+          پنل ادمین
         </h1>
         <ul class="dashboard-menu__list">
-          <li class="dashboard-menu__item">
+          <li class="dashboard-menu__item dashboard-menu__item--active">
             <a href="#" class="dashboard-menu__link">
               <svg class="dashboard-menu__icon">
                 <use href="#dashboard"></use>
@@ -179,7 +212,38 @@
       </aside>
 
       <!-- ! Main Section -->
-      <section class="dashboard-main"></section>
+      <section class="dashboard-main">
+        <div class="dashboard-main__wrapper">
+          <!-- * ========BreadCrubm Section======== -->
+          <section class="breadCrumb">
+            <div class="breadCrumb__wrapper">
+              <span class="breadCrumb_item">
+                <a href="#" class="breadCrumb_item-link">
+                  پنل ادمین
+                  <svg class="breadCrumb__icon-svg">
+                    <use href="#admin"></use>
+                  </svg>
+                </a>
+              </span>
+
+              <span class="breadCrumb__icon">
+                <svg class="breadCrumb__icon-svg">
+                  <use href="#chevron-left"></use>
+                </svg>
+              </span>
+
+              <span class="breadCrumb_item">
+                <a href="#" class="breadCrumb_item-link">
+                  داشبورد
+                  <svg class="breadCrumb__icon-svg">
+                    <use href="#dashboard"></use>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </section>
+        </div>
+      </section>
     </section>
   </body>
 </html>
