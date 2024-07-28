@@ -496,12 +496,12 @@
     text-align: center;
   }
   /*! Account Details (Main) */
-  .account-details__form div div input{
+  .account-details__form div div input {
     width: 16rem;
   }
 
   /*! Admin Login */
-.admin-form{
-  width: 20rem;
-}
+  .admin-form {
+    width: 20rem;
+  }
 }
