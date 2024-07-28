@@ -499,4 +499,9 @@
   .account-details__form div div input{
     width: 16rem;
   }
+
+  /*! Admin Login */
+.admin-form{
+  width: 20rem;
+}
 }
