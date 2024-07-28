@@ -2,7 +2,6 @@
 @import "./reset.css";
 @import "./fonts.css";
 
-
 /* * ====Color Variables==== */
 :root {
   --dodgerBlue: #4078ff;
@@ -25,9 +24,98 @@
 }
 body {
   font-family: "iranSans-light", Courier, monospace;
+  background-color: var(--whiteSmoke);
 }
 .container {
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
+}
+
+/* ! Form Section */
+
+.admin-form {
+  /* background-color: red; */
+  width: 30rem;
+  text-align: center;
+  margin-top: 10rem;
+  display: block;
+  margin: 8rem auto;
+  padding: 1rem;
+  border: 2px solid var(--blackPearl);
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.admin-form__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "lamia", Courier, monospace;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.admin-form__title-logo {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+.admin-form__row1,
+.admin-form__row2 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.admin-form__row1-label,
+.admin-form__row2-label {
+  font-size: 1.2rem;
+  font-family: "iranSans-bold", Courier, monospace;
+}
+
+.admin-form__row1-email,
+.admin-form__row2-password {
+  padding: 1rem;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
+  font-family: "iranSans-medium", Courier, monospace;
+  text-align: center;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.admin-form__btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "lamia", Courier, monospace;
+  font-size: 1.4rem;
+  padding: 1rem;
+  margin: 2rem auto;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  background-color: var(--blackPearl);
+  color: var(--white);
+  cursor: pointer;
+  transition: all 120ms ease-in;
+  border: 2px solid var(--blackPearl);
+}
+.admin-form__btn:hover {
+  background: none;
+  color: var(--blackPearl);
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.admin-form__btn:hover .admin-form__btn-icon {
+  color: var(--blackPearl);
+}
+
+.admin-form__btn-icon {
+  color: var(--white);
+  width: 2rem;
+  height: 2rem;
 }
