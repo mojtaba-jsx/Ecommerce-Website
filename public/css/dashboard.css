@@ -39,6 +39,7 @@ body {
   justify-content: space-between;
   gap: 2rem;
   width: 100%;
+  margin-bottom: 4rem;
 }
 
 .dashboard-menu {
@@ -242,4 +243,99 @@ body {
 
 .infos__top__orders__top__left-value{
   font-size: 1.2rem;
+}
+
+/* ! Infos Bottom Best Sell */
+.infos__bottom{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding: 1rem;
+  
+}
+.infos__bottom__best-sell{
+  background-color: var(--white);
+  padding: 1rem;
+  width: 20rem;
+  height: 25rem;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border-radius: 0.5rem;
+}
+
+.infos__bottom__best-sell-titles{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-bottom: 2px solid var(--whiteSmoke);
+  padding-bottom: 2rem;
+}
+
+.infos__bottom__best-sell-titles-1{
+  font-size: 1.2rem;
+  font-family: "iranSans-bold", Courier, monospace;
+  
+}
+
+.infos__bottom__best-sell-titles-2{
+  font-family: "iranSans-bold", Courier, monospace;
+  color: var(--grayCloud);
+}
+
+.infos__bottom__best-sell-price{
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+
+}
+
+.infos__bottom__best-sell-price-title{
+  font-size: 1.2rem;
+  font-family: "iranSans-medium", Courier, monospace;
+  position: relative;
+  color: var(--grayCloud);
+
+}
+.infos__bottom__best-sell-price-title::before{
+  position: absolute;
+  content: '';
+  width: 2rem;
+  height: 0.1rem;
+  left: -2.4rem;
+  top: 0.7rem;
+  background-color: var(--grayCloud);
+}
+
+.infos__bottom__best-sell-price-value{
+  font-size: 2rem;
+  font-family: "iranSans-bold", Courier, monospace;
+
+}
+
+.infos__bottom__best-sell-products{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.5rem;
+  border: 2px solid var(--grayCloud);
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.infos__bottom__best-sell-products-price{
+  font-family: "iranSans-bold", Courier, monospace;
+  position: relative;
+  font-size: 0.8rem;
+
+
+}
+.infos__bottom__best-sell-products-price::before{
+  position: absolute;
+  content: '';
+  width: 1rem;
+  height: 0.1rem;
+  background-color: var(--grayCloud);
+  right: -1.4rem;
+  top: 0.5rem;
 }
