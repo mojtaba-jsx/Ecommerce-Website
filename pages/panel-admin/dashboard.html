@@ -142,6 +142,22 @@
           d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
         />
       </symbol>
+      <!--! Logout -->
+      <symbol
+        id="logout"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15"
+        />
+      </symbol>
     </svg>
 
     <section class="dashboard">
@@ -155,6 +171,7 @@
           />
           پنل ادمین
         </h1>
+
         <ul class="dashboard-menu__list">
           <li class="dashboard-menu__item dashboard-menu__item--active">
             <a href="#" class="dashboard-menu__link">
@@ -206,6 +223,14 @@
                 <use href="#setting"></use>
               </svg>
               تنظیمات
+            </a>
+          </li>
+          <li class="dashboard-menu__item">
+            <a href="#" class="dashboard-menu__link">
+              <svg class="dashboard-menu__icon">
+                <use href="#logout"></use>
+              </svg>
+              خروج
             </a>
           </li>
         </ul>
@@ -375,7 +400,6 @@
                 </div>
                 <div class="infos__bottom__best-sell-chart">
                   <canvas id="myChart3"></canvas>
-
                 </div>
               </div>
 
@@ -413,7 +437,7 @@
                     <td>انجام شده</td>
                   </tr>
                   <tr>
-                    <td>پیراهن آّبی</td>
+                    <td>پیراهن آبی</td>
                     <td>20/2/1402</td>
                     <td>120000 تومان</td>
                     <td>انجام شده</td>

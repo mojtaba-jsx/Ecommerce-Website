@@ -111,11 +111,12 @@ body {
 /* * ==========Infos Section========= */
 .infos {
   margin-top: 2rem;
+  width: 100%;
 }
 .infos__top {
   display: flex;
   justify-content: space-around;
-  width: 70rem;
+  /* width: 70rem; */
 }
 
 .infos__top div:hover {
@@ -278,6 +279,7 @@ body {
   margin-top: 2rem;
   padding: 1rem;
   gap: 1rem;
+  /* width: 100%; */
 }
 .infos__bottom__best-sell {
   background-color: var(--white);
