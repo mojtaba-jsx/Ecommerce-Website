@@ -126,7 +126,7 @@ body {
 .infos__top__customer,
 .infos__top__orders {
   width: 20rem;
-  height: 10rem;
+  height: 20rem;
   padding: 1rem;
   border-radius: 0.5rem;
   background-color: var(--white);
@@ -244,6 +244,33 @@ body {
   font-size: 1.2rem;
 }
 
+.progress {
+  position: relative;
+  width: 20rem;
+  height: 2rem;
+  background-color: #f0f1ff;
+  border-radius: 1rem;
+}
+
+.progress-line {
+  position: absolute;
+  left: 0;
+  width: 18rem;
+  height: 2rem;
+  background-color: blue;
+  border-radius: 1rem;
+  color: var(--white);
+  text-align: center;
+  line-height: 2rem;
+  font-family: "iranSans-bold", Courier, monospace;
+}
+
+.infos__top__orders__bottom-title {
+  font-family: "iranSans-bold", Courier, monospace;
+  margin: 0.5rem;
+  display: block;
+}
+
 /* ! Infos Bottom Best Sell */
 .infos__bottom {
   display: flex;
@@ -256,7 +283,7 @@ body {
   background-color: var(--white);
   padding: 1rem;
   width: 20rem;
-  height: 25rem;
+  height: 40rem;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   border-radius: 0.5rem;
 }
@@ -387,4 +414,10 @@ body {
   text-align: center;
   font-family: "iranSans-bold", Courier, monospace;
   background-color: var(--blackPearl);
+}
+
+/* ! Charts */
+#myChart {
+  width: 100%;
+  height: 100%;
 }

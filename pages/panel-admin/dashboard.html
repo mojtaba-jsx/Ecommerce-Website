@@ -262,7 +262,9 @@
                 </div>
 
                 <div class="infos__top__sale__bottom">
-                  <h1>chart</h1>
+                  <div>
+                    <canvas id="myChart1"></canvas>
+                  </div>
                 </div>
               </div>
 
@@ -286,7 +288,7 @@
                 </div>
 
                 <div class="infos__top__customer__bottom">
-                  <h1>chart</h1>
+                  <canvas id="myChart2"></canvas>
                 </div>
               </div>
 
@@ -304,13 +306,18 @@
 
                   <div class="infos__top__orders__top__left">
                     <span class="infos__top__orders__top__left-value">
-                      700
+                      880
                     </span>
                   </div>
                 </div>
 
                 <div class="infos__top__orders__bottom">
-                  <h1>chart</h1>
+                  <span class="infos__top__orders__bottom-title">
+                    120 عدد مانده
+                  </span>
+                  <div class="progress">
+                    <div class="progress-line">880 سفارش</div>
+                  </div>
                 </div>
               </div>
             </section>
@@ -367,7 +374,8 @@
                   </span>
                 </div>
                 <div class="infos__bottom__best-sell-chart">
-                  <h1>chart</h1>
+                  <canvas id="myChart3"></canvas>
+
                 </div>
               </div>
 
@@ -417,5 +425,8 @@
         </div>
       </section>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../../public/js/dashboard.js"></script>
   </body>
 </html>
