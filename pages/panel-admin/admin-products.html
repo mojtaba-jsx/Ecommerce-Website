@@ -3,9 +3,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- *==== CSS Links ====-->
-    <link rel="stylesheet" href="../../public/css/dashboard.css" />
+    <link rel="stylesheet" href="../../public/css/admin-products.css" />
     <link rel="stylesheet" href="../../public/css/responsive.css" />
-    <title>داشبورد</title>
+    <title>محصولات</title>
   </head>
   <body>
     <svg class="icons">
@@ -127,6 +127,24 @@
           d="M15.75 19.5 8.25 12l7.5-7.5"
         />
       </symbol>
+
+      <!-- ! Chevron Right -->
+      <symbol
+        id="chevron-right"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m8.25 4.5 7.5 7.5-7.5 7.5"
+        />
+      </symbol>
+
       <!-- ! Admin -->
       <symbol
         id="admin"
@@ -157,6 +175,38 @@
           stroke-linecap="round"
           stroke-linejoin="round"
           d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15"
+        />
+      </symbol>
+      <!-- ! Plus -->
+      <symbol
+        id="plus"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 4.5v15m7.5-7.5h-15"
+        />
+      </symbol>
+      <!-- ! Close -->
+      <symbol
+        id="close"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18 18 6M6 6l12 12"
         />
       </symbol>
     </svg>
@@ -269,189 +319,88 @@
             </div>
           </section>
           <!-- * ========Infos Section======== -->
-          <section class="infos">
-            <!-- ! Top Section -->
-            <section class="infos__top">
-              <!--!  Sales -->
-              <div class="infos__top__sale">
-                <div class="infos__top__sale__top">
-                  <div class="infos__top__sale__right">
-                    <span class="infos__top__sale__right-title"> فروش کل </span>
-                    <span class="infos__top__sale__right-text"> این ماه </span>
-                  </div>
+          <section class="admin-products">
+            <div class="admin-products__top">
+              <h1 class="admin-products__top-title">محصولات</h1>
+              <button class="admin-products__top-btn">
+                اضافه کردن محصول
+                <svg class="admin-products__top-btn-svg">
+                  <use href="#plus"></use>
+                </svg>
+              </button>
+            </div>
 
-                  <div class="infos__top__sale__left">
-                    <span class="infos__top__sale__left-value">
-                      1000000 تومان
-                    </span>
-                  </div>
-                </div>
+            <table class="admin-products__table">
+              <tr>
+                <th>تصویر</th>
+                <th>نام</th>
+                <th>قیمت</th>
+                <th>موجودی</th>
+                <th>دسته بندی</th>
+                <th>وضعیت</th>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    src="../../public/images/products/shirt.png"
+                    alt="image"
+                    class="admin-products__table-image"
+                  />
+                </td>
+                <td>تی شرت مشکی نخ پنبه</td>
+                <td>12000 تومان</td>
+                <td>موجود</td>
+                <td>لباس مردانه</td>
+                <td>
+                  <svg class="admin-products__table-icon">
+                    <use href="#close"></use>
+                  </svg>
+                </td>
+              </tr>
+            </table>
 
-                <div class="infos__top__sale__bottom">
-                  <div>
-                    <canvas id="myChart1"></canvas>
-                  </div>
-                </div>
-              </div>
-
-              <!--!  Customer -->
-              <div class="infos__top__customer">
-                <div class="infos__top__customer__top">
-                  <div class="infos__top__customer__right">
-                    <span class="infos__top__customer__right-title">
-                      مشتریان
-                    </span>
-                    <span class="infos__top__customer__right-text">
-                      این ماه
-                    </span>
-                  </div>
-
-                  <div class="infos__top__customer__left">
-                    <span class="infos__top__customer__left-value">
-                      1000 نفر
-                    </span>
-                  </div>
-                </div>
-
-                <div class="infos__top__customer__bottom">
-                  <canvas id="myChart2"></canvas>
-                </div>
-              </div>
-
-              <!--!  Orders -->
-              <div class="infos__top__orders">
-                <div class="infos__top__orders__top">
-                  <div class="infos__top__orders__top__right">
-                    <span class="infos__top__orders__top__right-title">
-                      سفارشات
-                    </span>
-                    <span class="infos__top__orders__top__right-text">
-                      هدف ماهانه : 1000
-                    </span>
-                  </div>
-
-                  <div class="infos__top__orders__top__left">
-                    <span class="infos__top__orders__top__left-value">
-                      880
-                    </span>
-                  </div>
-                </div>
-
-                <div class="infos__top__orders__bottom">
-                  <span class="infos__top__orders__bottom-title">
-                    120 عدد مانده
-                  </span>
-                  <div class="progress">
-                    <div class="progress-line">880 سفارش</div>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <!-- ! Bottom Section -->
-            <section class="infos__bottom">
-              <!-- ! Best Selling -->
-              <div class="infos__bottom__best-sell">
-                <!-- ! ==== -->
-                <div class="infos__bottom__best-sell-titles">
-                  <span class="infos__bottom__best-sell-titles-1">
-                    پر فروش ترین
-                  </span>
-
-                  <span class="infos__bottom__best-sell-titles-2">
-                    این ماه
-                  </span>
-                </div>
-                <!-- ! ==== -->
-                <div class="infos__bottom__best-sell-price">
-                  <span class="infos__bottom__best-sell-price-title">
-                    فروش کل
-                  </span>
-
-                  <span class="infos__bottom__best-sell-price-value">
-                    100000 تومان
-                  </span>
-                </div>
-                <!-- ! ==== -->
-                <div class="infos__bottom__best-sell-products">
-                  <span class="infos__bottom__best-sell-products-name">
-                    تی شرت مشکی نخ پنبه
-                  </span>
-                  <span class="infos__bottom__best-sell-products-price">
-                    100 هزار تومان فروش
-                  </span>
-                </div>
-
-                <div class="infos__bottom__best-sell-products">
-                  <span class="infos__bottom__best-sell-products-name">
-                    تی شرت سفید نخ پنبه
-                  </span>
-                  <span class="infos__bottom__best-sell-products-price">
-                    200 هزار تومان فروش
-                  </span>
-                </div>
-
-                <div class="infos__bottom__best-sell-products">
-                  <span class="infos__bottom__best-sell-products-name">
-                    شلوار لی آبی رنگ
-                  </span>
-                  <span class="infos__bottom__best-sell-products-price">
-                    150 هزار تومان فروش
-                  </span>
-                </div>
-                <div class="infos__bottom__best-sell-chart">
-                  <canvas id="myChart3"></canvas>
-                </div>
-              </div>
-
-              <!-- ! Recent Orders -->
-              <div class="infos__bottom__recent-order">
-                <h1 class="infos__bottom__recent-order-title">
-                  سفارشات اخیر
-                  <a href="#" class="infos__bottom__recent-order-title-link">
-                    مشاهده همه
+            <div class="admin-products__pagination">
+              <ul class="admin-products__pagination__list">
+                <li class="admin-products__pagination__item">
+                  <a href="#" class="admin-products__pagination__link">
+                    <svg class="admin-products__pagination__link-icon">
+                      <use href="#chevron-left"></use>
+                    </svg>
                   </a>
-                </h1>
-                <table class="infos__bottom__recent-order-table">
-                  <tr>
-                    <th>آیتم</th>
-                    <th>تاریخ</th>
-                    <th>جمع کل</th>
-                    <th>وضعیت</th>
-                  </tr>
-                  <tr>
-                    <td>تیشرت مشکی نخ پنبه</td>
-                    <td>20/2/1402</td>
-                    <td>120000 تومان</td>
-                    <td>در حال پردازش</td>
-                  </tr>
-                  <tr>
-                    <td>تیشرت سفید نخ پنبه</td>
-                    <td>20/2/1402</td>
-                    <td>120000 تومان</td>
-                    <td>در حال پردازش</td>
-                  </tr>
-                  <tr>
-                    <td>شلوار لی آبی</td>
-                    <td>20/2/1402</td>
-                    <td>120000 تومان</td>
-                    <td>انجام شده</td>
-                  </tr>
-                  <tr>
-                    <td>پیراهن آبی</td>
-                    <td>20/2/1402</td>
-                    <td>120000 تومان</td>
-                    <td>انجام شده</td>
-                  </tr>
-                </table>
-              </div>
-            </section>
+                </li>
+                
+                <li class="admin-products__pagination__item">
+                  <a href="#" class="admin-products__pagination__link"> 1 </a>
+                </li>
+
+                <li class="admin-products__pagination__item">
+                  <a href="#" class="admin-products__pagination__link"> 2 </a>
+                </li>
+
+                <li class="admin-products__pagination__item">
+                  <a href="#" class="admin-products__pagination__link"> 3 </a>
+                </li>
+
+                <li class="admin-products__pagination__item">
+                  <a href="#" class="admin-products__pagination__link"> 4 </a>
+                </li>
+                
+                <li class="admin-products__pagination__item">
+                  <a href="#" class="admin-products__pagination__link"> 5 </a>
+                </li>
+                
+                <li class="admin-products__pagination__item">
+                  <a href="#" class="admin-products__pagination__link">
+                    <svg class="admin-products__pagination__link-icon">
+                      <use href="#chevron-right"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </section>
         </div>
       </section>
     </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="../../public/js/dashboard.js"></script>
   </body>
 </html>
