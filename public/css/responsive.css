@@ -46,7 +46,7 @@
     margin: 2rem auto;
     text-align: center;
   }
-  .dashboard-menu__link{
+  .dashboard-menu__link {
     justify-content: center;
   }
   .dashboard-menu__item {
@@ -69,18 +69,18 @@
   .infos__top__orders {
     margin: 1rem auto;
   }
-  .infos__bottom{
+  .infos__bottom {
     flex-direction: column;
   }
-  .infos__bottom__best-sell{
+  .infos__bottom__best-sell {
     width: 80%;
     margin: 1rem auto;
   }
-  .infos__bottom__best-sell-chart{
+  .infos__bottom__best-sell-chart {
     width: 20rem;
     margin: 1rem auto;
   }
-  .infos__bottom__recent-order{
+  .infos__bottom__recent-order {
     width: 80%;
     margin: 2rem auto;
   }
@@ -551,5 +551,12 @@
   /*! Admin Login */
   .admin-form {
     width: 20rem;
+  }
+  /* ! Admin products  */
+  .admin-products__table td{
+    line-height: 1.4rem;
+  }
+  .admin-products {
+    overflow-x: scroll;
   }
 }
