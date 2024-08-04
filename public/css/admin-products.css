@@ -114,6 +114,7 @@ body {
   width: 88%;
   margin: 0 auto;
   margin-top: 1.4rem;
+  display: none;
 }
 .admin-products__top {
   display: flex;
@@ -148,25 +149,22 @@ body {
   width: 100%;
 }
 /* ! Admin Products Table */
-.admin-products__table{
-    margin-top: 2rem;
+.admin-products__table {
+  margin-top: 2rem;
 }
 .admin-products__table td,
 .admin-products__table th {
   border: 1px solid #ddd;
-
 }
 
 .admin-products__table td {
-    height: 2rem;
-    text-align: center;
-    padding-bottom: 1.4rem;
-    font-size: 1.2rem;
-    font-family: "iranSans-medium", Courier, monospace;
-    transition: all 120ms ease-in;
-
+  height: 2rem;
+  text-align: center;
+  padding-bottom: 1.4rem;
+  font-size: 1.2rem;
+  font-family: "iranSans-medium", Courier, monospace;
+  transition: all 120ms ease-in;
 }
-
 
 .admin-products__table tr:nth-child(even) {
   background-color: #f2f2f2;
@@ -177,64 +175,222 @@ body {
 }
 
 .admin-products__table th {
-    padding: 1rem;
+  padding: 1rem;
   text-align: left;
   background-color: var(--blackPearl);
   color: var(--white);
   text-align: center;
   font-family: "iranSans-bold", Courier, monospace;
-
 }
 
-.admin-products__table-image{
-    display: block;
-    width: 3rem;
-    height: 4rem;
-    margin: 0 auto;
+.admin-products__table-image {
+  display: block;
+  width: 3rem;
+  height: 4rem;
+  margin: 0 auto;
 }
 
-.admin-products__table-icon{
-    width: 2rem;
-    height: 2rem;
-    color: var(--chiliPepper);
-    cursor: pointer;
+.admin-products__table-icon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--chiliPepper);
+  cursor: pointer;
 }
 
 /* ! Pagination */
 
-.admin-products__pagination{
-    margin-top: 2rem;
-    direction: ltr;
+.admin-products__pagination {
+  margin-top: 2rem;
+  direction: ltr;
 }
-.admin-products__pagination__list{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: var(--softPeach);
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-}
-
-.admin-products__pagination__link-icon{
-    width: 2rem;
-    height: 2rem;
+.admin-products__pagination__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--softPeach);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
 }
 
-.admin-products__pagination__item{
+.admin-products__pagination__link-icon {
+  width: 2rem;
+  height: 2rem;
+}
 
-    padding: 1rem;
-    border-radius: 0.5rem;
+.admin-products__pagination__item {
+  padding: 1rem;
+  border-radius: 0.5rem;
   font-family: "iranSans-bold", Courier, monospace;
-
 }
 
-.admin-products__pagination__item--active{
-    background-color: var(--grayCloud);
+.admin-products__pagination__item--active {
+  background-color: var(--grayCloud);
 }
 
-.admin-products__pagination__item:last-child{
-    padding: 0.2rem;
+.admin-products__pagination__item:last-child {
+  padding: 0.2rem;
 }
-.admin-products__pagination__item:first-child{
-    padding: 0.2rem;
+.admin-products__pagination__item:first-child {
+  padding: 0.2rem;
+}
+
+/* * ==========Admin Add Products Section========= */
+
+.admin-add-products {
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+.admin-add-products__title {
+  font-size: 1.2rem;
+  font-family: "iranSans-bold", Courier, monospace;
+}
+.admin-add-products__form {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin-top: 2rem;
+}
+
+.admin-add-products__form__row1,
+.admin-add-products__form__row2,
+.admin-add-products__form__row3,
+.admin-add-products__form__row4 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 2rem;
+  /* border-bottom: 1px solid var(--blackPearl); */
+  padding-bottom: 1rem;
+}
+
+.admin-add-products__form__row1-title,
+.admin-add-products__form__row1-price,
+.admin-add-products__form__row2-quantity,
+.admin-add-products__form__row2-stock,
+.admin-add-products__form__row3-image {
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+}
+
+label {
+  font-size: 1.1rem;
+  font-family: "iranSans-medium", Courier, monospace;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  padding: 0.8rem;
+  width: 20rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  background-color: var(--white);
+  text-align: center;
+  font-family: "iranSans-medium", Courier, monospace;
+}
+
+.admin-add-products__form__row2-stock-select {
+  padding: 0.8rem;
+  width: 20rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  font-family: "iranSans-medium", Courier, monospace;
+}
+.admin-add-products__form__row3-images-box {
+  display: flex;
+  gap: 1rem;
+}
+
+.admin-add-products__form__row3-images-box-img {
+  width: 3rem;
+  height: 4rem;
+}
+
+.admin-add-products__form__row4-colors {
+  display: flex;
+  gap: 1rem;
+}
+
+.admin-add-products__form__row4-colors div {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all 120ms ease-in;
+  opacity: 0.5;
+}
+.admin-add-products__form__row4-colors div:hover {
+  opacity: 1;
+}
+
+.admin-add-products__form__row4-colors-blue {
+  background-color: var(--dodgerBlue);
+}
+
+.admin-add-products__form__row4-colors-yellow {
+  background-color: var(--yellowOrange);
+}
+
+.admin-add-products__form__row4-colors-green {
+  background-color: var(--laSalleGreen);
+}
+
+.admin-add-products__form__row4-colors-skyblue {
+  background-color: var(--lightRoyalBlue);
+}
+
+.admin-add-products__form__row4-sizes {
+  display: flex;
+  gap: 1rem;
+}
+
+.admin-add-products__form__row4-sizes div {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.2rem;
+  border: 2px solid var(--blackPearl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  font-family: "iranSans-bold", Courier, monospace;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 120ms ease-in;
+}
+.admin-add-products__form__row4-sizes div:hover {
+  opacity: 1;
+}
+
+.admin-add-products__form__row5 {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-add-products__form__row5-textarea {
+  height: 20rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-family: "iranSans-medium", Courier, monospace;
+  resize: none;
+}
+
+.admin-add-products__form-btn{
+  padding: 1rem;
+  width: 14rem;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  background-color: var(--blackPearl);
+  color: var(--white);
+  font-family: "iranSans-bold", Courier, monospace;
+  cursor: pointer;
+
 }
