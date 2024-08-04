@@ -224,7 +224,7 @@
         </h1>
 
         <ul class="dashboard-menu__list">
-          <li class="dashboard-menu__item ">
+          <li class="dashboard-menu__item">
             <a href="#" class="dashboard-menu__link">
               <svg class="dashboard-menu__icon">
                 <use href="#dashboard"></use>
@@ -318,7 +318,7 @@
               </span>
             </div>
           </section>
-          <!-- * ========Infos Section======== -->
+          <!-- * ========Admin Products Section======== -->
           <section class="admin-products">
             <div class="admin-products__top">
               <h1 class="admin-products__top-title">محصولات</h1>
@@ -417,6 +417,7 @@
               </tr>
             </table>
 
+            <!-- ! Admin Products Pagination-->
             <div class="admin-products__pagination">
               <ul class="admin-products__pagination__list">
                 <li class="admin-products__pagination__item">
@@ -458,6 +459,103 @@
                 </li>
               </ul>
             </div>
+          </section>
+
+          <!-- * ========Add Products Section======== -->
+          <section class="admin-add-products">
+            <h1 class="admin-add-products__title">اضافه کردن محصول</h1>
+            <form action="#" class="admin-add-products__form">
+              <!-- ! Row1 -->
+              <div class="admin-add-products__form__row1">
+                <div class="admin-add-products__form__row1-title">
+                  <label for="">نام محصول</label>
+                  <input
+                    type="text"
+                    class="admin-add-products__form__row1-title-input"
+                  />
+                </div>
+
+                <div class="admin-add-products__form__row1-price">
+                  <label for="">قیمت محصول</label>
+                  <input
+                    type="text"
+                    class="admin-add-products__form__row1-price-input"
+                  />
+                </div>
+              </div>
+
+              <!-- ! Row2 -->
+              <div class="admin-add-products__form__row2">
+                <div class="admin-add-products__form__row2-quantity">
+                  <label for="">تعداد محصول</label>
+                  <input
+                    type="text"
+                    class="admin-add-products__form__row2-quantity-input"
+                  />
+                </div>
+
+                <div class="admin-add-products__form__row2-stock">
+                  <label for=""> وضهیت موجودی </label>
+                  <select class="admin-add-products__form__row2-stock-select">
+                    <option value="true">موجود</option>
+                    <option value="false">ناموجود</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- ! Row3 -->
+              <div class="admin-add-products__form__row3">
+                <div class="admin-add-products__form__row3-image">
+                  <label for="">تصاویر محصول</label>
+                  <input
+                    type="text"
+                    class="admin-add-products__form__row3-image-input"
+                    placeholder="لفا لینک آنلاین عکس را وارد کنید (پروژه آپلودر ندارد !)"
+                  />
+                </div>
+                <div class="admin-add-products__form__row3-images-box">
+                  <img
+                    src="../../public/images/products/shirt.png"
+                    alt="product"
+                    class="admin-add-products__form__row3-images-box-img"
+                  />
+                  <img
+                    src="../../public/images/products/shirt.png"
+                    alt="product"
+                    class="admin-add-products__form__row3-images-box-img"
+                  />
+                  <img
+                    src="../../public/images/products/shirt.png"
+                    alt="product"
+                    class="admin-add-products__form__row3-images-box-img"
+                  />
+                </div>
+              </div>
+              <!-- ! Row4 -->
+              <div class="admin-add-products__form__row4">
+                <div class="admin-add-products__form__row4-colors">
+                  <div class="admin-add-products__form__row4-colors-blue"></div>
+                  <div class="admin-add-products__form__row4-colors-yellow"></div>
+                  <div class="admin-add-products__form__row4-colors-green"></div>
+                  <div class="admin-add-products__form__row4-colors-skyblue"></div>
+                </div>
+
+                <div class="admin-add-products__form__row4-sizes">
+                  <div class="admin-add-products__form__row4-sizes-s">S</div>
+                  <div class="admin-add-products__form__row4-sizes-m">M</div>
+                  <div class="admin-add-products__form__row4-sizes-xl">XL</div>
+                  <div class="admin-add-products__form__row4-sizes-xxl">XXL</div>
+                </div>
+              </div>
+              <!-- ! Row5 -->
+             <div class="admin-add-products__form__row5">
+              <label for="">توضیحات محصول</label>
+              <textarea class="admin-add-products__form__row5-textarea"></textarea>
+             </div>
+             <button class="admin-add-products__form">
+              ذخیره محصول
+             </button>
+            </form>
           </section>
         </div>
       </section>
