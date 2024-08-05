@@ -395,6 +395,10 @@
     flex-direction: column;
     gap: 1rem;
   }
+  /* ! Admin Orders */
+  .admin-orders__table td {
+    line-height: 1.8rem;
+  }
 }
 
 /* *  ------------------------576px------------------------ */
@@ -574,7 +578,14 @@
   .admin-add-products__form input {
     width: 14rem;
   }
-  .admin-add-products__form__row2-stock-select{
+  .admin-add-products__form__row2-stock-select {
     width: 14rem;
+  }
+    /* ! Admin Orders */
+  .admin-orders{
+    overflow-x: scroll;
+  }
+  .admin-orders__pagination__list{
+    flex-wrap: wrap;
   }
 }
