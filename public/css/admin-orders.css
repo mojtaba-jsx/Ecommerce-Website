@@ -1,0 +1,33 @@
+/* * ==== CSS Module Import==== */
+@import "./reset.css";
+@import "./fonts.css";
+@import "./breadcrumb.css";
+
+/* * ====Color Variables==== */
+:root {
+  --dodgerBlue: #4078ff;
+  --blackPearl: #0e1422;
+  --dark: #202533;
+  --greenWhite: #e9e9eb;
+  --laSalleGreen: #057234;
+  --chiliPepper: #be1313;
+  --yellowOrange: #f3b40a;
+  --white: #ffffff;
+  --whiteSmoke: #f6f6f6;
+  --grayCloud: #b6b7bc;
+  --lightRoyalBlue: #4a3aff;
+  --porcelain: #eff0f6;
+  --mercury: #e6e7e8;
+  --softPeach: #eeeeee;
+}
+.icons {
+  display: none;
+}
+body {
+  font-family: "iranSans-light", Courier, monospace;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
