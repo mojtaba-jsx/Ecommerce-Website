@@ -1,0 +1,109 @@
+/* * ==== CSS Module Import==== */
+@import "./reset.css";
+@import "./fonts.css";
+@import "./breadcrumb.css";
+
+/* * ====Color Variables==== */
+:root {
+  --dodgerBlue: #4078ff;
+  --blackPearl: #0e1422;
+  --dark: #202533;
+  --greenWhite: #e9e9eb;
+  --laSalleGreen: #057234;
+  --chiliPepper: #be1313;
+  --yellowOrange: #f3b40a;
+  --white: #ffffff;
+  --whiteSmoke: #f6f6f6;
+  --grayCloud: #b6b7bc;
+  --lightRoyalBlue: #4a3aff;
+  --porcelain: #eff0f6;
+  --mercury: #e6e7e8;
+  --softPeach: #eeeeee;
+}
+.icons {
+  display: none;
+}
+body {
+  font-family: "iranSans-light", Courier, monospace;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* ! DahsBoard Section */
+
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.dashboard-menu {
+  width: 20%;
+  background-color: var(--white);
+  position: sticky;
+  height: 100%;
+  padding: 1rem;
+}
+
+.dashboard-main {
+  width: 80%;
+  /* background-color: blue; */
+  background-color: var(--whiteSmoke);
+}
+
+.dashboard-menu {
+  display: flex;
+  flex-direction: column;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+}
+
+.dashboard-menu__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-family: "lamia", Courier, monospace;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.dashboard-menu__list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.dashboard-menu__item {
+  margin-bottom: 1.8rem;
+  padding-right: 1rem;
+  padding: 1rem;
+  top: 0;
+  border-radius: 0.5rem;
+  transition: all 120ms ease-in;
+}
+.dashboard-menu__item.dashboard-menu__item--active {
+  background-color: var(--whiteSmoke);
+  color: var(--blackPearl);
+  font-weight: bold;
+}
+.dashboard-menu__item:hover {
+  background-color: var(--softPeach);
+  transform: scale(1.02);
+}
+
+.dashboard-menu__link {
+  color: var(--blackPearl);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dashboard-menu__icon {
+  width: 2rem;
+  height: 2rem;
+}

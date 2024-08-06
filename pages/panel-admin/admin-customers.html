@@ -3,9 +3,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- *==== CSS Links ====-->
-    <link rel="stylesheet" href="../../public/css/admin-orders.css" />
+    <link rel="stylesheet" href="../../public/css/admin-customers.css" />
     <link rel="stylesheet" href="../../public/css/responsive.css" />
-    <title>سفارشات</title>
+    <title>مشتریان</title>
   </head>
   <body>
     <svg class="icons">
@@ -326,33 +326,31 @@
 
               <span class="breadCrumb_item">
                 <a href="#" class="breadCrumb_item-link">
-                  سفارشات
+                  مشتریان
                   <svg class="breadCrumb__icon-svg">
-                    <use href="#products"></use>
+                    <use href="#customers"></use>
                   </svg>
                 </a>
               </span>
             </div>
           </section>
-          <!-- * ========Admin Orders Section======== -->
-          <section class="admin-orders">
-            <h1 class="admin-orders__title">سفارشات</h1>
+          <!-- * ========Admin Customers Section======== -->
+          <section class="admin-customers">
+            <h1 class="admin-customers__title">سفارشات</h1>
 
             <!-- ! Admin Products Table -->
-            <table class="admin-orders__table">
+            <table class="admin-customers__table">
               <tr>
-                <th>عکس</th>
-                <th>سفارش</th>
-                <th>تاریخ</th>
-                <th>جمع کل</th>
-                <th>وضعیت</th>
-                <th>اقدام</th>
+                <th>تصویر</th>
+                <th>نام و نام خانوادگی</th>
+                <th>ایمیل</th>
+                <th>آدرس</th>
               </tr>
 
               <tr>
-                <td class="admin-orders__table-row-image">
+                <td class="admin-customers__table-row-image">
                   <img
-                    src="../../public/images/products/shirt.png"
+                    src="../../public/images/index/customer.jpg"
                     alt="image"
                     class="admin-products__table-image"
                   />
@@ -360,106 +358,45 @@
                 <td>تی شرت مشکی نخ پنبه</td>
                 <td>22/10/1401</td>
                 <td>120000 تومان</td>
-                <td>در حال پردازش</td>
-                <td>
-                  <svg class="admin-orders__table-icon">
-                    <use href="#ellipsis"></use>
-                  </svg>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="admin-orders__table-row-image">
-                  <img
-                    src="../../public/images/products/shirt.png"
-                    alt="image"
-                    class="admin-products__table-image"
-                  />
-                </td>
-                <td>تی شرت مشکی نخ پنبه</td>
-                <td>22/10/1401</td>
-                <td>120000 تومان</td>
-                <td>در حال پردازش</td>
-                <td>
-                  <svg class="admin-orders__table-icon">
-                    <use href="#ellipsis"></use>
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <td class="admin-orders__table-row-image">
-                  <img
-                    src="../../public/images/products/shirt.png"
-                    alt="image"
-                    class="admin-products__table-image"
-                  />
-                </td>
-                <td>تی شرت مشکی نخ پنبه</td>
-                <td>22/10/1401</td>
-                <td>120000 تومان</td>
-                <td>در حال پردازش</td>
-                <td>
-                  <svg class="admin-orders__table-icon">
-                    <use href="#ellipsis"></use>
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <td class="admin-orders__table-row-image">
-                  <img
-                    src="../../public/images/products/shirt.png"
-                    alt="image"
-                    class="admin-products__table-image"
-                  />
-                </td>
-                <td>تی شرت مشکی نخ پنبه</td>
-                <td>22/10/1401</td>
-                <td>120000 تومان</td>
-                <td>در حال پردازش</td>
-                <td>
-                  <svg class="admin-orders__table-icon">
-                    <use href="#ellipsis"></use>
-                  </svg>
-                </td>
               </tr>
             </table>
 
-            <!-- ! Admin Orders Pagination-->
-            <div class="admin-orders__pagination">
-              <ul class="admin-orders__pagination__list">
-                <li class="admin-orders__pagination__item">
-                  <a href="#" class="admin-orders__pagination__link">
-                    <svg class="admin-orders__pagination__link-icon">
+            <!-- ! Admin customers Pagination-->
+            <div class="admin-customers__pagination">
+              <ul class="admin-customers__pagination__list">
+                <li class="admin-customers__pagination__item">
+                  <a href="#" class="admin-customers__pagination__link">
+                    <svg class="admin-customers__pagination__link-icon">
                       <use href="#chevron-left"></use>
                     </svg>
                   </a>
                 </li>
 
                 <li
-                  class="admin-orders__pagination__item admin-orders__pagination__item--active"
+                  class="admin-customers__pagination__item admin-customers__pagination__item--active"
                 >
-                  <a href="#" class="admin-orders__pagination__link"> 1 </a>
+                  <a href="#" class="admin-customers__pagination__link"> 1 </a>
                 </li>
 
-                <li class="admin-orders__pagination__item">
-                  <a href="#" class="admin-orders__pagination__link"> 2 </a>
+                <li class="admin-customers__pagination__item">
+                  <a href="#" class="admin-customers__pagination__link"> 2 </a>
                 </li>
 
-                <li class="admin-orders__pagination__item">
-                  <a href="#" class="admin-orders__pagination__link"> 3 </a>
+                <li class="admin-customers__pagination__item">
+                  <a href="#" class="admin-customers__pagination__link"> 3 </a>
                 </li>
 
-                <li class="admin-orders__pagination__item">
-                  <a href="#" class="admin-orders__pagination__link"> 4 </a>
+                <li class="admin-customers__pagination__item">
+                  <a href="#" class="admin-customers__pagination__link"> 4 </a>
                 </li>
 
-                <li class="admin-orders__pagination__item">
-                  <a href="#" class="admin-orders__pagination__link"> 5 </a>
+                <li class="admin-customers__pagination__item">
+                  <a href="#" class="admin-customers__pagination__link"> 5 </a>
                 </li>
 
-                <li class="admin-orders__pagination__item">
-                  <a href="#" class="admin-orders__pagination__link">
-                    <svg class="admin-orders__pagination__link-icon">
+                <li class="admin-customers__pagination__item">
+                  <a href="#" class="admin-customers__pagination__link">
+                    <svg class="admin-customers__pagination__link-icon">
                       <use href="#chevron-right"></use>
                     </svg>
                   </a>
