@@ -11,9 +11,15 @@
   --whiteSmoke: #f6f6f6;
   --grayCloud: #b6b7bc;
   --lightRoyalBlue: #4a3aff;
+  --ultraMarineBlue:#5468ff;
   --porcelain: #eff0f6;
   --mercury: #e6e7e8;
   --softPeach: #eeeeee;
+  /* !Gradient */
+  --gradient-size: 100% 100%;
+  --gradient-position: 100% 0;
+  --gradient-color-start: #5adaff;
+  --gradient-color-end: #5468ff;
 }
 
 .mobile-menu {
@@ -28,6 +34,11 @@
   bottom: 1rem;
   z-index: 1000;
   height: 4rem;
+  background: radial-gradient(
+    var(--gradient-size) at var(--gradient-position),
+    var(--gradient-color-start) 0%,
+    var(--gradient-color-end) 100%
+);
 
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
     rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
