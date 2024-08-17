@@ -11,14 +11,21 @@
   --whiteSmoke: #f6f6f6;
   --grayCloud: #b6b7bc;
   --lightRoyalBlue: #4a3aff;
+  --ultraMarineBlue:#5468ff;
   --porcelain: #eff0f6;
   --mercury: #e6e7e8;
   --softPeach: #eeeeee;
+  --linkWater:#d8e4f4;
+  /* !Gradient */
+  --gradient-size: 100% 100%;
+  --gradient-position: 100% 0;
+  --gradient-color-start: #5adaff;
+  --gradient-color-end: #5468ff;
 }
 /* ! //////// Join Section //////// */
 .join {
   margin-bottom: 10rem;
-  background-color: var(--whiteSmoke);
+  background-color: var(--linkWater);
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
@@ -42,6 +49,7 @@
   height: 4rem;
   display: flex;
   align-items: center;
+  gap: 1rem;
 }
 .join__left__box-input {
   height: 100%;
@@ -56,4 +64,9 @@
   height: 100%;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #5adaff 0,
+    #5468ff 100%
+  );
 }
