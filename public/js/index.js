@@ -43,5 +43,6 @@ function openCity(evt, cityName) {
 // ! Aos Library Init
 AOS.init();
 
-
-
+fetch("http://localhost:3000/products")
+  .then((res) => res.json())
+  .then((data) => console.log(data));

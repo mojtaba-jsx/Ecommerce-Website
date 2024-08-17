@@ -1,11 +1,142 @@
 {
-  "posts": [
-    { "id": "1", "title": "a title", "views": 100 },
+  "products": [
     {
-      "id": "2",
-      "title": "another title",
-      "views": 200,
-      "image": "./public/images/index/customer.jpg"
+      "type": "hat",
+      "items": [
+        {
+          "id": "1",
+          "name": "کلاه نقاب دار کارتونی",
+          "quantity": 10,
+          "colors": ["red", "green", "black"],
+          "images": [
+            "./public/images/products/hat/hat1-1.jpg",
+            "./public/images/products/hat/hat1-2.jpg",
+            "./public/images/products/hat/hat1-3.jpg"
+          ],
+          "size": ["XL", "L"],
+          "score": "4.2-54",
+          "stock": true
+        },
+        {
+          "id": "2",
+          "name": "کلاه مدل New York Yunkees",
+          "quantity": 20,
+          "colors": ["green", "white", "red"],
+          "images": [
+            "./public/images/products/hat/hat2-1.jpg",
+            "./public/images/products/hat/hat2-2.jpg",
+            "./public/images/products/hat/hat2-3.jpg"
+          ],
+          "size": ["XL", "L"],
+          "score": "4.8-40",
+          "stock": true
+        },
+        {
+          "id": "3",
+          "name": "کلاه طرح خز دار",
+          "quantity": 14,
+          "colors": ["brown", "blue", "red"],
+          "images": [
+            "./public/images/products/hat/hat3-1.jpg",
+            "./public/images/products/hat/hat3-2.jpg",
+            "./public/images/products/hat/hat3-3.jpg"
+          ],
+          "size": ["XL"],
+          "score": "3.8-10",
+          "stock": true
+        },
+        {
+          "id": "4",
+          "name": "کلاه مدل new york yankees پشت توری  ",
+          "quantity": 4,
+          "colors": ["black", "green", "gray"],
+          "images": [
+            "./public/images/products/hat/hat4-1.jpg",
+            "./public/images/products/hat/hat4-2.jpg",
+            "./public/images/products/hat/hat4-3.jpg"
+          ],
+          "size": ["XL"],
+          "score": "2.9-20",
+          "stock": true
+        },
+        {
+          "id": "5",
+          "name": "کلاه نقاب دار طرح تایگر",
+          "quantity": 10,
+          "colors": ["green", "black"],
+          "images": [
+            "./public/images/products/hat/hat5-1.jpg",
+            "./public/images/products/hat/hat5-2.jpg",
+            "./public/images/products/hat/hat5-3.jpg"
+          ],
+          "size": ["XL"],
+          "score": "4-54",
+          "stock": true
+        },
+        {
+          "id": "6",
+          "name": "کلاه نقاب دار طرح کالیفرنیا",
+          "quantity": 30,
+          "colors": ["blue", "black", "gray"],
+          "images": [
+            "./public/images/products/hat/hat6-1.jpg",
+            "./public/images/products/hat/hat6-2.jpg",
+            "./public/images/products/hat/hat6-3.jpg"
+          ],
+          "size": ["XL"],
+          "score": "2.8-14",
+          "stock": true
+        },
+        {
+          "id": "7",
+          "name": "کلاه نقاب دار طرح BMW",
+          "quantity": 30,
+          "colors": ["white", "red", "black"],
+          "images": [
+            "./public/images/products/hat/hat7-1.jpg",
+            "./public/images/products/hat/hat7-2.jpg",
+            "./public/images/products/hat/hat7-3.jpg"
+          ],
+          "size": ["XL"],
+          "score": "4.2-44",
+          "stock": true
+        },
+        {
+          "id": "8",
+          "name": "کلاه نقاب دار طرح F3",
+          "quantity": 30,
+          "colors": ["skyblue", "blue", "white"],
+          "images": [
+            "./public/images/products/hat/hat8-1.jpg",
+            "./public/images/products/hat/hat8-2.jpg",
+            "./public/images/products/hat/hat8-3.jpg"
+          ],
+          "size": ["XL"],
+          "score": "4.8-44",
+          "stock": true
+        },
+        {
+          "id": "9",
+          "name": "کلاه نقاب دار طرح Freedom",
+          "quantity": 30,
+          "colors": ["black", "gray", "skyblue"],
+          "images": [
+            "./public/images/products/hat/hat9-1.jpg",
+            "./public/images/products/hat/hat9-2.jpg",
+            "./public/images/products/hat/hat9-3.jpg"
+          ],
+          "size": ["XL"],
+          "score": "4.4-44",
+          "stock": true
+        }
+      ]
+    },
+    {
+      "type": "ProductType2",
+      "items": [
+        { "id": "003", "name": "Product3", "quantity": 7 },
+        { "id": "004", "name": "Product4", "quantity": 3 }
+      ]
     }
   ],
   "comments": [
