@@ -1,0 +1,55 @@
+let shopProductsWrapper = document.querySelector(".shop-products__wrapper");
+
+window.addEventListener("load", getAllProducts);
+
+function getAllProducts() {
+  fetch(`http://localhost:3000/products`)
+    .then((res) => res.json())
+    .then((products) => {
+      console.log(products);
+      products.forEach((product) => {
+        shopProductsWrapper.insertAdjacentHTML(
+          "beforeend",
+          `
+                
+            <div class="shop-product">
+                  <div class="shop-product__top">
+                    <img
+                      src="${product.images[0]}"
+                      alt="product"
+                      class="shop-product-image"
+                    />
+                </div>
+
+                  <div class="shop-product__bottom">
+                    <span class="shop-product__bottom-title">
+                     ${product.name}
+                    </span>
+                    <a href="#" class="shop-product__bottom__link">
+                      مشاهده محصول
+                      <svg class="shop-product__bottom__link-icon">
+                        <use href="#eye"></use>
+                      </svg>
+                    </a>
+                    <div class="shop-product__bottom__infos">
+                      <span class="shop-product__bottom__infos-price">
+                        ${(product.price).toLocaleString() + " تومان"} 
+                      </span>
+                      <span class="shop-product__bottom__infos-stock">
+                        ${product.stock ? "موجود" : "ناموجود"}
+                      </span>
+                    </div>
+                  </div>
+
+                  <button class="shop-product__btn">
+                    افزودن به سبد خرید
+                    <svg class="shop-product__btn-icon">
+                      <use href="#basket"></use>
+                    </svg>
+                  </button>
+                </div>
+                `
+        );
+      });
+    });
+}
