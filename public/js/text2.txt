@@ -1,0 +1,83 @@
+const selectedCategories = [];
+
+function fetchAndFilterProducts() {
+  fetch("http://localhost:3000/products")
+    .then((response) => response.json())
+    .then((data) => {
+      const filteredProducts = data.filter((product) =>
+        selectedCategories.includes(product.category)
+      );
+      console.log(filteredProducts);
+      filteredProducts.forEach((product) => {
+        console.log(product);
+        shopProductsWrapper.insertAdjacentHTML(
+          "beforeend",
+          `
+          
+            <div class="shop-product">
+                  <div class="shop-product__top">
+                    <img
+                      src="${product.images[0]}"
+                      alt="product"
+                      class="shop-product-image"
+                    />
+                </div>
+
+                  <div class="shop-product__bottom">
+                    <span class="shop-product__bottom-title">
+                     ${product.name}
+                    </span>
+                    <a href="#" class="shop-product__bottom__link">
+                      مشاهده محصول
+                      <svg class="shop-product__bottom__link-icon">
+                        <use href="#eye"></use>
+                      </svg>
+                    </a>
+                    <div class="shop-product__bottom__infos">
+                      <span class="shop-product__bottom__infos-price">
+                        ${product.price.toLocaleString() + " تومان"} 
+                      </span>
+                      <span class="shop-product__bottom__infos-stock">
+                        ${product.stock ? "موجود" : "ناموجود"}
+                      </span>
+                    </div>
+                  </div>
+
+                  <button class="shop-product__btn">
+                    افزودن به سبد خرید
+                    <svg class="shop-product__btn-icon">
+                      <use href="#basket"></use>
+                    </svg>
+                  </button>
+                </div>
+          `
+        );
+      });
+    })
+    .catch((error) => console.error("Error fetching data:", error));
+}
+
+// انتخاب همه چک‌باکس‌ها
+const checkboxes = document.querySelectorAll(".side-menu__item-checkbox");
+
+checkboxes.forEach((checkbox) => {
+  checkbox.addEventListener("change", (event) => {
+    const category = event.target.dataset.category;
+
+    if (event.target.checked) {
+      // اضافه کردن دسته‌بندی به آرایه اگر چک‌باکس تیک خورده باشد
+      selectedCategories.push(category);
+    } else {
+      shopProductsWrapper.innerHTML=''
+
+      // حذف دسته‌بندی از آرایه اگر چک‌باکس تیک برداشته شده باشد
+      const index = selectedCategories.indexOf(category);
+      if (index > -1) {
+        selectedCategories.splice(index, 1);
+      }
+    }
+
+    // ارسال درخواست به سرور با مقادیر به‌روز شده
+    fetchAndFilterProducts();
+  });
+});
